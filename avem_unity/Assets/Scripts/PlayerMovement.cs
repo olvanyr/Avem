@@ -103,7 +103,7 @@ public class PlayerMovement : MonoBehaviour
  
     }
 
-    void MovePlayer(float _horizontalMovement, float verticalMovement)
+    public void MovePlayer(float _horizontalMovement, float verticalMovement)
     {
         Vector3 targetVelocity = new Vector2(_horizontalMovement, rb.velocity.y);//the force we aplie on x and the current y
         //rb.velocity = targetVelocity;
