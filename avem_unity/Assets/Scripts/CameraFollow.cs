@@ -12,6 +12,9 @@ public class CameraFollow : MonoBehaviour
 
     private Vector3 velocity;
 
+    //Scene transition coordinate
+    public VectorValue startingPosition;
+
     public static CameraFollow instance;
     private void Awake()
     {
@@ -22,6 +25,11 @@ public class CameraFollow : MonoBehaviour
         }
 
         instance = this;
+    }
+
+    private void Start()
+    {
+        transform.position = new Vector3(startingPosition.initialValue.x, startingPosition.initialValue.y, transform.position.z);
     }
 
     void Update()

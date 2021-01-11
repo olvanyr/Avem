@@ -37,6 +37,9 @@ public class PlayerMovement : MonoBehaviour
     public float wallSlidingSpeed;
     public float frontCheckRadius;
 
+    //Scene transition coordinate
+    public VectorValue startingPosition;
+
 
     public static PlayerMovement instance;
     private void Awake()
@@ -55,6 +58,13 @@ public class PlayerMovement : MonoBehaviour
         playerInput.NormalMovement.Jump.performed += context => Jump(); //second methode
         playerInput.NormalMovement.Move.performed += context => Movement(context.ReadValue<Vector2>()); //second methode
     }
+
+
+    private void Start()
+    {
+        transform.position = startingPosition.initialValue;
+    }
+
 
     private void OnEnable() //if the script is enable, the we enable the PlayerInput we need to enable it
     {
