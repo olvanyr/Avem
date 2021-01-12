@@ -16,10 +16,12 @@ public class GameSaveManager : MonoBehaviour
             Destroy(this);
             return;
         }
+        else
+        {
+            instance = this;
+        }
 
-        instance = this;
-
-        DontDestroyOnLoad(this);
+        DontDestroyOnLoad(this.gameObject);
 
     }
     // Start is called before the first frame update
