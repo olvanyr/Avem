@@ -1,12 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameSaveManager : MonoBehaviour
 {
     public static GameSaveManager instance;
 
-    public List<ScriptableObject> scriptableObjects = new List<ScriptableObject>();
+    public List<ArrayList> data = new List<ArrayList>();
+    public List<int> doorData = new List<int>();
+
+    public int sceneID;
+    public int sceneIDLast;
 
     private void Awake()
     {
@@ -23,16 +28,18 @@ public class GameSaveManager : MonoBehaviour
 
         DontDestroyOnLoad(this.gameObject);
 
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
+        if (sceneID != sceneIDLast)
+        {
+            sceneIDLast = sceneID;
+
+        }
+        
+        sceneID = SceneManager.GetActiveScene().buildIndex;
         
     }
 }

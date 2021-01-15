@@ -9,17 +9,27 @@ public class SimpleDoor : MonoBehaviour
 
     public Animator animator;
 
-    public bool isDoorOpen;
+    public bool isDoorOpen = false;
     
     private bool isInRange = false;
+
+    public int id;
+
+   
 
     // Start is called before the first frame update
 
     private void Start()
     {
 
+        if (GameSaveManager.instance.doorData.Contains(id))
+        {
+            isDoorOpen = true;
+        }
+
+
         //DoorAlreadyOpen();
-        if(isDoorOpen)
+        if (isDoorOpen)
         {
             DoorAlreadyOpen();
         }
@@ -48,6 +58,12 @@ public class SimpleDoor : MonoBehaviour
     {   
         doorCollider.enabled = false;
         isDoorOpen = true;
+
+        if (GameSaveManager.instance.doorData.Contains(id))
+        {
+            Debug.LogError("the current door id is already atributed");
+        }
+        GameSaveManager.instance.doorData.Add(id);
     }
 
     void DoorAlreadyOpen()
