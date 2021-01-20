@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Mathematics;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -36,6 +37,10 @@ public class PlayerMovement : MonoBehaviour
     private bool isWallSliging;
     public float wallSlidingSpeed;
     public float frontCheckRadius;
+
+    // hovering var
+    public float newGravityScale;
+    public float gravityScale;
 
     //Scene transition coordinate
     public VectorValue startingPosition;
@@ -79,8 +84,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, collisionLayer);
+        //isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, collisionLayer); 
         isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0, collisionLayer);
+
+        if (isGrounded)
+        {
+            rb.gravityScale = gravityScale;
+        }
 
         isTouchingFront = Physics2D.OverlapCircle(frontCheck.position, frontCheckRadius, collisionLayer);
 
@@ -100,6 +110,12 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
         }
+
+        // give to the animator the speed so wee can transition n the animation
+        float charachterVelocity = math.abs((rb.velocity.x));
+        animator.SetFloat("speed", charachterVelocity);
+
+        Debug.Log("rigid body velocity " + charachterVelocity.ToString());
     }
 
    
@@ -127,6 +143,16 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(new Vector2(0, jumpForce));
         }
+        else {
+
+            if (rb.velocity.y < 0)
+            {
+                rb.gravityScale = newGravityScale;
+            }
+            
+        }
+
+       
 
         //Debug.Log("Player is jumping");
     }

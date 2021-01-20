@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -414816013
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: -3884400247260062513, guid: 4aa6d12e1ff1cc8468af28201f6c9aa5,
     type: 3}
@@ -127,7 +127,7 @@ MonoBehaviour:
   doorCollider: {fileID: 7426163168785874137}
   animator: {fileID: 7426163167741937438}
   isDoorOpen: 0
-  door: {fileID: 11400000, guid: 443edc26deca15f40b5b0a95025f6d1a, type: 2}
+  id: 0
 --- !u!95 &7426163167741937438
 Animator:
   serializedVersion: 3
