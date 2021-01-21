@@ -27,13 +27,15 @@ public class PlayerMovement : MonoBehaviour
 
     //take reference for the empty gameobject groundcheck
     public Transform groundCheck;
+
     //public float groundCheckRadius;
     public Vector2 groundCheckSize;
     public LayerMask collisionLayer;
 
     //walljump var
-    private bool isTouchingFront;
-    public Transform frontCheck;
+    public bool isTouchingFront;
+    public Transform frontCheck1;
+    public Transform frontCheck2;
     private bool isWallSliging;
     public float wallSlidingSpeed;
     public float frontCheckRadius;
@@ -92,7 +94,15 @@ public class PlayerMovement : MonoBehaviour
             rb.gravityScale = gravityScale;
         }
 
-        isTouchingFront = Physics2D.OverlapCircle(frontCheck.position, frontCheckRadius, collisionLayer);
+        if (Physics2D.OverlapCircle(frontCheck1.position, frontCheckRadius, collisionLayer) || Physics2D.OverlapCircle(frontCheck2.position, frontCheckRadius, collisionLayer))
+        {
+            isTouchingFront = true;
+        }
+        else
+        {
+            isTouchingFront = false;
+        }
+
 
         if (isTouchingFront == true && isGrounded == false && Mathf.Abs(rb.velocity.x) < 0.1f)
         {
@@ -113,9 +123,12 @@ public class PlayerMovement : MonoBehaviour
 
         // give to the animator the speed so wee can transition n the animation
         float charachterVelocity = math.abs((rb.velocity.x));
+        float charachterVerticalVelocity = (rb.velocity.y);
         animator.SetFloat("speed", charachterVelocity);
+        animator.SetFloat("verticalSpeed", charachterVerticalVelocity);
+        animator.SetBool("isGrounded", isGrounded);
 
-        Debug.Log("rigid body velocity " + charachterVelocity.ToString());
+        //Debug.Log("rigid body velocity " + charachterVelocity.ToString());
     }
 
    
@@ -161,13 +174,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if (_velocity > 0.1f)
         {
-            transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
-            //spriteRenderer.flipX = false;
+            //transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+            spriteRenderer.flipX = false;
         }
         else if (_velocity < -0.1f)
         {
-            //spriteRenderer.flipX = true;
-            transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+            spriteRenderer.flipX = true;
+            //transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
         }
     }
 
@@ -178,7 +191,8 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.DrawWireCube(groundCheck.position, groundCheckSize);
 
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(frontCheck.position, frontCheckRadius);
+        Gizmos.DrawWireSphere(frontCheck1.position, frontCheckRadius);
+        Gizmos.DrawWireSphere(frontCheck2.position, frontCheckRadius);
         //Gizmos.DrawWireCube(frontCheck.position, wallCheckSize);
     }
 }

@@ -33,6 +33,14 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Action1"",
+                    ""type"": ""Button"",
+                    ""id"": ""588efe23-5172-4c5d-896b-77f226f831dd"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -222,6 +230,28 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3d22fcfc-3174-4fa6-9ef5-e86f1cb1a813"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Action1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""57a491a7-3a50-4e3d-aecc-244b8bb5c2a0"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardAndMouse"",
+                    ""action"": ""Action1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -298,6 +328,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
         m_NormalMovement = asset.FindActionMap("NormalMovement", throwIfNotFound: true);
         m_NormalMovement_Move = m_NormalMovement.FindAction("Move", throwIfNotFound: true);
         m_NormalMovement_Jump = m_NormalMovement.FindAction("Jump", throwIfNotFound: true);
+        m_NormalMovement_Action1 = m_NormalMovement.FindAction("Action1", throwIfNotFound: true);
         // Menu
         m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
         m_Menu_Pause = m_Menu.FindAction("Pause", throwIfNotFound: true);
@@ -352,12 +383,14 @@ public class @PlayerInput : IInputActionCollection, IDisposable
     private INormalMovementActions m_NormalMovementActionsCallbackInterface;
     private readonly InputAction m_NormalMovement_Move;
     private readonly InputAction m_NormalMovement_Jump;
+    private readonly InputAction m_NormalMovement_Action1;
     public struct NormalMovementActions
     {
         private @PlayerInput m_Wrapper;
         public NormalMovementActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_NormalMovement_Move;
         public InputAction @Jump => m_Wrapper.m_NormalMovement_Jump;
+        public InputAction @Action1 => m_Wrapper.m_NormalMovement_Action1;
         public InputActionMap Get() { return m_Wrapper.m_NormalMovement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -373,6 +406,9 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                 @Jump.started -= m_Wrapper.m_NormalMovementActionsCallbackInterface.OnJump;
                 @Jump.performed -= m_Wrapper.m_NormalMovementActionsCallbackInterface.OnJump;
                 @Jump.canceled -= m_Wrapper.m_NormalMovementActionsCallbackInterface.OnJump;
+                @Action1.started -= m_Wrapper.m_NormalMovementActionsCallbackInterface.OnAction1;
+                @Action1.performed -= m_Wrapper.m_NormalMovementActionsCallbackInterface.OnAction1;
+                @Action1.canceled -= m_Wrapper.m_NormalMovementActionsCallbackInterface.OnAction1;
             }
             m_Wrapper.m_NormalMovementActionsCallbackInterface = instance;
             if (instance != null)
@@ -383,6 +419,9 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
+                @Action1.started += instance.OnAction1;
+                @Action1.performed += instance.OnAction1;
+                @Action1.canceled += instance.OnAction1;
             }
         }
     }
@@ -442,6 +481,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+        void OnAction1(InputAction.CallbackContext context);
     }
     public interface IMenuActions
     {
