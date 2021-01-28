@@ -29,7 +29,8 @@ public class SceneTransition : MonoBehaviour
     {
         playerInput = playerMovement.playerInput;
 
-        playerInput.NormalMovement.Action1.performed += context => GoToNextSene();
+        //playerInput.NormalMovement.Action1.performed += context => GoToNextSene();
+        playerInput.NormalMovement.Move.performed += context => GoToNextSene(context.ReadValue<Vector2>());
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -53,10 +54,10 @@ public class SceneTransition : MonoBehaviour
         }
     }
 
-    public void GoToNextSene()
+    public void GoToNextSene(Vector2 direction)
     {
 
-        if (inRange)
+        if (inRange && direction.y > 0.5)
         {
             playerPositionStorage.initialValue = playerPosition;
             levelLoader.LoadLevel(sceneToLoad);

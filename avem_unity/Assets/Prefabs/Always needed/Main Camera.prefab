@@ -133,4 +133,35 @@ MonoBehaviour:
   positionOffset: {x: 0, y: 0, z: 0}
   maxPosition: {x: 0, y: 0}
   minPosition: {x: 0, y: 0}
+  cam: {fileID: 4422176218200108570}
+  color: {r: 0.9056604, g: 0.14097545, b: 0.14097545, a: 0}
+  gradient:
+    serializedVersion: 2
+    key0: {r: 0.105882354, g: 0, b: 0.62352943, a: 1}
+    key1: {r: 1, g: 0.44483572, b: 0, a: 1}
+    key2: {r: 1, g: 0.86827826, b: 0, a: 1}
+    key3: {r: 1, g: 0.87058824, b: 0, a: 1}
+    key4: {r: 1, g: 0.44313726, b: 0, a: 0}
+    key5: {r: 0.10354428, g: 0, b: 0.6226415, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 16384
+    ctime2: 26214
+    ctime3: 39321
+    ctime4: 49151
+    ctime5: 65535
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 55319
+    atime3: 55319
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 6
+    m_NumAlphaKeys: 2
   startingPosition: {fileID: 11400000, guid: bec281ec6e7cfcb4191e2a5693ce81ea, type: 2}

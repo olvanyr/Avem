@@ -71,9 +71,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Scene1
-  playerPosition: {x: -3, y: -1}
+  playerPosition: {x: -6, y: -1}
   playerPositionStorage: {fileID: 11400000, guid: bec281ec6e7cfcb4191e2a5693ce81ea,
     type: 2}
   levelLoader: {fileID: 0}
   playerMovement: {fileID: 0}
   rbPlayer: {fileID: 0}
+  inRange: 0
+  popUp: {fileID: 0}
+  popUpScript: {fileID: 0}
+  popUpText: Go to next room
+  popUpSprite: {fileID: -96796154962138083, guid: 05fced0d64b28714b9fcf59c08332a33,
+    type: 3}

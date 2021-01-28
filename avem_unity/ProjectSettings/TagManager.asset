@@ -50,12 +50,12 @@ TagManager:
   - name: Ground
     uniqueID: 2518303913
     locked: 0
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Player
     uniqueID: 4070633159
     locked: 0
   - name: FrontProps
     uniqueID: 3823616063
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0

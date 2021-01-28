@@ -47,6 +47,10 @@ public class PlayerMovement : MonoBehaviour
     //Scene transition coordinate
     public VectorValue startingPosition;
 
+    //state var
+
+    public bool isPressing;
+
 
     public static PlayerMovement instance;
     private void Awake()
@@ -63,6 +67,7 @@ public class PlayerMovement : MonoBehaviour
         playerInput = new PlayerInput();
 
         playerInput.NormalMovement.Jump.performed += context => Jump(); //second methode
+        playerInput.NormalMovement.Action1.performed += context => Press(); //second methode
         playerInput.NormalMovement.Move.performed += context => Movement(context.ReadValue<Vector2>()); //second methode
     }
 
@@ -113,9 +118,17 @@ public class PlayerMovement : MonoBehaviour
             isWallSliging = false;
         }
 
+
+        if (!isPressing)
+        {
+            MovePlayer(horizontalMovement, verticalMovement);
+        }
+        else
+        {
+            MovePlayer(0, 0);
+        }
         
 
-        MovePlayer(horizontalMovement, verticalMovement);
         if (isWallSliging)
         {
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
@@ -136,10 +149,10 @@ public class PlayerMovement : MonoBehaviour
     void Movement(Vector2 direction)
     {
         //Debug.Log("Player is moving : " + direction);
-
-        horizontalMovement = direction.x * moveSpeed * Time.fixedDeltaTime;
-        verticalMovement = direction.y * 0 * Time.fixedDeltaTime; //actualy, the vertical movvement is equal to zero
- 
+        
+            horizontalMovement = direction.x * moveSpeed * Time.fixedDeltaTime;
+            verticalMovement = direction.y * 0 * Time.fixedDeltaTime; //actualy, the vertical movvement is equal to zero
+        
     }
 
     public void MovePlayer(float _horizontalMovement, float verticalMovement)
@@ -152,7 +165,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
-        if (isGrounded)
+        if (isGrounded && !isPressing)
         {
             rb.AddForce(new Vector2(0, jumpForce));
         }
@@ -168,6 +181,22 @@ public class PlayerMovement : MonoBehaviour
        
 
         //Debug.Log("Player is jumping");
+    }
+
+    void Press()
+    {
+        if (!isPressing && isGrounded)
+        {
+            animator.SetTrigger("isPressing");
+            isPressing = true;
+        }       
+    }
+    void StopPress()
+    {
+
+         isPressing = false;
+
+        
     }
 
     void flip(float _velocity)

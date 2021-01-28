@@ -12,6 +12,13 @@ public class CameraFollow : MonoBehaviour
 
     private Vector3 velocity;
 
+    public Camera cam;
+
+    public Color color;
+    public Gradient gradient;
+
+    
+
     //Scene transition coordinate
     public VectorValue startingPosition;
 
@@ -30,6 +37,11 @@ public class CameraFollow : MonoBehaviour
     private void Start()
     {
         transform.position = new Vector3(startingPosition.initialValue.x, startingPosition.initialValue.y, transform.position.z);
+
+
+        //color = gradient.Evaluate(0.5f);
+
+        CamerColorUpdate(color);
     }
 
     void Update()
@@ -47,5 +59,12 @@ public class CameraFollow : MonoBehaviour
 
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, timeOffset);
 
+        
+
+    }
+
+    public void CamerColorUpdate(Color color)
+    {
+        cam.backgroundColor = color;
     }
 }
