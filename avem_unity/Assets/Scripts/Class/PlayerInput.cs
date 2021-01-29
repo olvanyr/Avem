@@ -41,6 +41,14 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Action2"",
+                    ""type"": ""Button"",
+                    ""id"": ""442a1b0a-e1c0-429e-9673-1eb34a7ca897"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -244,6 +252,28 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""c0f0ceb1-d359-4799-a394-48bde0e4eb61"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardAndMouse"",
+                    ""action"": ""Action2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""81ceaaa7-e06f-46f3-b839-a32fda6feb94"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Action2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""57a491a7-3a50-4e3d-aecc-244b8bb5c2a0"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
@@ -329,6 +359,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
         m_NormalMovement_Move = m_NormalMovement.FindAction("Move", throwIfNotFound: true);
         m_NormalMovement_Jump = m_NormalMovement.FindAction("Jump", throwIfNotFound: true);
         m_NormalMovement_Action1 = m_NormalMovement.FindAction("Action1", throwIfNotFound: true);
+        m_NormalMovement_Action2 = m_NormalMovement.FindAction("Action2", throwIfNotFound: true);
         // Menu
         m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
         m_Menu_Pause = m_Menu.FindAction("Pause", throwIfNotFound: true);
@@ -384,6 +415,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
     private readonly InputAction m_NormalMovement_Move;
     private readonly InputAction m_NormalMovement_Jump;
     private readonly InputAction m_NormalMovement_Action1;
+    private readonly InputAction m_NormalMovement_Action2;
     public struct NormalMovementActions
     {
         private @PlayerInput m_Wrapper;
@@ -391,6 +423,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
         public InputAction @Move => m_Wrapper.m_NormalMovement_Move;
         public InputAction @Jump => m_Wrapper.m_NormalMovement_Jump;
         public InputAction @Action1 => m_Wrapper.m_NormalMovement_Action1;
+        public InputAction @Action2 => m_Wrapper.m_NormalMovement_Action2;
         public InputActionMap Get() { return m_Wrapper.m_NormalMovement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -409,6 +442,9 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                 @Action1.started -= m_Wrapper.m_NormalMovementActionsCallbackInterface.OnAction1;
                 @Action1.performed -= m_Wrapper.m_NormalMovementActionsCallbackInterface.OnAction1;
                 @Action1.canceled -= m_Wrapper.m_NormalMovementActionsCallbackInterface.OnAction1;
+                @Action2.started -= m_Wrapper.m_NormalMovementActionsCallbackInterface.OnAction2;
+                @Action2.performed -= m_Wrapper.m_NormalMovementActionsCallbackInterface.OnAction2;
+                @Action2.canceled -= m_Wrapper.m_NormalMovementActionsCallbackInterface.OnAction2;
             }
             m_Wrapper.m_NormalMovementActionsCallbackInterface = instance;
             if (instance != null)
@@ -422,6 +458,9 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                 @Action1.started += instance.OnAction1;
                 @Action1.performed += instance.OnAction1;
                 @Action1.canceled += instance.OnAction1;
+                @Action2.started += instance.OnAction2;
+                @Action2.performed += instance.OnAction2;
+                @Action2.canceled += instance.OnAction2;
             }
         }
     }
@@ -482,6 +521,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnAction1(InputAction.CallbackContext context);
+        void OnAction2(InputAction.CallbackContext context);
     }
     public interface IMenuActions
     {

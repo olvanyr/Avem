@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Button.cs" />
     <Compile Include="Assets\DownWayPlatform.cs" />
+    <Compile Include="Assets\PickUpFruit.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\CameraSnapToRoom.cs" />

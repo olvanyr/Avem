@@ -50,6 +50,11 @@ public class PlayerMovement : MonoBehaviour
     //state var
 
     public bool isPressing;
+    public bool isPickUping;
+
+
+    //track if the bird have something in his bick
+    public bool haveObject = false;
 
 
     public static PlayerMovement instance;
@@ -68,6 +73,7 @@ public class PlayerMovement : MonoBehaviour
 
         playerInput.NormalMovement.Jump.performed += context => Jump(); //second methode
         playerInput.NormalMovement.Action1.performed += context => Press(); //second methode
+        playerInput.NormalMovement.Action2.performed += context => PickUp(); //second methode
         playerInput.NormalMovement.Move.performed += context => Movement(context.ReadValue<Vector2>()); //second methode
     }
 
@@ -119,7 +125,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        if (!isPressing)
+        if (!isPressing && !isPickUping)
         {
             MovePlayer(horizontalMovement, verticalMovement);
         }
@@ -165,7 +171,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
-        if (isGrounded && !isPressing)
+        if (isGrounded && !isPressing && !isPickUping)
         {
             rb.AddForce(new Vector2(0, jumpForce));
         }
@@ -185,18 +191,30 @@ public class PlayerMovement : MonoBehaviour
 
     void Press()
     {
-        if (!isPressing && isGrounded)
+        if (!isPressing && isGrounded && !isPickUping && !haveObject)
         {
             animator.SetTrigger("isPressing");
             isPressing = true;
         }       
     }
+
+    void PickUp()
+    {
+        if (!isPickUping && isGrounded && !isPressing && !haveObject)
+        {
+            animator.SetTrigger("isPickUping");
+            isPickUping = true;
+        }
+    }
+
+    void StopPickUp()
+    {
+        isPickUping = false;
+    }
+
     void StopPress()
     {
-
          isPressing = false;
-
-        
     }
 
     void flip(float _velocity)

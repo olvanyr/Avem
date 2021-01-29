@@ -13,8 +13,6 @@ public class TimerDoor : MonoBehaviour
 
     public bool isDoorClose = false;
 
-    private bool isInRange = false;
-
     public int id;
 
     public float timeSpawn;
@@ -53,9 +51,9 @@ public class TimerDoor : MonoBehaviour
 
         float time = (timeSpawn - currentTime);
 
-        if (time > 999)
+        if (time < -999)
         {
-            time = 999;
+            time = -999;
         }
 
 
@@ -64,14 +62,6 @@ public class TimerDoor : MonoBehaviour
         if (timeSpawn < Timer.instance.currentTime)
         {
             animator.SetTrigger("CloseDoor");
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            isInRange = true;
         }
     }
 

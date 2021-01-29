@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Red
   layers:
   - Default
   - TransparentFX
@@ -49,6 +50,9 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 2518303913
+    locked: 0
+  - name: Cable
+    uniqueID: 605455127
     locked: 0
   - name: Player
     uniqueID: 4070633159
