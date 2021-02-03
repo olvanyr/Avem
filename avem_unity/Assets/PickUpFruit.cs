@@ -20,7 +20,7 @@ public class PickUpFruit : MonoBehaviour
 
     public SpriteRenderer spriteRenderer;
     public Animator animator;
-
+    
     public Rigidbody2D rb;
     void Start()
     {
@@ -30,14 +30,14 @@ public class PickUpFruit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (inRange && PlayerMovement.instance.isPickUping)
+
+        //Pick up fruit
+        if (inRange && PlayerMovement.instance.state == "pick")
         {
             isPicked = true;
             PlayerMovement.instance.haveObject = true;
             animator.Play("Picked");
         }
-
-
 
         if (isPicked)
         {
@@ -45,10 +45,11 @@ public class PickUpFruit : MonoBehaviour
             rb.simulated = false;
        
             self.transform.position = player.transform.position;
+            self.transform.eulerAngles = new Vector3(0, 0, 0);
             float charachterVelocity = math.abs(PlayerMovement.instance.rb.velocity.x);
             animator.SetFloat("speed", charachterVelocity);
 
-            if (math.abs(PlayerMovement.instance.rb.velocity.y) > 0.2)
+            if (math.abs(PlayerMovement.instance.rb.velocity.y) > 0.2 && PlayerMovement.instance.isGrounded == false|| PlayerMovement.instance.haveObject == false && isPicked)
             {
                 isPicked = false;
                 PlayerMovement.instance.haveObject = false;
@@ -59,6 +60,15 @@ public class PickUpFruit : MonoBehaviour
 
     }
 
+
+    public void Eating()
+    {
+        if (PlayerMovement.instance.state == "eat")
+        {
+            PlayerHealth.instance.AddHealth(1);
+            Destroy(self);
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

@@ -48,9 +48,7 @@ public class PlayerMovement : MonoBehaviour
     public VectorValue startingPosition;
 
     //state var
-
-    public bool isPressing;
-    public bool isPickUping;
+    public string state;
 
 
     //track if the bird have something in his bick
@@ -97,57 +95,62 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, collisionLayer); 
-        isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0, collisionLayer);
+        if (state == "move")
+        {
 
-        if (isGrounded)
-        {
-            rb.gravityScale = gravityScale;
-        }
+            //Is grounded ? 
+            isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0, collisionLayer);
 
-        if (Physics2D.OverlapCircle(frontCheck1.position, frontCheckRadius, collisionLayer) || Physics2D.OverlapCircle(frontCheck2.position, frontCheckRadius, collisionLayer))
-        {
-            isTouchingFront = true;
-        }
-        else
-        {
-            isTouchingFront = false;
-        }
+            if (isGrounded)
+            {
+                rb.gravityScale = gravityScale;
+            }
 
 
-        if (isTouchingFront == true && isGrounded == false && Mathf.Abs(rb.velocity.x) < 0.1f)
-        {
-            isWallSliging = true;
-        }
-        else
-        {
-            isWallSliging = false;
-        }
 
+            //Wall Slide
+            if (Physics2D.OverlapCircle(frontCheck1.position, frontCheckRadius, collisionLayer) || Physics2D.OverlapCircle(frontCheck2.position, frontCheckRadius, collisionLayer))
+            {
+                isTouchingFront = true;
+            }
+            else
+            {
+                isTouchingFront = false;
+            }
 
-        if (!isPressing && !isPickUping)
-        {
+            if (isTouchingFront == true && isGrounded == false && Mathf.Abs(rb.velocity.x) < 0.1f)
+            {
+                isWallSliging = true;
+            }
+            else
+            {
+                isWallSliging = false;
+            }
+
+            if (isWallSliging)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
+            }
             MovePlayer(horizontalMovement, verticalMovement);
         }
         else
         {
             MovePlayer(0, 0);
         }
-        
 
-        if (isWallSliging)
+        //eat state 
+
+        if (state == "eat")
         {
-            rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
+
         }
 
-        // give to the animator the speed so wee can transition n the animation
+        // Animation
         float charachterVelocity = math.abs((rb.velocity.x));
         float charachterVerticalVelocity = (rb.velocity.y);
         animator.SetFloat("speed", charachterVelocity);
         animator.SetFloat("verticalSpeed", charachterVerticalVelocity);
         animator.SetBool("isGrounded", isGrounded);
-
-        //Debug.Log("rigid body velocity " + charachterVelocity.ToString());
     }
 
    
@@ -171,52 +174,71 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
-        if (isGrounded && !isPressing && !isPickUping)
+        if (state == "move")
         {
-            rb.AddForce(new Vector2(0, jumpForce));
-        }
-        else {
-
-            if (rb.velocity.y < 0)
+            if (isGrounded)
             {
-                rb.gravityScale = newGravityScale;
+                rb.AddForce(new Vector2(0, jumpForce));
             }
-            
+            else
+            {
+
+                if (rb.velocity.y < 0)
+                {
+                    rb.gravityScale = newGravityScale;
+                }
+
+            }
         }
-
-       
-
-        //Debug.Log("Player is jumping");
     }
 
     void Press()
     {
-        if (!isPressing && isGrounded && !isPickUping && !haveObject)
+        if (state == "move")
         {
-            animator.SetTrigger("isPressing");
-            isPressing = true;
-        }       
+            if (isGrounded)
+            {
+                animator.SetTrigger("isPressing");
+                state = "press";
+            }
+        }
+
+        haveObject = false;
     }
 
     void PickUp()
     {
-        if (!isPickUping && isGrounded && !isPressing && !haveObject)
+        
+        if (state == "pick")
         {
-            animator.SetTrigger("isPickUping");
-            isPickUping = true;
+            state = "eat";
         }
+
+        if (state == "move")
+        {
+            if (isGrounded && !haveObject)
+            {
+                animator.SetTrigger("isPickUping");
+                state = "pick";
+            }
+            haveObject = false;
+        }
+        
+
     }
 
     void StopPickUp()
     {
-        isPickUping = false;
+        state = "move";
     }
 
     void StopPress()
     {
-         isPressing = false;
+        state = "move";
     }
 
+
+    //-----------Animation
     void flip(float _velocity)
     {
         if (_velocity > 0.1f)
@@ -231,6 +253,8 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+
+    //--------------------------------- only debug
     public void OnDrawGizmos()
     {
         Gizmos.color = Color.red;

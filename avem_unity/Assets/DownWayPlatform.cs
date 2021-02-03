@@ -12,6 +12,8 @@ public class DownWayPlatform : MonoBehaviour
     public Transform playerTransform;
     public Transform selfTransform;
 
+    public SpriteRenderer spriteRenderer;
+
     public PlayerMovement playerMovement;
     public PlayerInput playerInput;
     public void Start()
@@ -20,6 +22,8 @@ public class DownWayPlatform : MonoBehaviour
 
         //playerInput.NormalMovement.Action1.performed += context => GoToNextSene();
         playerInput.NormalMovement.Move.performed += context => GoDown(context.ReadValue<Vector2>());
+
+        SetColliderSize();
     }
 
 
@@ -48,6 +52,11 @@ public class DownWayPlatform : MonoBehaviour
         {
             platformEffector.rotationalOffset = 0;
         }
+    }
+
+    private void SetColliderSize()
+    {
+        boxCollider.size = new Vector2(spriteRenderer.size.x, boxCollider.size.y);
     }
 
 }

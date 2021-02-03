@@ -13,6 +13,8 @@ public class GameSaveManager : MonoBehaviour
     public int sceneID;
     public int sceneIDLast;
 
+    public int playerHealth;
+
     private void Awake()
     {
         if (instance != null)

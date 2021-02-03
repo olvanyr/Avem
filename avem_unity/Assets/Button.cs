@@ -28,6 +28,8 @@ public class Button : MonoBehaviour
 
     public Animator animator;
     public PlayerMovement player;
+
+    public bool isHorizontal;
     // Start is called before the first frame update
     void Start()
     {
@@ -53,21 +55,30 @@ public class Button : MonoBehaviour
     void Update()
     {
 
-        //pushing the button to open door
-        if (inRange && PlayerMovement.instance.isPressing && !isOn)
+        if (inRange && isHorizontal && !isOn)
         {
-            isOn = true;
-            animator.SetBool("IsOn", true);
-            timer = waitTime;
-            SetColor(lightColor2);
+            ButtonOn();
+        }
+
+
+        //pushing the button to open door
+        if (inRange && PlayerMovement.instance.state == "press" && !isOn)
+        {
+            ButtonOn();
         }
 
         //reset the button after a certain time
         float deltaTime = Time.deltaTime;
 
+        
         timer = (timer - deltaTime);
 
-        if (timer < 0)
+        if (inRange && isHorizontal)
+        {
+            timer = waitTime;
+        }
+
+            if (timer < 0)
         {
             timer = 0;
         }
@@ -77,13 +88,25 @@ public class Button : MonoBehaviour
 
         if (timer == 0 && isOn && waitTime != 0)
         {
-            animator.SetBool("IsOff", true);
-            isOn = false;
-            SetColor(lightColor1);
+            ButtonOff();
         }
     }
 
+    public void ButtonOn()
+    {
+        isOn = true;
+        animator.SetBool("IsOn", true);
+        timer = waitTime;
+        SetColor(lightColor2);
+    }
 
+
+    public void ButtonOff()
+    {
+        animator.SetBool("IsOff", true);
+        isOn = false;
+        SetColor(lightColor1);
+    }
 
     public void CablesColorOn()
     {
@@ -105,7 +128,7 @@ public class Button : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") || isHorizontal && collision.CompareTag("PhysicObject"))
         {
             inRange = true;
         }
@@ -114,7 +137,7 @@ public class Button : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") || isHorizontal && collision.CompareTag("PhysicObject"))
         {
             inRange = false;
         }
