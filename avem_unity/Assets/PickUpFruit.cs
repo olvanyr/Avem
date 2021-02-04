@@ -32,7 +32,7 @@ public class PickUpFruit : MonoBehaviour
     {
 
         //Pick up fruit
-        if (inRange && PlayerMovement.instance.state == "pick")
+        if (inRange && PlayerMovement.instance.state == "pick" && PlayerMovement.instance.haveObject == false)
         {
             isPicked = true;
             PlayerMovement.instance.haveObject = true;
@@ -66,6 +66,7 @@ public class PickUpFruit : MonoBehaviour
         if (PlayerMovement.instance.state == "eat")
         {
             PlayerHealth.instance.AddHealth(1);
+            PlayerMovement.instance.haveObject = false;
             Destroy(self);
         }
     }
