@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isTouchingFront;
     public Transform frontCheck1;
     public Transform frontCheck2;
-    private bool isWallSliging;
+    private bool isWallSliding;
     public float wallSlidingSpeed;
     public float frontCheckRadius;
 
@@ -120,14 +120,14 @@ public class PlayerMovement : MonoBehaviour
 
             if (isTouchingFront == true && isGrounded == false && Mathf.Abs(rb.velocity.x) < 0.1f)
             {
-                isWallSliging = true;
+                isWallSliding = true;
             }
             else
             {
-                isWallSliging = false;
+                isWallSliding = false;
             }
 
-            if (isWallSliging)
+            if (isWallSliding)
             {
                 rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
             }
@@ -151,6 +151,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("speed", charachterVelocity);
         animator.SetFloat("verticalSpeed", charachterVerticalVelocity);
         animator.SetBool("isGrounded", isGrounded);
+        animator.SetBool("isWallSliding", isWallSliding);
     }
 
    
@@ -223,8 +224,6 @@ public class PlayerMovement : MonoBehaviour
             }
             haveObject = false;
         }
-        
-
     }
 
     void StopPickUp()

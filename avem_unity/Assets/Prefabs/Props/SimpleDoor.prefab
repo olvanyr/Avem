@@ -50,6 +50,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -414816013
-  m_SortingLayer: -2
+  m_SortingLayer: -5
   m_SortingOrder: 0
   m_Sprite: {fileID: -3884400247260062513, guid: 4aa6d12e1ff1cc8468af28201f6c9aa5,
     type: 3}
@@ -128,6 +129,8 @@ MonoBehaviour:
   animator: {fileID: 7426163167741937438}
   isDoorOpen: 0
   id: 0
+  isAttachedToAButton: 0
+  button: {fileID: 0}
 --- !u!95 &7426163167741937438
 Animator:
   serializedVersion: 3
@@ -187,7 +190,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 7426163168785874139}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d67ee4567c37d2544b9614d3019a6149, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

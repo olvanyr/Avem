@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\InputPlayer.cs" />
     <Compile Include="Assets\Scripts\PopUp.cs" />
+    <Compile Include="Assets\Scanner.cs" />
     <Compile Include="Assets\Scripts\Class\PlayerInput.cs" />
     <Compile Include="Assets\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\MainMenuAndUI\MainMenu.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\SimpleDoor.cs" />
     <Compile Include="Assets\Scripts\GameSaveManager.cs" />
+    <Compile Include="Assets\Red.cs" />
     <Compile Include="Assets\DownWayPlatform.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\MainMenuAndUI\SettingsMenu.cs" />
@@ -81,8 +83,7 @@
     <Compile Include="Assets\Scripts\SceneTransition.cs" />
     <Compile Include="Assets\Button.cs" />
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
-    <Compile Include="Assets\Scanner.cs" />
-    <Compile Include="Assets\red.cs" />
+    <Compile Include="Assets\Door.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

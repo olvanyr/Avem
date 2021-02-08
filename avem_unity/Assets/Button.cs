@@ -7,6 +7,8 @@ using UnityEngine;
 
 public class Button : MonoBehaviour
 {
+    public Transform trasfor;
+
 
     public bool isOn;
 
@@ -64,7 +66,16 @@ public class Button : MonoBehaviour
         //pushing the button to open door
         if (inRange && PlayerMovement.instance.state == "press" && !isOn)
         {
-            ButtonOn();
+            //check player orientation
+            if (PlayerMovement.instance.spriteRenderer.flipX && trasfor.localScale.x == -1)
+            {
+                ButtonOn();
+            }
+            if (!PlayerMovement.instance.spriteRenderer.flipX && trasfor.localScale.x == 1)
+            {
+                ButtonOn();
+            }
+
         }
 
         //reset the button after a certain time
