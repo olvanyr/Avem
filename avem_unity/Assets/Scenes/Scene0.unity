@@ -8937,8 +8937,8 @@ Tilemap:
   - first: {x: 4, y: -3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 9
-      m_TileSpriteIndex: 9
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
       m_TileColorIndex: 11
       m_TileObjectToInstantiateIndex: 65535
@@ -10128,13 +10128,13 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: dfafd359d54d2c04899c0fc08908ffe9, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 6a59868f6cb7c1444aa53b8bad08c46a, type: 2}
   - m_RefCount: 16
     m_Data: {fileID: 11400000, guid: fa8e518bdba42594eae6aefe927753e0, type: 2}
-  - m_RefCount: 66
+  - m_RefCount: 65
     m_Data: {fileID: 11400000, guid: 4cdec7163a4830748a3724d5a74b6bca, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: dac44c3484e5e864e93ada911f2e18e3, type: 2}
@@ -10155,15 +10155,16 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -2661919970533589962, guid: 05fced0d64b28714b9fcf59c08332a33,
+      type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 5893540339403691780, guid: 05fced0d64b28714b9fcf59c08332a33,
       type: 3}
   - m_RefCount: 16
     m_Data: {fileID: 6217686846738184359, guid: 05fced0d64b28714b9fcf59c08332a33,
       type: 3}
-  - m_RefCount: 66
+  - m_RefCount: 65
     m_Data: {fileID: -3701851516310602662, guid: 05fced0d64b28714b9fcf59c08332a33,
       type: 3}
   - m_RefCount: 2
@@ -10309,6 +10310,18 @@ CompositeCollider2D:
       - X: 490004928
         Y: -40000400
       - X: 490004928
+        Y: -20000200
+      - X: 50000600
+        Y: -20000200
+      - X: 50000600
+        Y: -20000159
+      - X: 50000541
+        Y: -20000100
+      - X: 40000359
+        Y: -20000100
+      - X: 40000300
+        Y: -20000159
+      - X: 40000300
         Y: -20000200
       - X: -80000800
         Y: -20000200
