@@ -32,14 +32,6 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 groundCheckSize;
     public LayerMask collisionLayer;
 
-    //walljump var
-    public bool isTouchingFront;
-    public Transform frontCheck1;
-    public Transform frontCheck2;
-    private bool isWallSliding;
-    public float wallSlidingSpeed;
-    public float frontCheckRadius;
-
     // hovering var
     public float newGravityScale;
     public float gravityScale;
@@ -106,31 +98,6 @@ public class PlayerMovement : MonoBehaviour
                 rb.gravityScale = gravityScale;
             }
 
-
-
-            //Wall Slide
-            if (Physics2D.OverlapCircle(frontCheck1.position, frontCheckRadius, collisionLayer) || Physics2D.OverlapCircle(frontCheck2.position, frontCheckRadius, collisionLayer))
-            {
-                isTouchingFront = true;
-            }
-            else
-            {
-                isTouchingFront = false;
-            }
-
-            if (isTouchingFront == true && isGrounded == false && Mathf.Abs(rb.velocity.x) < 0.1f)
-            {
-                isWallSliding = true;
-            }
-            else
-            {
-                isWallSliding = false;
-            }
-
-            if (isWallSliding)
-            {
-                rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
-            }
             MovePlayer(horizontalMovement, verticalMovement);
         }
         else
@@ -151,7 +118,6 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("speed", charachterVelocity);
         animator.SetFloat("verticalSpeed", charachterVerticalVelocity);
         animator.SetBool("isGrounded", isGrounded);
-        animator.SetBool("isWallSliding", isWallSliding);
     }
 
    
@@ -259,10 +225,5 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.color = Color.red;
         //Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
         Gizmos.DrawWireCube(groundCheck.position, groundCheckSize);
-
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(frontCheck1.position, frontCheckRadius);
-        Gizmos.DrawWireSphere(frontCheck2.position, frontCheckRadius);
-        //Gizmos.DrawWireCube(frontCheck.position, wallCheckSize);
     }
 }
