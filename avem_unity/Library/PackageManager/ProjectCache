@@ -5,15 +5,15 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637480356600387463
-    m_Hash: 1540197827
+      ticks: 637504618253388904
+    m_Hash: 3437594792
   m_LockFileStatus:
     m_FilePath: D:/GameMaking/Avem/avem_unity/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637480366857705451
+      ticks: 637505328232380179
     m_Hash: 1398122264
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
