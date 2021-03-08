@@ -16,6 +16,8 @@ public class MainMenu : MonoBehaviour
     public AudioClip highlightSound;
     public AudioClip onClickSound;
 
+    public AudioClip StartGameSong;
+
     public AudioMixer audioMixer;
 
     private void Start()
@@ -24,10 +26,9 @@ public class MainMenu : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(firstSelectedButton);
     }
 
-    public void StartGameButton() //this one is obsolote, now I use a levelLoader
+    public void StartGameButton() //use this function to set all starting param, but not to change scene
     {
-        SceneManager.LoadScene(levelToLoad);
-        OnClickSound();
+        AudioManager.instance.NextSong(StartGameSong);  
     }
 
     public void SettingsButton()

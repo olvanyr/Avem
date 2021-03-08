@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Unity.Mathematics;
 using UnityEngine;
-using Unity.Mathematics;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -71,6 +69,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         transform.position = startingPosition.initialValue;
+       
     }
 
 
@@ -87,6 +86,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        
         if (state == "move")
         {
 
@@ -99,6 +99,8 @@ public class PlayerMovement : MonoBehaviour
             }
 
             MovePlayer(horizontalMovement, verticalMovement);
+
+            
         }
         else
         {
@@ -120,15 +122,13 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("isGrounded", isGrounded);
     }
 
-   
-    
+
     void Movement(Vector2 direction)
     {
         //Debug.Log("Player is moving : " + direction);
         
             horizontalMovement = direction.x * moveSpeed * Time.fixedDeltaTime;
             verticalMovement = direction.y * 0 * Time.fixedDeltaTime; //actualy, the vertical movvement is equal to zero
-        
     }
 
     public void MovePlayer(float _horizontalMovement, float verticalMovement)

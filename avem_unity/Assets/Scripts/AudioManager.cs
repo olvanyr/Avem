@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
@@ -8,7 +10,7 @@ public class AudioManager : MonoBehaviour
     {
         if (instance != null)
         {
-            //Debug.LogWarning("il y a plus d'une instance de AudioManager dans la scéne");
+            Debug.LogWarning("il y a plus d'une instance de AudioManager dans la scéne");
             Destroy(this.gameObject);
             return;
         }
@@ -18,45 +20,86 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(transform.gameObject);
     }
 
+    
 
-    public AudioClip[] playlist;
     public AudioSource audioSource;
+    
     private AudioMixerGroup audioMixerGroupe;
     public AudioMixerGroup audioMixerGroupeSound;
     public AudioMixerGroup audioMixerGroupeMusic;
 
-    private int musicIndex = 0;
+    public Animator animator;
 
-    void Start()
+    public float fadeInTime;
+    public float fadeOutTime;
+
+    public AudioClip audioClip;
+
+    
+
+    private void Start()
     {
-        if (playlist.Length > 0)
-        {
-            audioSource.clip = playlist[musicIndex];
-            audioSource.Play();
-
-        }
-    }
-
-    void Update()
-    {
-        if (playlist.Length>0)
-        {
-            if (!audioSource.isPlaying)
-            {
-                PlayNextSong();
-            }
-        }
-        
-    }
-
-    void PlayNextSong()
-    {
-
-        musicIndex = (musicIndex + 1) % playlist.Length;
-
-        audioSource.clip = playlist[musicIndex];
+        audioSource.clip = audioClip;
         audioSource.Play();
     }
+
+    private void Update()
+    {
+        if (!audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
+    }
+
+    public void NextSong(AudioClip nextSong)
+    {
+        StartCoroutine(PlayNextSong(nextSong));
+    }
+
+
+    public IEnumerator PlayNextSong(AudioClip nextSong)
+    {
+        animator.SetBool("Fadeing",true);
+        yield return new WaitForSeconds(fadeInTime);
+        audioSource.clip = nextSong;
+        audioSource.Play();
+        animator.SetBool("Fadeing", false);
+        //yield return new WaitForSeconds(fadeOutTime);
+        
+    }
+    /*  
+     *  public AudioClip[] playlist;
+     *  private int musicIndex = 0;
+     *  void Start()
+        {
+            if (playlist.Length > 0)
+            {
+                audioSource.clip = playlist[musicIndex];
+                audioSource.Play();
+
+            }
+        }
+
+        void Update()
+        {
+            if (playlist.Length>0)
+            {
+                if (!audioSource.isPlaying)
+                {
+                    PlayNextSong();
+                }
+            }
+
+        }
+
+        void PlayNextSong()
+        {
+
+            musicIndex = (musicIndex + 1) % playlist.Length;
+
+            audioSource.clip = playlist[musicIndex];
+            audioSource.Play();
+        }*/
 
     public AudioSource PlayClipAt(AudioClip clip, string audioMixerString, Vector3 pos)
     {

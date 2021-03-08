@@ -64,6 +64,9 @@ public class SceneTransition : MonoBehaviour
             playerMovement.enabled = false;
             rbPlayer.simulated = false;
         }
-        
+            
     }
+
+    
 }
+
