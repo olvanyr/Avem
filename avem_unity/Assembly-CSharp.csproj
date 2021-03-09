@@ -77,6 +77,7 @@
     <Compile Include="Assets\Red.cs" />
     <Compile Include="Assets\DownWayPlatform.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Elevator.cs" />
     <Compile Include="Assets\Scripts\MainMenuAndUI\SettingsMenu.cs" />
     <Compile Include="Assets\Scripts\Snapping.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
@@ -84,7 +85,7 @@
     <Compile Include="Assets\Scripts\SceneTransition.cs" />
     <Compile Include="Assets\Button.cs" />
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
-    <Compile Include="Assets\Elevator.cs" />
+    <Compile Include="Assets\Restart.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

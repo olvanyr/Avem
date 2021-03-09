@@ -61,6 +61,7 @@ public class AudioManager : MonoBehaviour
     {
         animator.SetBool("Fadeing",true);
         yield return new WaitForSeconds(fadeInTime);
+        audioSource.Stop();
         audioSource.clip = nextSong;
         audioSource.Play();
         animator.SetBool("Fadeing", false);

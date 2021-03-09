@@ -29,8 +29,6 @@ public class GameSaveManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(this.gameObject);
-
-        
     }
 
     private void Update()
@@ -44,4 +42,5 @@ public class GameSaveManager : MonoBehaviour
         sceneID = SceneManager.GetActiveScene().buildIndex;
         
     }
+
 }

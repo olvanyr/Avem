@@ -54,16 +54,27 @@ public class PlayerHealth : MonoBehaviour
     {
         if (!isInvincible)
         {
+            if (playerHealth == 1)
+            {
+                PlayerMovement.instance.state = "die";
+                PlayerDeath();
+                playerHealth -= damage;
+                StopAllCoroutines();
+                return;
+            }
             playerHealth -= damage;
-            if (playerHealth < 0)
+            if (playerHealth <= 0)
             {
                 playerHealth = 0;
+                return;
             }
 
             isInvincible = true;
-
+            StopCoroutine(InvincibilityFlash());
+            StopCoroutine(HandleInvincibilityDelay());
             StartCoroutine(InvincibilityFlash());
             StartCoroutine(HandleInvincibilityDelay());
+            
         }
         
     }
@@ -75,6 +86,11 @@ public class PlayerHealth : MonoBehaviour
         {
             playerHealth = maxHealth;
         }
+    }
+
+    public void PlayerDeath()
+    {
+        Restart.instance.RestartGame();
     }
 
     public IEnumerator InvincibilityFlash()

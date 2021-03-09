@@ -120,6 +120,11 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("speed", charachterVelocity);
         animator.SetFloat("verticalSpeed", charachterVerticalVelocity);
         animator.SetBool("isGrounded", isGrounded);
+
+        if (state == "die")
+        {
+            animator.Play("Die");
+        }
     }
 
 

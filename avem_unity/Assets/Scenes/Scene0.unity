@@ -6276,6 +6276,53 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &851097391
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 851097393}
+  - component: {fileID: 851097392}
+  m_Layer: 0
+  m_Name: RestartManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &851097392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851097391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd406458f607d5641b55897e6df7f410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelLoader: {fileID: 1751794743}
+  explosionLight: {fileID: 8378505587866470348, guid: 684849c93bcce9743b1214ca5c22e994,
+    type: 3}
+  nextSong: {fileID: 8300000, guid: 68a87a3de1e272947968614226240547, type: 3}
+--- !u!4 &851097393
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851097391}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 32.518284, y: -1.407008, z: -18.614464}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &873346977
 GameObject:
   m_ObjectHideFlags: 0
@@ -6889,8 +6936,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.509
-  m_Color: {r: 1, g: 0.010668468, b: 0, a: 1}
+  m_FalloffIntensity: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: f991a3d1f36846e7a9441a96c7eea0f23fc0e7e30000000017831624
@@ -6902,8 +6949,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0.98017234
-  m_PointLightOuterRadius: 4.605839
+  m_PointLightInnerRadius: 2.41
+  m_PointLightOuterRadius: 6.3986998
   m_PointLightDistance: 2
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -6923,8 +6970,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227293617}
-  m_LocalRotation: {x: -0, y: -0, z: 0.0051859417, w: 0.9999866}
-  m_LocalPosition: {x: 17.03, y: 4.5, z: 10.9392185}
+  m_LocalRotation: {x: -0, y: -0, z: -0.02874445, w: 0.9995868}
+  m_LocalPosition: {x: 21.67, y: 5.24, z: 10.9392185}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1318564037}
@@ -12896,6 +12943,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1145436545391863108, guid: 0a00b7c0eea487445a397ed677e773ee,
+        type: 3}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f7a0119918bc4b149baf6da8b495ec79, type: 3}
     - target: {fileID: 1145436545391863111, guid: 0a00b7c0eea487445a397ed677e773ee,
         type: 3}
       propertyPath: m_Name
@@ -13444,12 +13496,12 @@ PrefabInstance:
     - target: {fileID: 6205424049358141353, guid: 18e8cf65a6a64b146aab457b71810a58,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.93
+      value: 22.94
       objectReference: {fileID: 0}
     - target: {fileID: 6205424049358141353, guid: 18e8cf65a6a64b146aab457b71810a58,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.27
+      value: -1.92
       objectReference: {fileID: 0}
     - target: {fileID: 6205424049358141353, guid: 18e8cf65a6a64b146aab457b71810a58,
         type: 3}
