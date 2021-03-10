@@ -69,7 +69,11 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         transform.position = startingPosition.initialValue;
-       
+
+        if (state == "move")//use to give instante control of the bird if she is not sleeping
+        {
+            animator.Play("idle");
+        }
     }
 
 
@@ -197,12 +201,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void StopPickUp()
-    {
-        state = "move";
-    }
-
-    void StopPress()
+    void Move()
     {
         state = "move";
     }
