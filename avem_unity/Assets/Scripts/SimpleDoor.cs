@@ -19,6 +19,10 @@ public class SimpleDoor : MonoBehaviour
 
     public Button button;
 
+    //test
+    public List<string> doorData = new List<string>();
+
+    public string doorId;
 
 
     private void Awake()
@@ -31,11 +35,12 @@ public class SimpleDoor : MonoBehaviour
 
     private void Start()
     {
-
+        
         if (GameSaveManager.instance.doorData.Contains(id))
         {
             isDoorOpen = true;
         }
+        
 
 
         //DoorAlreadyOpen();

@@ -10,6 +10,7 @@ public class GameSaveManager : MonoBehaviour
     public List<ArrayList> data = new List<ArrayList>();
     public List<int> doorData = new List<int>();
 
+
     public int sceneID;
     public int sceneIDLast;
 
