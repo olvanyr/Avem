@@ -58,35 +58,35 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\InputPlayer.cs" />
     <Compile Include="Assets\Scripts\PopUp.cs" />
-    <Compile Include="Assets\Scanner.cs" />
+    <Compile Include="Assets\Scripts\Scanner.cs" />
     <Compile Include="Assets\Scripts\Class\PlayerInput.cs" />
-    <Compile Include="Assets\PlayerHealth.cs" />
-    <Compile Include="Assets\Door.cs" />
+    <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\MainMenuAndUI\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MainMenuAndUI\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\TimerDoor.cs" />
-    <Compile Include="Assets\PickUpFruit.cs" />
+    <Compile Include="Assets\Scripts\PickUpFruit.cs" />
     <Compile Include="Assets\Scripts\CameraSnapToRoom.cs" />
     <Compile Include="Assets\Scripts\LoadAndSaveData.cs" />
     <Compile Include="Assets\Scripts\Scriptable Object\VectorValue.cs" />
-    <Compile Include="Assets\Pick.cs" />
+    <Compile Include="Assets\Scripts\Pick.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
-    <Compile Include="Assets\Restart.cs" />
+    <Compile Include="Assets\Scripts\Restart.cs" />
     <Compile Include="Assets\Scripts\SimpleDoor.cs" />
+    <Compile Include="Assets\Scripts\OpenTimerDoor.cs" />
     <Compile Include="Assets\Scripts\GameSaveManager.cs" />
-    <Compile Include="Assets\Red.cs" />
-    <Compile Include="Assets\DownWayPlatform.cs" />
+    <Compile Include="Assets\Scripts\Red.cs" />
+    <Compile Include="Assets\Scripts\DownWayPlatform.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\Elevator.cs" />
+    <Compile Include="Assets\Scripts\Elevator.cs" />
     <Compile Include="Assets\Scripts\MainMenuAndUI\SettingsMenu.cs" />
     <Compile Include="Assets\Scripts\Snapping.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\DoorData.cs" />
     <Compile Include="Assets\Scripts\SceneTransition.cs" />
-    <Compile Include="Assets\Button.cs" />
+    <Compile Include="Assets\Scripts\Button.cs" />
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
-    <Compile Include="Assets\OpenTimerDoor.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
