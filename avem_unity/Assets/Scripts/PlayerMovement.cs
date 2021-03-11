@@ -100,6 +100,7 @@ public class PlayerMovement : MonoBehaviour
             if (isGrounded)
             {
                 rb.gravityScale = gravityScale;
+                animator.SetBool("hover", false);
             }
 
             MovePlayer(horizontalMovement, verticalMovement);
@@ -161,6 +162,8 @@ public class PlayerMovement : MonoBehaviour
 
                 if (rb.velocity.y < 0)
                 {
+                    animator.SetBool("hover",true);
+
                     rb.gravityScale = newGravityScale;
                 }
 
