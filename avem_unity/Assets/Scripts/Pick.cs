@@ -47,6 +47,14 @@ public class Pick : MonoBehaviour
 
     public void SetHitboxSize()
     {
-        boxCollider.size = new Vector2(spriteRenderer.size.x - 1.8f, boxCollider.size.y);
+        
+        if (tag == "SpikeAllSide")
+        {
+            boxCollider.size = new Vector2(spriteRenderer.size.x - 1.3f, spriteRenderer.size.y - 1.3f);
+        }
+        else if (tag == "SpikeNormal")
+        {
+            boxCollider.size = new Vector2(spriteRenderer.size.x - 1.8f, boxCollider.size.y);
+        }        
     }
 }

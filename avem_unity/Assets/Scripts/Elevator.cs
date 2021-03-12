@@ -16,10 +16,12 @@ public class Elevator : MonoBehaviour
     //public Transform transform;
 
     public BoxCollider2D boxCollider;
+    public SpriteRenderer spriteRenderer;
 
 
     private void Start()
     {
+        SetHitboxSize();
         if (transform.position.y >= stopPointTop.transform.position.y)
         {
             transform.position = new Vector3(transform.position.x, stopPointTop.transform.position.y, transform.position.z);
@@ -94,7 +96,10 @@ public class Elevator : MonoBehaviour
         }
     }
 
-
+    public void SetHitboxSize()
+    {
+        boxCollider.size = new Vector2(spriteRenderer.size.x, boxCollider.size.y);
+    }
 
     /*public bool isInRange;
 
