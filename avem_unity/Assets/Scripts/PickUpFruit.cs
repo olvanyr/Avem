@@ -9,11 +9,11 @@ public class PickUpFruit : MonoBehaviour
     public GameObject self;
     public GameObject player;
 
-
+/*
     public GameObject popUp;
     public PopUp popUpScript;
     public string popUpText;
-    public Sprite popUpSprite;
+    public Sprite popUpSprite;*/
 
     public bool isPicked;
     public bool inRange;
@@ -75,8 +75,8 @@ public class PickUpFruit : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             inRange = true;
-            popUp.SetActive(true);
-            popUpScript.UpdateHolder(popUpText, popUpSprite);
+            //popUp.SetActive(true);
+            //popUpScript.UpdateHolder(popUpText, popUpSprite);
         }
 
     }
@@ -86,7 +86,7 @@ public class PickUpFruit : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             inRange = false;
-            popUp.SetActive(false);
+            //popUp.SetActive(false);
             //popUp.UpdateHolder(popUpText, popUpSprite);
         }
     }

@@ -29,7 +29,7 @@ public class DownWayPlatform : MonoBehaviour
 
     private void Update()
     {
-        if (playerTransform.position.y > selfTransform.position.y)
+        if (playerTransform.position.y > (selfTransform.position.y))
         {
             boxCollider.enabled = true;
             
