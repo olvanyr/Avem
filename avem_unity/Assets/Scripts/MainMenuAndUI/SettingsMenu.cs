@@ -15,6 +15,9 @@ public class SettingsMenu : MonoBehaviour
     public Slider soundSlider;
 
     public Toggle fullscreenToggl;
+    public Toggle PromptToggl;
+
+    public Prompt promptContainer;
 
     public Dropdown resolutionDropdown;
 
@@ -44,9 +47,43 @@ public class SettingsMenu : MonoBehaviour
             PlayerPrefs.SetInt("Resolution", resolutionDropdown.value);
             PlayerPrefs.Save();
         }));
-        
-    }
 
+        //Load prompt
+        float isPromptEnable = PlayerPrefs.GetFloat("PromptEnable");
+
+        if (isPromptEnable == 0)
+        {
+            SetPrompt(false);
+            PromptToggl.isOn = false;
+        }
+        else
+        {
+            SetPrompt(true);
+            PromptToggl.isOn = true;
+        }
+
+    }
+    public void SetPrompt(bool isPromptEnable)
+    {
+
+        if (isPromptEnable)
+        {
+            PlayerPrefs.SetFloat("PromptEnable", 1);
+            if (promptContainer != null)
+            {
+                promptContainer.SetEnable(PlayerPrefs.GetFloat("PromptEnable"));
+            }   
+        }
+        else
+        {
+            PlayerPrefs.SetInt("PromptEnable", 0);
+            if (promptContainer != null)
+            {
+                promptContainer.SetEnable(PlayerPrefs.GetFloat("PromptEnable"));
+            }
+        }
+
+    }
     public void Start()
     {
         float masterVolume = PlayerPrefs.GetFloat("VolumeMaster", 0);
@@ -116,6 +153,8 @@ public class SettingsMenu : MonoBehaviour
             PlayerPrefs.SetInt("Fullscreen", 0);
         }
     }
+
+    
 
 
     public void SetResolution(int resolutionIndex)

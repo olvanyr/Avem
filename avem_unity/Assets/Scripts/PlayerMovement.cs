@@ -1,5 +1,6 @@
 ﻿using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce;
     public float accelerationTime;
     public bool isGrounded;
+    public float maxRbSpeed;
         //vector to apply the velocity 
         private Vector3 velocity = Vector3.zero;
 
@@ -66,7 +68,26 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    private void Start()
+
+
+    /*void OnGUI()
+    {
+        //This displays a Button on the screen at position (20,30), width 150 and height 50. The button’s text reads the last parameter. Press this for the SceneManager to load the Scene.
+        if (GUI.Button(new Rect(20, 30, 150, 30), "Other Scene Single"))
+        {
+            //The SceneManager loads your new Scene as a single Scene (not overlapping). This is Single mode.
+            SceneManager.LoadScene("SceneTest", LoadSceneMode.Single);
+        }
+
+        //Whereas pressing this Button loads the Additive Scene.
+        if (GUI.Button(new Rect(20, 60, 150, 30), "Other Scene Additive"))
+        {
+            //SceneManager loads your new Scene as an extra Scene (overlapping the other). This is Additive mode.
+            SceneManager.LoadScene("SceneTest", LoadSceneMode.Additive);
+        }
+    }*/
+
+private void Start()
     {
         transform.position = startingPosition.initialValue;
 
@@ -102,8 +123,10 @@ public class PlayerMovement : MonoBehaviour
                 rb.gravityScale = gravityScale;
                 animator.SetBool("hover", false);
             }
-
+            
             MovePlayer(horizontalMovement, verticalMovement);
+            
+            
 
             
         }
@@ -136,9 +159,9 @@ public class PlayerMovement : MonoBehaviour
     void Movement(Vector2 direction)
     {
         //Debug.Log("Player is moving : " + direction);
-        
-            horizontalMovement = direction.x * moveSpeed * Time.fixedDeltaTime;
-            verticalMovement = direction.y * 0 * Time.fixedDeltaTime; //actualy, the vertical movvement is equal to zero
+
+        horizontalMovement = direction.x * moveSpeed * Time.fixedDeltaTime;
+        verticalMovement = direction.y * 0 * Time.fixedDeltaTime; //actualy, the vertical movvement is equal to zero
     }
 
     public void MovePlayer(float _horizontalMovement, float verticalMovement)
@@ -153,7 +176,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (state == "move")
         {
-            if (isGrounded)
+            if (isGrounded && rb.velocity.magnitude < maxRbSpeed)
             {
                 rb.AddForce(new Vector2(0, jumpForce));
             }

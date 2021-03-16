@@ -26,15 +26,13 @@ public class DownWayPlatform : MonoBehaviour
         SetColliderSize();
     }
 
-
     private void Update()
     {
-        if (playerTransform.position.y > (selfTransform.position.y))
+        if (playerTransform.position.y >= (selfTransform.position.y + 0.63))
         {
-            boxCollider.enabled = true;
-            
+            boxCollider.enabled = true;    
         }
-        else
+        if (playerTransform.position.y < (selfTransform.position.y ))
         {
             boxCollider.enabled = false;
             

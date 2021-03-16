@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
     public string levelToLoad;
 
     public GameObject settingsWindow;
+    public GameObject controlsWindow;
 
     public GameObject firstSelectedButton, firstSettingSelectedButton, optionClosedButton;
 
@@ -44,6 +45,15 @@ public class MainMenu : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(optionClosedButton);
         OnClickSound();
+    }
+
+    public void ControlsButton()
+    {
+        controlsWindow.SetActive(true);
+    }
+    public void CloseControlsButton()
+    {
+        controlsWindow.SetActive(false);
     }
 
     public void QuitGameButton()

@@ -18,6 +18,8 @@ public class Snapping : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        cameraFollow = CameraFollow.instance.GetComponent<CameraFollow>();
+
         boxX = boxCollider.size.x;
         boxY = boxCollider.size.y;
 

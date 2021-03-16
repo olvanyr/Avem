@@ -11,6 +11,8 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject settingsWindow;
 
+    public GameObject controlsWindow;
+
     private PlayerInput playerInput;
 
 
@@ -52,6 +54,8 @@ public class PauseMenu : MonoBehaviour
     public void Resumed()
     {
         pauseMenuUI.SetActive(false);
+        settingsWindow.SetActive(false);
+        controlsWindow.SetActive(false);
         Time.timeScale = 1;
         PlayerMovement.instance.enabled = true;
         gameIsPaused = false;
@@ -73,7 +77,16 @@ public class PauseMenu : MonoBehaviour
     {
         settingsWindow.SetActive(false);
     }
-    
+
+    public void ControlsButton()
+    {
+        controlsWindow.SetActive(true);
+    }
+    public void CloseControlsButton()
+    {
+        controlsWindow.SetActive(false);
+    }
+
 
     private void OnEnable() //if the script is enable, the we enable the PlayerInput we need to enable it
     {
