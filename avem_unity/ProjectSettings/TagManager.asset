@@ -44,20 +44,26 @@ TagManager:
   - name: Background
     uniqueID: 2854609119
     locked: 0
+  - name: BackWall
+    uniqueID: 164294729
+    locked: 0
+  - name: BackWallProps
+    uniqueID: 2739129739
+    locked: 0
   - name: BackProps
     uniqueID: 3517157881
     locked: 0
   - name: Door
     uniqueID: 3880151283
     locked: 0
+  - name: Player
+    uniqueID: 4070633159
+    locked: 0
   - name: Ground
     uniqueID: 2518303913
     locked: 0
   - name: Cable
     uniqueID: 605455127
-    locked: 0
-  - name: Player
-    uniqueID: 4070633159
     locked: 0
   - name: FrontProps
     uniqueID: 3823616063
