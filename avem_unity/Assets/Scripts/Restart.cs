@@ -44,6 +44,5 @@ public class Restart : MonoBehaviour
         yield return new WaitForSeconds(2f);
         AudioManager.instance.NextSong(nextSong);
         levelLoader.LoadLevel("MainMenu");
-        
     }
 }

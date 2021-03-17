@@ -60,16 +60,17 @@
     <Compile Include="Assets\Scripts\PopUp.cs" />
     <Compile Include="Assets\Scripts\Scanner.cs" />
     <Compile Include="Assets\Scripts\Class\PlayerInput.cs" />
-    <Compile Include="Assets\Green.cs" />
+    <Compile Include="Assets\Scripts\Green.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\MainMenuAndUI\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MainMenuAndUI\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\TimerDoor.cs" />
-    <Compile Include="Assets\Blue.cs" />
+    <Compile Include="Assets\Scripts\Blue.cs" />
     <Compile Include="Assets\Scripts\PickUpFruit.cs" />
     <Compile Include="Assets\Scripts\CameraSnapToRoom.cs" />
     <Compile Include="Assets\Scripts\LoadAndSaveData.cs" />
+    <Compile Include="Assets\Scripts\Prompt.cs" />
     <Compile Include="Assets\Scripts\Scriptable Object\VectorValue.cs" />
     <Compile Include="Assets\Scripts\Pick.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
@@ -89,7 +90,7 @@
     <Compile Include="Assets\Scripts\SceneTransition.cs" />
     <Compile Include="Assets\Scripts\Button.cs" />
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
-    <Compile Include="Assets\Prompt.cs" />
+    <Compile Include="Assets\DestructionTimer.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

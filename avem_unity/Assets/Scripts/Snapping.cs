@@ -41,4 +41,11 @@ public class Snapping : MonoBehaviour
         }
         
     }
+
+    public void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        //var size = new Vector3(boxCollider.size.x);
+        Gizmos.DrawWireCube(transform.position, boxCollider.size);
+    }
 }

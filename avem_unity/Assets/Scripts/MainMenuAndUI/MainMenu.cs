@@ -29,7 +29,12 @@ public class MainMenu : MonoBehaviour
 
     public void StartGameButton() //use this function to set all starting param, but not to change scene
     {
-        AudioManager.instance.NextSong(StartGameSong);  
+        AudioManager.instance.NextSong(StartGameSong);
+        if (Timer.instance != null)
+        {
+            Timer.instance.startTime = Time.time;
+            Timer.instance.currentTime = 0;
+}
     }
 
     public void SettingsButton()
