@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public PlayerInput playerInput;
 
+
+    public PlayerInput playerInput;
     //ref to componente 
     public Rigidbody2D rb;
 
