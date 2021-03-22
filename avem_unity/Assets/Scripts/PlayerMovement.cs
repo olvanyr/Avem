@@ -237,12 +237,12 @@ private void Start()
     //-----------Animation
     void flip(float _velocity)
     {
-        if (_velocity > 0.1f)
+        if (_velocity > 0.3f)
         {
             //transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
             spriteRenderer.flipX = false;
         }
-        else if (_velocity < -0.1f)
+        else if (_velocity < -0.3f)
         {
             spriteRenderer.flipX = true;
             //transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);

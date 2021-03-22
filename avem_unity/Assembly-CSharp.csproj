@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\MainMenuAndUI\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MainMenuAndUI\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\TimerDoor.cs" />
+    <Compile Include="Assets\DestructionTimer.cs" />
     <Compile Include="Assets\Scripts\Blue.cs" />
     <Compile Include="Assets\Scripts\PickUpFruit.cs" />
     <Compile Include="Assets\Scripts\CameraSnapToRoom.cs" />
@@ -90,7 +91,7 @@
     <Compile Include="Assets\Scripts\SceneTransition.cs" />
     <Compile Include="Assets\Scripts\Button.cs" />
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
-    <Compile Include="Assets\DestructionTimer.cs" />
+    <Compile Include="Assets\ScreenShotMaker.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
