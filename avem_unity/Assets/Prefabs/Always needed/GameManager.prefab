@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6721220291384650570}
   - component: {fileID: 6721220291384650568}
   - component: {fileID: 6721220291384650567}
-  - component: {fileID: 60790482}
+  - component: {fileID: 115853102}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 0}
   settingsWindow: {fileID: 0}
+  controlsWindow: {fileID: 0}
   levelLoader: {fileID: 0}
   sceneId: MainMenu
 --- !u!114 &6721220291384650568
@@ -65,6 +66,7 @@ MonoBehaviour:
   doorData: 
   sceneID: 0
   sceneIDLast: 0
+  playerHealth: 0
 --- !u!114 &6721220291384650567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,8 +79,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7566dda73f6627341a609888d3f8d846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startTime: 0
   currentTime: 0
---- !u!114 &60790482
+--- !u!114 &115853102
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
