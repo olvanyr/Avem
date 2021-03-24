@@ -104,7 +104,9 @@ MonoBehaviour:
   isDoorOpen: 1
   id: 3
   isAttachedToAButton: 0
+  isAttachedToAScanner: 0
   button: {fileID: 0}
+  scanner: {fileID: 0}
 --- !u!61 &1469552500655535319
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -205,5 +207,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 6}
+  m_Size: {x: 0.6, y: 6}
   m_EdgeRadius: 0

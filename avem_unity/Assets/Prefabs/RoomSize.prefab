@@ -70,6 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41831edb3e6a4ec49ace0d65c7cb11a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraSize: 5
   boxCollider: {fileID: 2019820354728397951}
   cameraFollow: {fileID: 0}
   boxX: 0

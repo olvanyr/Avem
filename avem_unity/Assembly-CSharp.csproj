@@ -66,7 +66,7 @@
     <Compile Include="Assets\Scripts\MainMenuAndUI\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MainMenuAndUI\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\TimerDoor.cs" />
-    <Compile Include="Assets\DestructionTimer.cs" />
+    <Compile Include="Assets\Scripts\DestructionTimer.cs" />
     <Compile Include="Assets\Scripts\Blue.cs" />
     <Compile Include="Assets\Scripts\PickUpFruit.cs" />
     <Compile Include="Assets\Scripts\CameraSnapToRoom.cs" />
@@ -90,8 +90,8 @@
     <Compile Include="Assets\Scripts\DoorData.cs" />
     <Compile Include="Assets\Scripts\SceneTransition.cs" />
     <Compile Include="Assets\Scripts\Button.cs" />
+    <Compile Include="Assets\Scripts\ScreenShotMaker.cs" />
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
-    <Compile Include="Assets\ScreenShotMaker.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -780,6 +780,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.2D.Tilemap.Extras.Editor.csproj">
+      <Project>{671ACB47-616D-C634-5F22-AF1D55BFA7B1}</Project>
+      <Name>Unity.2D.Tilemap.Extras.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj">
+      <Project>{29D6CE2A-DC8A-1E94-A888-339D96E4BA13}</Project>
+      <Name>Unity.2D.Tilemap.Extras</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
