@@ -16,8 +16,10 @@ public class SimpleDoor : MonoBehaviour
     public int id;
 
     public bool isAttachedToAButton;
+    public bool isAttachedToAScanner;
 
     public Button button;
+    public Scanner scanner;
 
     //test
     public List<string> doorData = new List<string>();
@@ -30,6 +32,10 @@ public class SimpleDoor : MonoBehaviour
         if (button != null)
         {
             isAttachedToAButton = true;
+        }
+        if (scanner != null)
+        {
+            isAttachedToAScanner = true;
         }
     }
 
@@ -57,6 +63,12 @@ public class SimpleDoor : MonoBehaviour
         if (isAttachedToAButton)
         {
             if (button.isOn)
+            {
+                animator.SetTrigger("openDoor");
+            }
+        }else if (isAttachedToAScanner)
+        {
+            if (scanner.isActivate)
             {
                 animator.SetTrigger("openDoor");
             }

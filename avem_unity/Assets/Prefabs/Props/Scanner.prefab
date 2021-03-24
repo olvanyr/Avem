@@ -108,6 +108,11 @@ MonoBehaviour:
   colorRed: {r: 1, g: 0.20392157, b: 0.20392157, a: 1}
   colorBlue: {r: 0.20392156, g: 0.574972, b: 1, a: 1}
   colorGreen: {r: 0, g: 1, b: 0.30770135, a: 1}
+  cablesSprite: []
+  colorOn: {r: 1, g: 1, b: 1, a: 1}
+  colorOnDark: {r: 0.6431373, g: 0.6431373, b: 0.6431373, a: 1}
+  colorOff: {r: 0.58431375, g: 0.58431375, b: 0.58431375, a: 1}
+  colorOffDark: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
   animator: {fileID: 2124882107700307797}
   scannerLight: {fileID: 2124882107700307817}
 --- !u!95 &2124882107700307797

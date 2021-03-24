@@ -15,8 +15,10 @@ public class Door : MonoBehaviour
     public int id;
 
     public bool isAttachedToAButton;
+    public bool isAttachedToAScanner;
 
     public Button button;
+    public Scanner scanner;
 
 
 
@@ -25,6 +27,10 @@ public class Door : MonoBehaviour
         if (button != null)
         {
             isAttachedToAButton = true;
+        }
+        if (scanner != null)
+        {
+            isAttachedToAScanner = true;
         }
     }
 
@@ -38,6 +44,17 @@ public class Door : MonoBehaviour
                 
             }
             if(!button.isOn)
+            {
+                isDoorOpen = false;
+            }
+        }else if (isAttachedToAScanner)
+        {
+            if (scanner.isActivate)
+            {
+                isDoorOpen = true;
+
+            }
+            if (!scanner.isActivate)
             {
                 isDoorOpen = false;
             }

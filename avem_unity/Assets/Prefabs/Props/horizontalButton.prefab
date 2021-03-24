@@ -123,6 +123,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -144,8 +145,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -471351233
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: -2176236321393186793, guid: 92e85ade21a41da45ac2fc77f0d229a5,
     type: 3}
@@ -171,13 +172,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abb9a5ce389ec074db99a379e05a8156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trasfor: {fileID: 5854734389234047317}
   isOn: 0
   inRange: 0
-  cablesSprite: []
+  cablesSprite:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   colorOn: {r: 1, g: 1, b: 1, a: 1}
+  colorOnDark: {r: 0.6431373, g: 0.6431373, b: 0.6431373, a: 1}
   colorOff: {r: 0.3764706, g: 0.37254903, b: 0.37254903, a: 1}
+  colorOffDark: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
   timer: 0
-  waitTime: 0.00001
+  waitTime: 0
   text: {fileID: 5854734389461412523}
   buttonLight: {fileID: 5854734388737737943}
   lightColor1: {r: 1, g: 0, b: 0.12156863, a: 1}
@@ -240,7 +247,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5854734389461412500}
   - component: {fileID: 5854734389461412522}
-  - component: {fileID: 5854734389461412501}
   - component: {fileID: 5854734389461412523}
   m_Layer: 0
   m_Name: TimerUi
@@ -283,6 +289,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -307,14 +314,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!222 &5854734389461412501
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5854734389461412520}
-  m_CullTransparentMesh: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5854734389461412523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,6 +330,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

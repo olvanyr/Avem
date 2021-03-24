@@ -17,7 +17,9 @@ public class Button : MonoBehaviour
     public SpriteRenderer[] cablesSprite;
 
     public Color colorOn;
+    public Color colorOnDark;
     public Color colorOff;
+    public Color colorOffDark;
 
     public float timer;
     public float waitTime;
@@ -38,7 +40,14 @@ public class Button : MonoBehaviour
         //init cable color
         for (int i = 0; i < cablesSprite.Length; i++)
         {
-            cablesSprite[i].color = colorOff;
+            if (cablesSprite[i].sortingLayerName == "Cable")
+            {
+                cablesSprite[i].color = colorOff;
+            }
+            else
+            {
+                cablesSprite[i].color = colorOffDark;
+            }
         }
 
         //init light and text color
@@ -123,7 +132,15 @@ public class Button : MonoBehaviour
     {
         for (int i = 0; i < cablesSprite.Length; i++)
         {
-            cablesSprite[i].color = colorOn;
+            if (cablesSprite[i].sortingLayerName == "Cable")
+            {
+                cablesSprite[i].color = colorOn;
+            }
+            else
+            {
+                cablesSprite[i].color = colorOnDark;
+            }
+            
         }
         animator.SetBool("IsOn", false);
     }
@@ -132,7 +149,14 @@ public class Button : MonoBehaviour
     {
         for (int i = 0; i < cablesSprite.Length; i++)
         {
-            cablesSprite[i].color = colorOff;
+            if (cablesSprite[i].sortingLayerName == "Cable")
+            {
+                cablesSprite[i].color = colorOff;
+            }
+            else
+            {
+                cablesSprite[i].color = colorOffDark;
+            }
         }
         animator.SetBool("IsOff", false);
     }
