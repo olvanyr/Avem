@@ -50,7 +50,11 @@ public class PlayerMovement : MonoBehaviour
 
     //track if the bird have something in his bick
     public bool haveObject = false;
+    //sound
 
+    public float soundTimer = 0;
+    public AudioClip[] walkSound;
+    public AudioClip[] landSound;
 
     public static PlayerMovement instance;
     private void Awake()
@@ -94,7 +98,8 @@ public class PlayerMovement : MonoBehaviour
 
 private void Start()
     {
-        transform.position = startingPosition.initialValue;
+        //!!!!!!!!!!!!!!!! uncomment this to make the player tp on start position
+        //transform.position = startingPosition.initialValue;
 
         if (state == "move")//use to give instante control of the bird if she is not sleeping
         {
@@ -125,8 +130,21 @@ private void Start()
 
             if (isGrounded)
             {
+                if (soundTimer <= 5){soundTimer++;}
+
+                    if (soundTimer == 5)
+                    {
+                    soundTimer = 10;
+                        var sound = landSound[UnityEngine.Random.Range(0, landSound.Length - 1)];
+                        AudioManager.instance.PlayClipAt(sound, "Sound", transform.position);
+                    }
+
                 rb.gravityScale = gravityScale;
                 animator.SetBool("hover", false);
+            }
+            else
+            {
+                soundTimer = 0f;
             }
             
             MovePlayer(horizontalMovement, verticalMovement);
@@ -251,6 +269,14 @@ private void Start()
             spriteRenderer.flipX = true;
             //transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
         }
+    }
+
+    void WalkSound()
+    {
+        
+        var sound = walkSound[UnityEngine.Random.Range(0, walkSound.Length-1)];
+        
+        var audioSource = AudioManager.instance.PlayClipAt(sound, "Sound", transform.position);
     }
 
 

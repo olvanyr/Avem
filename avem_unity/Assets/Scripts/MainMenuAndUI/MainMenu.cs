@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
     public GameObject settingsWindow;
     public GameObject controlsWindow;
 
-    public GameObject firstSelectedButton, firstSettingSelectedButton, optionClosedButton;
+    public GameObject firstSelectedButton, firstSettingSelectedButton, firstControlSelectedButton, optionClosedButton, controlClosedButton;
 
     public AudioClip highlightSound;
     public AudioClip onClickSound;
@@ -29,6 +29,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGameButton() //use this function to set all starting param, but not to change scene
     {
+        OnClickSound();
         AudioManager.instance.NextSong(StartGameSong);
         if (Timer.instance != null)
         {
@@ -55,10 +56,17 @@ public class MainMenu : MonoBehaviour
     public void ControlsButton()
     {
         controlsWindow.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(firstControlSelectedButton);
+        OnClickSound();
+        
     }
     public void CloseControlsButton()
     {
         controlsWindow.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(controlClosedButton);
+        OnClickSound();
     }
 
     public void QuitGameButton()
@@ -72,6 +80,6 @@ public class MainMenu : MonoBehaviour
     }
     public void HighlightSound()
     {
-        AudioManager.instance.PlayClipAt(highlightSound, "Sound", transform.position);
+        //AudioManager.instance.PlayClipAt(highlightSound, "Sound", transform.position);
     }
 }

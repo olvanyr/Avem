@@ -746,7 +746,9 @@ MonoBehaviour:
   controlsWindow: {fileID: 171131609}
   firstSelectedButton: {fileID: 1076903994}
   firstSettingSelectedButton: {fileID: 1586796298}
+  firstControlSelectedButton: {fileID: 972447036}
   optionClosedButton: {fileID: 1204016406}
+  controlClosedButton: {fileID: 1598557536}
   highlightSound: {fileID: 8300000, guid: 79ddbe17b0340ef4ab66e42d9e2667cd, type: 3}
   onClickSound: {fileID: 8300000, guid: 79ddbe17b0340ef4ab66e42d9e2667cd, type: 3}
   StartGameSong: {fileID: 8300000, guid: f7a0119918bc4b149baf6da8b495ec79, type: 3}
@@ -880,6 +882,12 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 2693788534169576937}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &972447036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6417559856994833720, guid: e64f3d5d95aa7f74f87106935c17162f,
+    type: 3}
+  m_PrefabInstance: {fileID: 383081416}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1076903994
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,18 +970,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1868968652}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: LoadLevel
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Scene0
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 688213210}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: StartGameButton
@@ -984,6 +980,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1868968652}
+        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Scene0
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1076903997
@@ -1667,6 +1675,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1145436545391863111, guid: 0a00b7c0eea487445a397ed677e773ee,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1145436545391863114, guid: 0a00b7c0eea487445a397ed677e773ee,
         type: 3}

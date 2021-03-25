@@ -161,7 +161,7 @@ public class SettingsMenu : MonoBehaviour
     {
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
-        OnClickSound();
+        //OnClickSound();
     }
 
     public void ClearSavedData()
@@ -171,6 +171,6 @@ public class SettingsMenu : MonoBehaviour
 
     public void OnClickSound()
     {
-        AudioManager.instance.PlayClipAt(onClickSound, "Sound", transform.position);
+        //AudioManager.instance.PlayClipAt(onClickSound, "Sound", transform.position);
     }
 }

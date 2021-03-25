@@ -18,8 +18,9 @@ public class DownWayPlatform : MonoBehaviour
     public PlayerInput playerInput;
     public void Start()
     {
+        playerMovement = PlayerMovement.instance;
         playerInput = playerMovement.playerInput;
-
+        
         //playerInput.NormalMovement.Action1.performed += context => GoToNextSene();
         playerInput.NormalMovement.Move.performed += context => GoDown(context.ReadValue<Vector2>());
 
@@ -28,7 +29,7 @@ public class DownWayPlatform : MonoBehaviour
 
     private void Update()
     {
-        if (playerTransform.position.y >= (selfTransform.position.y + 0.63))
+        if (playerTransform.position.y >= (selfTransform.position.y + 0.635))
         {
             boxCollider.enabled = true;    
         }

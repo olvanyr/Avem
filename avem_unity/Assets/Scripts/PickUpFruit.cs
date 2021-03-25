@@ -24,7 +24,7 @@ public class PickUpFruit : MonoBehaviour
     public Rigidbody2D rb;
     void Start()
     {
-        
+        player = PlayerMovement.instance.gameObject;
     }
 
     // Update is called once per frame

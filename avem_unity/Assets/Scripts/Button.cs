@@ -37,6 +37,7 @@ public class Button : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = PlayerMovement.instance;
         //init cable color
         for (int i = 0; i < cablesSprite.Length; i++)
         {

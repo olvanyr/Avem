@@ -17,6 +17,7 @@ public class Pick : MonoBehaviour
     private void Awake()
     {
         SetHitboxSize();
+        playerHealth = PlayerHealth.instance;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
