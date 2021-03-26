@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
     public bool haveObject = false;
     //sound
 
-    public float soundTimer = 0;
+    private float soundTimer = 10;
     public AudioClip[] walkSound;
     public AudioClip[] landSound;
 
@@ -134,9 +134,10 @@ private void Start()
 
                     if (soundTimer == 5)
                     {
-                    soundTimer = 10;
+                        soundTimer = 10;
                         var sound = landSound[UnityEngine.Random.Range(0, landSound.Length - 1)];
                         AudioManager.instance.PlayClipAt(sound, "Sound", transform.position);
+                        CameraFollow.instance.StartScreenShake(0.05f, 0.04f, 0f);
                     }
 
                 rb.gravityScale = gravityScale;
@@ -148,7 +149,7 @@ private void Start()
             }
             
             MovePlayer(horizontalMovement, verticalMovement);
-            
+
             
 
             

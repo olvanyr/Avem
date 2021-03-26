@@ -17,6 +17,9 @@ public class CameraFollow : MonoBehaviour
     public Color color;
     public Gradient gradient;
 
+    //screenshake
+    private float shakeTimeRemaining, shakeEmplitude, shakeFadeTime, shakeRotation, rotMultiplier, rotateFadeTime;
+
     
 
     //Scene transition coordinate
@@ -66,5 +69,47 @@ public class CameraFollow : MonoBehaviour
     public void CamerColorUpdate(Color color)
     {
         cam.backgroundColor = color;
+    }
+
+
+    //screenshacke
+    private void LateUpdate()
+    {
+        if (shakeTimeRemaining > 0)
+        {
+            shakeTimeRemaining -= Time.deltaTime;
+
+            float xAmount = Random.Range(-1f, 1) * shakeEmplitude;
+            float yAmount = Random.Range(-1f, 1) * shakeEmplitude;
+            float rotAmount = Random.Range(-1f, 1) * rotMultiplier;
+
+            transform.position += new Vector3(xAmount, yAmount, 0);
+            transform.rotation = Quaternion.Euler(0,0,rotAmount);
+
+            shakeEmplitude = Mathf.MoveTowards(shakeEmplitude, 0f, shakeFadeTime * Time.deltaTime);
+            shakeRotation = Mathf.MoveTowards(shakeRotation, 0f, rotateFadeTime * Time.deltaTime);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+            shakeTimeRemaining = 0;
+            shakeEmplitude = 0;
+            rotMultiplier = 0;
+            shakeFadeTime = 0;
+            rotateFadeTime = 0;
+        }
+    }
+
+    public void StartScreenShake(float length, float emplitude, float rotEmplitude)
+    {
+        if ( shakeEmplitude < emplitude || rotMultiplier < rotEmplitude)
+        {
+            shakeTimeRemaining = length;
+            shakeEmplitude = emplitude;
+            rotMultiplier = rotEmplitude;
+
+            shakeFadeTime = emplitude / length;
+            rotateFadeTime = rotEmplitude / length;
+        }
     }
 }

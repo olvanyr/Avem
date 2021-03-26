@@ -17,6 +17,8 @@ public class Snapping : MonoBehaviour
 
     public Vector2 minPosition;
     public Vector2 maxPosition;
+
+    public GameObject[] ObjectManagment;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,10 +58,21 @@ public class Snapping : MonoBehaviour
             }
             cameraFollow.minPosition = minPosition;
             cameraFollow.maxPosition = maxPosition;
-
+            /*for (int i = 0; i < ObjectManagment.Length; i++)
+            {
+                ObjectManagment[i].SetActive(true);
+            }*/
         }
         
     }
+
+    /*private void OnTriggerExit2D(Collider2D collision)
+    {
+        for (int i = 0; i < ObjectManagment.Length; i++)
+        {
+            ObjectManagment[i].SetActive(false);
+        }
+    }*/
 
     public void OnDrawGizmos()
     {

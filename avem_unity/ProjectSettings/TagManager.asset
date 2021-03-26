@@ -63,6 +63,9 @@ TagManager:
   - name: Ground
     uniqueID: 2518303913
     locked: 0
+  - name: WallCorection
+    uniqueID: 4283207291
+    locked: 0
   - name: Cable
     uniqueID: 605455127
     locked: 0

@@ -17,6 +17,9 @@ public class Pick : MonoBehaviour
     private void Awake()
     {
         SetHitboxSize();
+    }
+    private void Start()
+    {
         playerHealth = PlayerHealth.instance;
     }
 

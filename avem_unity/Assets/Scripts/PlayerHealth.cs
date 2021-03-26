@@ -62,6 +62,7 @@ public class PlayerHealth : MonoBehaviour
                 StopAllCoroutines();
                 return;
             }
+            CameraFollow.instance.StartScreenShake(invicibilityFlashDelay, 0.1f, 0.9f);
             playerHealth -= damage;
             if (playerHealth <= 0)
             {
@@ -91,6 +92,7 @@ public class PlayerHealth : MonoBehaviour
     public void PlayerDeath()
     {
         Restart.instance.RestartGame();
+        CameraFollow.instance.StartScreenShake(2f, 0.2f, 1f);
     }
 
     public IEnumerator InvincibilityFlash()
