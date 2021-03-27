@@ -44,6 +44,7 @@ public class OpenTimerDoor : MonoBehaviour
 
     }
 
+
     void Update()
     {
 

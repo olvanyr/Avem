@@ -61,8 +61,17 @@ public class Button : MonoBehaviour
         {
             SetColor(lightColor1);
         }
+
+        
     }
 
+    private void OnEnable()
+    {
+        if (isOn && animator.GetCurrentAnimatorStateInfo(0).IsName("OffIdle"))
+        {
+            animator.Play("OnIdle");
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -99,10 +108,11 @@ public class Button : MonoBehaviour
             timer = waitTime;
         }
 
-            if (timer < 0)
+        if (timer < 0)
         {
             timer = 0;
         }
+
 
 
         text.text = timer.ToString("F2");
