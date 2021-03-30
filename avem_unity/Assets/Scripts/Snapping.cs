@@ -35,6 +35,11 @@ public class Snapping : MonoBehaviour
         minPosition.y = transform.position.y - ((boxY/2) - halfHeight);
         maxPosition.x = transform.position.x + ((boxX/2) - halfWidth);
         maxPosition.y = transform.position.y + ((boxY/2) - halfHeight);
+
+        for (int i = 0; i < ObjectManagment.Length; i++)
+        {
+            ObjectManagment[i].SetActive(false);
+        }
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -58,21 +63,21 @@ public class Snapping : MonoBehaviour
             }
             cameraFollow.minPosition = minPosition;
             cameraFollow.maxPosition = maxPosition;
-            /*for (int i = 0; i < ObjectManagment.Length; i++)
+            for (int i = 0; i < ObjectManagment.Length; i++)
             {
                 ObjectManagment[i].SetActive(true);
-            }*/
+            }
         }
         
     }
 
-    /*private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         for (int i = 0; i < ObjectManagment.Length; i++)
         {
             ObjectManagment[i].SetActive(false);
         }
-    }*/
+    }
 
     public void OnDrawGizmos()
     {

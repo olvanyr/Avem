@@ -175,10 +175,7 @@ MonoBehaviour:
   trasfor: {fileID: 5854734389234047317}
   isOn: 0
   inRange: 0
-  cablesSprite:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  cablesSprite: []
   colorOn: {r: 1, g: 1, b: 1, a: 1}
   colorOnDark: {r: 0.6431373, g: 0.6431373, b: 0.6431373, a: 1}
   colorOff: {r: 0.3764706, g: 0.37254903, b: 0.37254903, a: 1}

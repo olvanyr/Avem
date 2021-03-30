@@ -113,7 +113,7 @@ public class Scanner : MonoBehaviour
             }
 
         }
-        animator.SetBool("IsOn", false);
+        //animator.SetBool("IsOn", false);
     }
 
     public void CablesColorOff()
@@ -129,6 +129,6 @@ public class Scanner : MonoBehaviour
                 cablesSprite[i].color = colorOffDark;
             }
         }
-        animator.SetBool("IsOff", false);
+        //animator.SetBool("IsOff", false);
     }
 }

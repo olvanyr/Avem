@@ -7,9 +7,7 @@ public class GameSaveManager : MonoBehaviour
 {
     public static GameSaveManager instance;
 
-    public List<ArrayList> data = new List<ArrayList>();
     public List<int> doorData = new List<int>();
-
 
     public int sceneID;
     public int sceneIDLast;
@@ -18,6 +16,7 @@ public class GameSaveManager : MonoBehaviour
 
     private void Awake()
     {
+        
         if (instance != null)
         {
             Debug.LogWarning("il y a plus d'une instance de GameSaveMangaer dans la scéne");

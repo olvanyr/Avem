@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469552500655535320}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.81, y: 12.06, z: 10.9392185}
+  m_LocalPosition: {x: 1.81, y: 12.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1469552501927136293}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -414816013
-  m_SortingLayer: -5
+  m_SortingLayer: -6
   m_SortingOrder: 0
   m_Sprite: {fileID: -8234536430552275792, guid: 4c6b0d24205f8a14c90216ece3575435,
     type: 3}
@@ -102,6 +102,7 @@ MonoBehaviour:
   doorCollider: {fileID: 1469552501927136290}
   animator: {fileID: 1469552500655535318}
   isDoorOpen: 1
+  openDoor: 1
   id: 3
   isAttachedToAButton: 0
   isAttachedToAScanner: 0
@@ -162,7 +163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1469552501927136293}
   - component: {fileID: 1469552501927136290}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

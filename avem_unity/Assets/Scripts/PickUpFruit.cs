@@ -49,7 +49,7 @@ public class PickUpFruit : MonoBehaviour
             float charachterVelocity = math.abs(PlayerMovement.instance.rb.velocity.x);
             animator.SetFloat("speed", charachterVelocity);
 
-            if (math.abs(PlayerMovement.instance.rb.velocity.y) > 0.2 && PlayerMovement.instance.isGrounded == false|| PlayerMovement.instance.haveObject == false && isPicked)
+            if ((PlayerMovement.instance.rb.velocity.y) > 0.2 && PlayerMovement.instance.isGrounded == false|| PlayerMovement.instance.haveObject == false && isPicked)
             {
                 isPicked = false;
                 PlayerMovement.instance.haveObject = false;

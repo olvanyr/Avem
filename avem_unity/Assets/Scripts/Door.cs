@@ -12,6 +12,8 @@ public class Door : MonoBehaviour
 
     private bool isInRange = false;
 
+    public bool openDoor;
+
     public int id;
 
     public bool isAttachedToAButton;
@@ -40,23 +42,50 @@ public class Door : MonoBehaviour
         {
             if (button.isOn)
             {
-                isDoorOpen = true;
-                
+                if (openDoor)
+                {
+                    isDoorOpen = true;
+                }
+                else
+                {
+                    isDoorOpen = false;
+                }
             }
             if(!button.isOn)
             {
-                isDoorOpen = false;
+                if (openDoor)
+                {
+                    isDoorOpen = false;
+                }
+                else
+                {
+                    isDoorOpen = true;
+                }
             }
         }else if (isAttachedToAScanner)
         {
             if (scanner.isActivate)
             {
-                isDoorOpen = true;
+                if (openDoor)
+                {
+                    isDoorOpen = true;
+                }
+                else
+                {
+                    isDoorOpen = false;
+                }
 
             }
             if (!scanner.isActivate)
             {
-                isDoorOpen = false;
+                if (openDoor)
+                {
+                    isDoorOpen = false;
+                }
+                else
+                {
+                    isDoorOpen = true;
+                }
             }
         }
         else
