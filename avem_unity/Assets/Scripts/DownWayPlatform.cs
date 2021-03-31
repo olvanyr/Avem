@@ -18,6 +18,7 @@ public class DownWayPlatform : MonoBehaviour
     public PlayerInput playerInput;
     public void Start()
     {
+        playerTransform = PlayerMovement.instance.transform;
         playerMovement = PlayerMovement.instance;
         playerInput = playerMovement.playerInput;
         
