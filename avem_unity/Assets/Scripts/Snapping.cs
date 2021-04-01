@@ -6,6 +6,7 @@ public class Snapping : MonoBehaviour
 {
 
     public float cameraSize;
+    public Color color;
 
     public BoxCollider2D boxCollider;
     public CameraFollow cameraFollow;
@@ -41,6 +42,8 @@ public class Snapping : MonoBehaviour
             ObjectManagment[i].SetActive(false);
         }
     }
+
+    
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -67,6 +70,8 @@ public class Snapping : MonoBehaviour
             {
                 ObjectManagment[i].SetActive(true);
             }
+
+            CameraFollow.instance.CamerColorUpdate(color);
         }
         
     }

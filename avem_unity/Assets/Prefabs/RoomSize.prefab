@@ -71,6 +71,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraSize: 5
+  color: {r: 0.03137255, g: 0.050980393, b: 0.101960786, a: 0}
   boxCollider: {fileID: 2019820354728397951}
   cameraFollow: {fileID: 0}
   boxX: 0
@@ -79,3 +80,4 @@ MonoBehaviour:
   halfWidth: 0
   minPosition: {x: 0, y: 0}
   maxPosition: {x: 0, y: 0}
+  ObjectManagment: []

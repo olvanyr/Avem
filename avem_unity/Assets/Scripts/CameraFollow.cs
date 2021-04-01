@@ -44,7 +44,7 @@ public class CameraFollow : MonoBehaviour
 
         //color = gradient.Evaluate(0.5f);
 
-        CamerColorUpdate(color);
+        //CamerColorUpdate(color);
     }
 
     void Update()
