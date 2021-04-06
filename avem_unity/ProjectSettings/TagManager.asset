@@ -60,6 +60,9 @@ TagManager:
   - name: Player
     uniqueID: 4070633159
     locked: 0
+  - name: Hologram
+    uniqueID: 4261951475
+    locked: 0
   - name: Ground
     uniqueID: 2518303913
     locked: 0

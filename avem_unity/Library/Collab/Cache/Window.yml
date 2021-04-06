@@ -16,11 +16,18 @@ MonoBehaviour:
     m_Keys:
     - Assets/Prefabs/Props/Cable.prefab
     - Assets/Prefabs/Props/Cable.prefab.meta
+    - Assets/Prefabs/Props/Hologram.prefab
+    - Assets/Prefabs/Props/Hologram.prefab.meta
     - Assets/ReplaceGameObjects.cs
     - Assets/ReplaceGameObjects.cs.meta
     - Assets/Scenes/Scene0.unity
+    - Assets/Scripts/ScreenShotMaker.cs
+    - Assets/_Imports/Button&door&scanner/Cable.png
+    - Assets/_Imports/PlaceHolder/Logo.png
+    - Assets/_Imports/PlaceHolder/Logo.png.meta
+    - ProjectSettings/TagManager.asset
     - 
-    m_Values: 000000000000
+    m_Values: 00000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
