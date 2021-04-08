@@ -15,6 +15,8 @@ public class SimpleDoor : MonoBehaviour
 
     public int id;
 
+    private AudioClip hitSound;
+
     public bool isAttachedToAButton;
     public bool isAttachedToAScanner;
 
@@ -25,6 +27,8 @@ public class SimpleDoor : MonoBehaviour
     public List<string> doorData = new List<string>();
 
     public string doorId;
+
+    public GlobalVariables globalVar;
 
 
     private void Awake()
@@ -37,6 +41,8 @@ public class SimpleDoor : MonoBehaviour
         {
             isAttachedToAScanner = true;
         }
+
+        hitSound = globalVar.doorHit1;
     }
 
     private void Start()
@@ -96,6 +102,7 @@ public class SimpleDoor : MonoBehaviour
     {   
         doorCollider.enabled = false;
         isDoorOpen = true;
+        AudioManager.instance.PlayClipAt(hitSound, "Sound", transform.position);
 
         if (GameSaveManager.instance.doorData.Contains(id))
         {

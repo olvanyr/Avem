@@ -10,6 +10,13 @@ public class Elevator : MonoBehaviour
     public string direction;
     public float elevatorSpeed;
 
+    private AudioClip loopSound;
+    private AudioClip stopSound;
+    //public float duration;
+
+
+    public AudioSource audioSource;
+
 
     public GameObject stopPointTop;
     public GameObject stopPointBottom;
@@ -18,7 +25,13 @@ public class Elevator : MonoBehaviour
     public BoxCollider2D boxCollider;
     public SpriteRenderer spriteRenderer;
 
+    public GlobalVariables globalVar;
 
+    private void Awake()
+    {
+        loopSound = globalVar.elevatorLoop;
+        stopSound = globalVar.elevatorStop;
+    }
     private void Start()
     {
         SetHitboxSize();
@@ -73,6 +86,11 @@ public class Elevator : MonoBehaviour
 
         if (isMoving)
         {
+            if (audioSource == null)
+            {
+                audioSource = AudioManager.instance.PlayLoop(loopSound, "Sound", transform.position);
+            }
+            
             if (direction == "up")
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y + elevatorSpeed, transform.position.z);
@@ -81,6 +99,7 @@ public class Elevator : MonoBehaviour
                     transform.position = new Vector3(transform.position.x, stopPointTop.transform.position.y, transform.position.z);
                     isMoving = false;
                     PlayerMovement.instance.state = "move";
+                    AudioManager.instance.PlayClip(stopSound, "Sound", transform.position);
                 }
             }
             else
@@ -91,7 +110,15 @@ public class Elevator : MonoBehaviour
                     transform.position = new Vector3(transform.position.x, stopPointBottom.transform.position.y, transform.position.z);
                     isMoving = false;
                     PlayerMovement.instance.state = "move";
+                    AudioManager.instance.PlayClip(stopSound, "Sound", transform.position);
                 }
+            }
+        }
+        else
+        {
+            if (audioSource != null)
+            {
+               Destroy(audioSource);
             }
         }
     }

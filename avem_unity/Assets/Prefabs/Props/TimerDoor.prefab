@@ -82,7 +82,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8631715141325562484}
   - component: {fileID: 8631715141325562489}
-  - component: {fileID: 8631715141325562486}
   - component: {fileID: 8631715141325562487}
   m_Layer: 0
   m_Name: TimerUi
@@ -125,6 +124,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -149,14 +149,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!222 &8631715141325562486
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8631715141325562485}
-  m_CullTransparentMesh: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &8631715141325562487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,6 +165,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -299,6 +293,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -321,7 +316,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -414816013
-  m_SortingLayer: -2
+  m_SortingLayer: -7
   m_SortingOrder: 0
   m_Sprite: {fileID: 8888026348813107094, guid: 61b912da5012c0d4ea466940a8e14909,
     type: 3}
@@ -371,10 +366,13 @@ MonoBehaviour:
   isDoorClose: 0
   id: 5
   timeSpawn: 10
+  hitSoundFirst: {fileID: 8300000, guid: 54e4a8687ebc01d4aa3308d897f14a24, type: 3}
+  hitSoundSecond: {fileID: 8300000, guid: e8bedf43d21e34942aebc898c024faff, type: 3}
   text: {fileID: 8631715141325562487}
   doorLight: {fileID: 8631715140882293975}
   color1: {r: 0, g: 0.7830189, b: 0.34104162, a: 0.87058824}
   color2: {r: 0.7264151, g: 0, b: 0, a: 0.8784314}
+  globalVar: {fileID: 11400000, guid: 7c65547159007f242bf8a3ab7aca9a90, type: 2}
 --- !u!1 &8631715141918603766
 GameObject:
   m_ObjectHideFlags: 0

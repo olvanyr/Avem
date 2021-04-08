@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c7dcade73b17f4697f4e5d712756fe, type: 3}
+  m_Name: GlobalVar
+  m_EditorClassIdentifier: 
+  menuMusic: {fileID: 8300000, guid: 68a87a3de1e272947968614226240547, type: 3}
+  gameMusic: {fileID: 8300000, guid: f7a0119918bc4b149baf6da8b495ec79, type: 3}
+  endMusic: {fileID: 0}
+  playerLandingSound:
+  - {fileID: 8300000, guid: e2fd51bf8797fc9409d665d78a2d4172, type: 3}
+  - {fileID: 8300000, guid: fb108ca173e890248b6a2603c1b2e703, type: 3}
+  - {fileID: 8300000, guid: f1a5b27a78291004b9a0d35d4ca0fd7a, type: 3}
+  playerWalkingSound:
+  - {fileID: 8300000, guid: 6795c9052afd78b478dad66c521ac148, type: 3}
+  - {fileID: 8300000, guid: 195b525b08bb29f4a90a2f8d7d9dcaec, type: 3}
+  - {fileID: 8300000, guid: 488a49353cc86964681a3ae5c9e6d9e4, type: 3}
+  - {fileID: 8300000, guid: dbb74286203965f4384f9e008d325019, type: 3}
+  - {fileID: 8300000, guid: ba72ea6a25fc2c64bb3cef323b962ee2, type: 3}
+  doorHit1: {fileID: 8300000, guid: 54e4a8687ebc01d4aa3308d897f14a24, type: 3}
+  doorHit2: {fileID: 8300000, guid: e8bedf43d21e34942aebc898c024faff, type: 3}
+  elevatorLoop: {fileID: 8300000, guid: 7f6fcb00df79bc849b7bc96c8e54dfa2, type: 3}
+  elevatorStop: {fileID: 8300000, guid: 966083245bb63d445bc8a1666e1487b7, type: 3}
+  explosion: {fileID: 8300000, guid: 93ab61ee9471bde4da54212a023f4744, type: 3}

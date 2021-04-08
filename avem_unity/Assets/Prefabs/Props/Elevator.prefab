@@ -101,10 +101,14 @@ MonoBehaviour:
   isMoving: 0
   direction: 
   elevatorSpeed: 0.03
+  loopSound: {fileID: 8300000, guid: 7f6fcb00df79bc849b7bc96c8e54dfa2, type: 3}
+  stopSound: {fileID: 8300000, guid: 966083245bb63d445bc8a1666e1487b7, type: 3}
+  audioSource: {fileID: 0}
   stopPointTop: {fileID: 5847824053442511566}
   stopPointBottom: {fileID: 5847824053291863704}
   boxCollider: {fileID: 5847824053251615943}
   spriteRenderer: {fileID: 5847824052522531990}
+  globalVar: {fileID: 11400000, guid: 7c65547159007f242bf8a3ab7aca9a90, type: 2}
 --- !u!61 &5847824052522531944
 BoxCollider2D:
   m_ObjectHideFlags: 0

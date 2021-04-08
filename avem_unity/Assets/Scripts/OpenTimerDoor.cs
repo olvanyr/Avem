@@ -15,6 +15,8 @@ public class OpenTimerDoor : MonoBehaviour
 
     public int id;
 
+    private AudioClip hitSound;
+
     public float timeSpawn;
 
     public TextMeshPro text;
@@ -24,6 +26,13 @@ public class OpenTimerDoor : MonoBehaviour
 
     public Color color1;
     public Color color2;
+
+    public GlobalVariables globalVar;
+
+    private void Awake()
+    {
+        hitSound = globalVar.doorHit1;
+    }
 
     private void Start()
     {
@@ -41,6 +50,8 @@ public class OpenTimerDoor : MonoBehaviour
         {
             DoorAlreadyOpen();
         }
+
+
 
     }
 
@@ -73,7 +84,7 @@ public class OpenTimerDoor : MonoBehaviour
         doorCollider.enabled = true;
         isDoorOpen = true;
 
-        
+        AudioManager.instance.PlayClipAt(hitSound, "Sound", transform.position);
 
         if (GameSaveManager.instance.doorData.Contains(id))
         {

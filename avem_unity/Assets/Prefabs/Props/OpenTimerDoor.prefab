@@ -131,7 +131,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -414816013
-  m_SortingLayer: -5
+  m_SortingLayer: -7
   m_SortingOrder: 0
   m_Sprite: {fileID: -3884400247260062513, guid: 4aa6d12e1ff1cc8468af28201f6c9aa5,
     type: 3}
@@ -180,6 +180,8 @@ MonoBehaviour:
   animator: {fileID: 5368306145623145775}
   isDoorOpen: 0
   id: 100
+  hitSound: {fileID: 8300000, guid: 54e4a8687ebc01d4aa3308d897f14a24, type: 3}
+  audioSource: {fileID: 0}
   timeSpawn: 3
   text: {fileID: 5368306145705441812}
   doorLight: {fileID: 5368306146612783286}

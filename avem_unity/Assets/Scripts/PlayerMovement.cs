@@ -53,8 +53,9 @@ public class PlayerMovement : MonoBehaviour
     //sound
 
     private float soundTimer = 10;
-    public AudioClip[] walkSound;
-    public AudioClip[] landSound;
+    private AudioClip[] walkSound;
+    private AudioClip[] landSound;
+    public GlobalVariables globalVar;
 
     public static PlayerMovement instance;
     private void Awake()
@@ -74,6 +75,10 @@ public class PlayerMovement : MonoBehaviour
         playerInput.NormalMovement.Action1.performed += context => Press(); //second methode
         playerInput.NormalMovement.Action2.performed += context => PickUp(); //second methode
         playerInput.NormalMovement.Move.performed += context => Movement(context.ReadValue<Vector2>()); //second methode
+
+        //init global variable
+        walkSound = globalVar.playerWalkingSound;
+        landSound = globalVar.playerLandingSound;
     }
 
 
@@ -96,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }*/
 
-private void Start()
+    private void Start()
     {
         //!!!!!!!!!!!!!!!! uncomment this to make the player tp on start position
         //transform.position = startingPosition.initialValue;
@@ -136,7 +141,7 @@ private void Start()
                     {
                         soundTimer = 10;
                         var sound = landSound[UnityEngine.Random.Range(0, landSound.Length - 1)];
-                        AudioManager.instance.PlayClipAt(sound, "Sound", transform.position);
+                        AudioManager.instance.PlayClip(sound, "Sound", transform.position);
                         CameraFollow.instance.StartScreenShake(0.05f, 0.04f, 0f);
                     }
 
@@ -277,7 +282,7 @@ private void Start()
         
         var sound = walkSound[UnityEngine.Random.Range(0, walkSound.Length-1)];
         
-        var audioSource = AudioManager.instance.PlayClipAt(sound, "Sound", transform.position);
+        var audioSource = AudioManager.instance.PlayClip(sound, "Sound", transform.position);
     }
 
 

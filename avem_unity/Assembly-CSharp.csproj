@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Green.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />
+    <Compile Include="Assets\ReplaceGameObjects.cs" />
     <Compile Include="Assets\Scripts\MainMenuAndUI\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MainMenuAndUI\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\TimerDoor.cs" />
@@ -93,7 +94,7 @@
     <Compile Include="Assets\Scripts\Button.cs" />
     <Compile Include="Assets\Scripts\ScreenShotMaker.cs" />
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
-    <Compile Include="Assets\ReplaceGameObjects.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Object\GlobalVariables.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

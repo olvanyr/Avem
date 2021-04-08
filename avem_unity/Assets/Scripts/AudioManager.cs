@@ -36,7 +36,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip audioClip;
 
     
-
+    
     private void Start()
     {
         audioSource.clip = audioClip;
@@ -105,6 +105,77 @@ public class AudioManager : MonoBehaviour
     public AudioSource PlayClipAt(AudioClip clip, string audioMixerString, Vector3 pos)
     {
 
+        
+        GameObject tempGameObject = new GameObject("TempAudio"); //create a new empty game object named TempAudio
+        tempGameObject.transform.position = new Vector3(pos.x, pos.y, -15f);//change the position of the object to our param pos
+        AudioSource audioSource = tempGameObject.AddComponent<AudioSource>(); //add an audiosource to the object while storing the accesse to the audiosource in a temporary var called audioSource
+        
+
+        if (audioMixerString == "Sound")
+        {
+            audioMixerGroupe = audioMixerGroupeSound;
+            audioSource.spatialBlend = 1f;
+            audioSource.rolloffMode = AudioRolloffMode.Linear;
+            audioSource.minDistance = 6f;
+            audioSource.maxDistance = 10f;
+        }
+
+        if (audioMixerString == "Music")
+        {
+            audioMixerGroupe = audioMixerGroupeMusic;
+
+            
+        }
+
+        
+
+        audioSource.clip = clip; //add the clip we whant the object to play
+
+        audioSource.outputAudioMixerGroup = audioMixerGroupe;//the the audio groupe so the volume is still affected by the settings
+        audioSource.Play();//play the clip
+        Destroy(tempGameObject, clip.length);//destroy the object when the clip is over
+        return audioSource;
+    }
+    public AudioSource PlayClip(AudioClip clip, string audioMixerString, Vector3 pos)
+    {
+
+
+        GameObject tempGameObject = new GameObject("TempAudio"); //create a new empty game object named TempAudio
+        tempGameObject.transform.position = new Vector3(pos.x, pos.y, -15f);//change the position of the object to our param pos
+        AudioSource audioSource = tempGameObject.AddComponent<AudioSource>(); //add an audiosource to the object while storing the accesse to the audiosource in a temporary var called audioSource
+
+
+        if (audioMixerString == "Sound")
+        {
+            audioMixerGroupe = audioMixerGroupeSound;
+        }
+
+        if (audioMixerString == "Music")
+        {
+            audioMixerGroupe = audioMixerGroupeMusic;
+
+
+        }
+
+
+
+        audioSource.clip = clip; //add the clip we whant the object to play
+
+        audioSource.outputAudioMixerGroup = audioMixerGroupe;//the the audio groupe so the volume is still affected by the settings
+        audioSource.Play();//play the clip
+        Destroy(tempGameObject, clip.length);//destroy the object when the clip is over
+        return audioSource;
+    }
+
+    public AudioSource PlayLoop(AudioClip clip, string audioMixerString, Vector3 pos)
+    {
+
+
+        GameObject tempGameObject = new GameObject("TempAudio"); //create a new empty game object named TempAudio
+        tempGameObject.transform.position = new Vector3(pos.x, pos.y, -15f);//change the position of the object to our param pos
+        AudioSource audioSource = tempGameObject.AddComponent<AudioSource>(); //add an audiosource to the object while storing the accesse to the audiosource in a temporary var called audioSource
+
+
         if (audioMixerString == "Sound")
         {
             audioMixerGroupe = audioMixerGroupeSound;
@@ -114,13 +185,12 @@ public class AudioManager : MonoBehaviour
         {
             audioMixerGroupe = audioMixerGroupeMusic;
         }
-        GameObject tempGameObject = new GameObject("TempAudio"); //create a new empty game object named TempAudio
-        tempGameObject.transform.position = pos;//change the position of the object to our param pos
-        AudioSource audioSource = tempGameObject.AddComponent<AudioSource>(); //add an audiosource to the object while storing the accesse to the audiosource in a temporary var called audioSource
+        audioSource.loop = true;
         audioSource.clip = clip; //add the clip we whant the object to play
+
         audioSource.outputAudioMixerGroup = audioMixerGroupe;//the the audio groupe so the volume is still affected by the settings
         audioSource.Play();//play the clip
-        Destroy(tempGameObject, clip.length);//destroy the object when the clip is over
+        //Destroy(tempGameObject, duration);//destroy the object when the duration is over
         return audioSource;
     }
 }

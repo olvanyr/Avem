@@ -14,6 +14,11 @@ public class Restart : MonoBehaviour
 
     public AudioClip nextSong;
 
+    public AudioClip explosionSound;
+
+    public GlobalVariables globalVar;
+
+
     private void Awake()
     {
         if (instance != null)
@@ -26,12 +31,16 @@ public class Restart : MonoBehaviour
         {
             instance = this;
         }
+
+        nextSong = globalVar.menuMusic;
+        explosionSound = globalVar.explosion;
     }
     public void RestartGame()
     {
         var position = new Vector3(PlayerHealth.instance.transform.position.x, PlayerHealth.instance.transform.position.y, PlayerHealth.instance.transform.position.z);
         if (explosionInstance == null)
         {
+            AudioManager.instance.PlayClip(explosionSound, "Sound", transform.position);
             explosionInstance = Instantiate(explosionLight, position, Quaternion.identity);
             StartCoroutine(ChangeRoom());
         }

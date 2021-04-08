@@ -17,6 +17,9 @@ public class TimerDoor : MonoBehaviour
 
     public float timeSpawn;
 
+    private AudioClip hitSoundFirst;
+    private AudioClip hitSoundSecond;
+
     public TextMeshPro text;
 
     public Light2D doorLight;
@@ -24,6 +27,14 @@ public class TimerDoor : MonoBehaviour
 
     public Color color1;
     public Color color2;
+
+    public GlobalVariables globalVar;
+
+    private void Awake()
+    {
+        hitSoundFirst = globalVar.doorHit1;
+        hitSoundSecond = globalVar.doorHit2;
+    }
 
     private void Start()
     {
@@ -92,5 +103,19 @@ public class TimerDoor : MonoBehaviour
     {
         doorLight.color = c;
         text.color = c;
+    }
+
+
+    void PlayFirstSound()
+    {
+
+        AudioManager.instance.PlayClipAt(hitSoundFirst, "Sound", transform.position);
+
+    }
+    void PlaySecondSound()
+    {
+
+        AudioManager.instance.PlayClipAt(hitSoundSecond, "Sound", transform.position);
+
     }
 }
