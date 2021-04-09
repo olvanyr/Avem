@@ -115,6 +115,8 @@ MonoBehaviour:
   colorOffDark: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
   animator: {fileID: 2124882107700307797}
   scannerLight: {fileID: 2124882107700307817}
+  normalMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  litMaterial: {fileID: 2100000, guid: d02f35a58e02d7c498cd61d07b6f2791, type: 2}
 --- !u!95 &2124882107700307797
 Animator:
   serializedVersion: 3

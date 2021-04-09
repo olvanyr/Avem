@@ -28,6 +28,9 @@ public class Scanner : MonoBehaviour
 
     public Light2D scannerLight;
 
+    public Material normalMaterial;
+    public Material litMaterial;
+
     private void Start()
     {
 
@@ -41,6 +44,7 @@ public class Scanner : MonoBehaviour
         //init cable color
         for (int i = 0; i < cablesSprite.Length; i++)
         {
+            cablesSprite[i].material = normalMaterial;
             if (cablesSprite[i].sortingLayerName == "Cable")
             {
                 cablesSprite[i].color = colorOff;
@@ -103,6 +107,7 @@ public class Scanner : MonoBehaviour
     {
         for (int i = 0; i < cablesSprite.Length; i++)
         {
+            cablesSprite[i].material = litMaterial;
             if (cablesSprite[i].sortingLayerName == "Cable")
             {
                 cablesSprite[i].color = colorOn;
@@ -120,6 +125,7 @@ public class Scanner : MonoBehaviour
     {
         for (int i = 0; i < cablesSprite.Length; i++)
         {
+            cablesSprite[i].material = normalMaterial;
             if (cablesSprite[i].sortingLayerName == "Cable")
             {
                 cablesSprite[i].color = colorOff;

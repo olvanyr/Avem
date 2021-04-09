@@ -33,6 +33,9 @@ public class Button : MonoBehaviour
     public Animator animator;
     public PlayerMovement player;
 
+    public Material normalMaterial;
+    public Material litMaterial;
+
     public bool isHorizontal;
     // Start is called before the first frame update
     void Start()
@@ -41,13 +44,16 @@ public class Button : MonoBehaviour
         //init cable color
         for (int i = 0; i < cablesSprite.Length; i++)
         {
+            cablesSprite[i].material = normalMaterial;
             if (cablesSprite[i].sortingLayerName == "Cable")
             {
                 cablesSprite[i].color = colorOff;
+                
             }
             else
             {
                 cablesSprite[i].color = colorOffDark;
+                
             }
         }
 
@@ -143,6 +149,7 @@ public class Button : MonoBehaviour
     {
         for (int i = 0; i < cablesSprite.Length; i++)
         {
+            cablesSprite[i].material = litMaterial;
             if (cablesSprite[i].sortingLayerName == "Cable")
             {
                 cablesSprite[i].color = colorOn;
@@ -160,6 +167,7 @@ public class Button : MonoBehaviour
     {
         for (int i = 0; i < cablesSprite.Length; i++)
         {
+            cablesSprite[i].material = normalMaterial;
             if (cablesSprite[i].sortingLayerName == "Cable")
             {
                 cablesSprite[i].color = colorOff;

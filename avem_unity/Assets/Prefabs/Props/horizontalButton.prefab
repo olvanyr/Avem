@@ -188,6 +188,8 @@ MonoBehaviour:
   lightColor2: {r: 0, g: 0.78431374, b: 0.34117648, a: 1}
   animator: {fileID: 5854734389234047336}
   player: {fileID: 0}
+  normalMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  litMaterial: {fileID: 2100000, guid: d02f35a58e02d7c498cd61d07b6f2791, type: 2}
   isHorizontal: 1
 --- !u!95 &5854734389234047336
 Animator:

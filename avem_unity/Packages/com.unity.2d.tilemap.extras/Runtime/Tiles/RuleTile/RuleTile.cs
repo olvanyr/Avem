@@ -7,6 +7,21 @@ using UnityEngine.Serialization;
 
 namespace UnityEngine
 {
+    public class SiblingTile : RuleTile<SiblingTile>
+    {
+        public List<TileBase> Siblings = new List<TileBase>();
+
+        public override bool RuleMatch(int neighbor, TileBase tile)
+        {
+            // Direct override of rule tile's "this" check with an inclusion of those in Siblings list.
+            switch (neighbor)
+            {
+                case TilingRuleOutput.Neighbor.This:
+                    return tile == this || Siblings.Contains(tile);
+            }
+            return base.RuleMatch(neighbor, tile);
+        }
+    }
     /// <summary>
     /// Generic visual tile for creating different tilesets like terrain, pipeline, random or animated tiles.
     /// This is templated to accept a Neighbor Rule Class for Custom Rules.

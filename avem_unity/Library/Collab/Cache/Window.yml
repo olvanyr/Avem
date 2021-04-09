@@ -14,75 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Animation/TimerDoor/open.anim
-    - Assets/Hologram.mat
-    - Assets/Hologram.mat.meta
-    - Assets/Prefabs/Props/Cable.prefab
-    - Assets/Prefabs/Props/Cable.prefab.meta
-    - Assets/Prefabs/Props/Elevator.prefab
-    - Assets/Prefabs/Props/Hologram.prefab
-    - Assets/Prefabs/Props/Hologram.prefab.meta
-    - Assets/Prefabs/Props/OpenTimerDoor.prefab
-    - Assets/Prefabs/Props/Point Light 2D.prefab
-    - Assets/Prefabs/Props/SimpleDoor.prefab
-    - Assets/Prefabs/Props/TimerDoor.prefab
-    - Assets/Renderer/UniversalRenderPipelineAsset.asset
-    - Assets/ReplaceGameObjects.cs
-    - Assets/ReplaceGameObjects.cs.meta
-    - Assets/Scenes/Scene0.meta
+    - Assets/AttachGameObjectsToParticles.cs
+    - Assets/AttachGameObjectsToParticles.cs.meta
+    - Assets/NewCustomRuleTile.cs
+    - Assets/NewCustomRuleTile.cs.meta
+    - Assets/Prefabs/ParticleSpore.prefab
+    - Assets/Prefabs/Props/Point Light 2D Particle.prefab
+    - Assets/Prefabs/Props/Point Light 2D Particle.prefab.meta
     - Assets/Scenes/Scene0.unity
-    - Assets/Scenes/Scene0/Global Volume Profile.asset
-    - Assets/Scenes/Scene0/Global Volume Profile.asset.meta
-    - Assets/Scripts/AudioManager.cs
-    - Assets/Scripts/Elevator.cs
-    - Assets/Scripts/OpenTimerDoor.cs
-    - Assets/Scripts/PlayerMovement.cs
-    - Assets/Scripts/Restart.cs
-    - Assets/Scripts/ScreenShotMaker.cs
-    - Assets/Scripts/Scriptable Object/GlobalVar.asset
-    - Assets/Scripts/Scriptable Object/GlobalVar.asset.meta
-    - Assets/Scripts/Scriptable Object/GlobalVariables.cs
-    - Assets/Scripts/Scriptable Object/GlobalVariables.cs.meta
-    - Assets/Scripts/SimpleDoor.cs
-    - Assets/Scripts/SimpleDoor.cs.meta
-    - Assets/Scripts/TimerDoor.cs
-    - Assets/_Imports/Audio/Door hit 01.wav
-    - Assets/_Imports/Audio/Door hit 01.wav.meta
-    - Assets/_Imports/Audio/Door hit 11.wav
-    - Assets/_Imports/Audio/Door hit 11.wav.meta
-    - Assets/_Imports/Audio/ElevatorCling.wav
-    - Assets/_Imports/Audio/ElevatorCling.wav.meta
-    - Assets/_Imports/Audio/ElevatorLoop.wav
-    - Assets/_Imports/Audio/ElevatorLoop.wav.meta
-    - Assets/_Imports/Audio/Explosion.wav
-    - Assets/_Imports/Audio/Explosion.wav.meta
-    - Assets/_Imports/Audio/door hit 1.wav
-    - Assets/_Imports/Audio/door hit 1.wav.meta
-    - Assets/_Imports/Button&door&scanner/Cable.png
-    - Assets/_Imports/Fonts/2015 Cruiser Bold SDF.asset
-    - Assets/_Imports/Hollograms.meta
-    - Assets/_Imports/Hollograms/Hologram1.png
-    - Assets/_Imports/Hollograms/Hologram1.png.meta
-    - Assets/_Imports/Hollograms/Hologram1_e.png
-    - Assets/_Imports/Hollograms/Hologram1_e.png.meta
-    - Assets/_Imports/Hollograms/Hologram2.png
-    - Assets/_Imports/Hollograms/Hologram2.png.meta
-    - Assets/_Imports/Hollograms/Hologram2_e.png
-    - Assets/_Imports/Hollograms/Hologram2_e.png.meta
-    - Assets/_Imports/Hollograms/Hologram3.png
-    - Assets/_Imports/Hollograms/Hologram3.png.meta
-    - Assets/_Imports/Hollograms/Hologram3_e.png
-    - Assets/_Imports/Hollograms/Hologram3_e.png.meta
-    - Assets/_Imports/PlaceHolder/Logo.png
-    - Assets/_Imports/PlaceHolder/Logo.png.meta
-    - Assets/_Imports/PlaceHolder/Logo_e.png
-    - Assets/_Imports/PlaceHolder/Logo_e.png.meta
-    - Assets/spriteGlowUnlit.shadergraph
-    - Assets/spriteGlowUnlit.shadergraph.meta
-    - ProjectSettings/TagManager.asset
+    - Assets/Tiles/WallTileSet/WallPalette.prefab
+    - Packages/com.unity.2d.tilemap.extras/Runtime/Tiles/RuleTile/RuleTile.cs
     - 
-    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  RevisionSummary: 
+    m_Values: 0101010101010101010101
+  RevisionSummary: add bloom
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0
