@@ -34,6 +34,12 @@ public class Door : MonoBehaviour
         {
             isAttachedToAScanner = true;
         }
+
+        if (isAttachedToAButton || isAttachedToAScanner)
+        {
+            var selfCollider = GetComponent<BoxCollider2D>();
+            selfCollider.enabled = false;
+        }
     }
 
     void Update()

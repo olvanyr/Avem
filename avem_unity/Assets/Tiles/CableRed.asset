@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25192638efa881c469b1ac4d8cfd3f1b, type: 3}
+  m_Name: CableRed
+  m_EditorClassIdentifier: 
+  m_Sprites:
+  - {fileID: 9061273058564175045, guid: 2a4428ab40d1f8545bb8c5d56335a944, type: 3}
+  - {fileID: 5112598600595611098, guid: 2a4428ab40d1f8545bb8c5d56335a944, type: 3}
+  - {fileID: -552930137252093638, guid: 2a4428ab40d1f8545bb8c5d56335a944, type: 3}
+  - {fileID: 18156821247297658, guid: 2a4428ab40d1f8545bb8c5d56335a944, type: 3}
+  - {fileID: 9061273058564175045, guid: 2a4428ab40d1f8545bb8c5d56335a944, type: 3}

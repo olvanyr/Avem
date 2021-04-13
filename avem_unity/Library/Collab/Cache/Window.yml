@@ -16,17 +16,128 @@ MonoBehaviour:
     m_Keys:
     - Assets/AttachGameObjectsToParticles.cs
     - Assets/AttachGameObjectsToParticles.cs.meta
+    - Assets/Hologram.mat
     - Assets/NewCustomRuleTile.cs
     - Assets/NewCustomRuleTile.cs.meta
     - Assets/Prefabs/ParticleSpore.prefab
     - Assets/Prefabs/Props/Point Light 2D Particle.prefab
     - Assets/Prefabs/Props/Point Light 2D Particle.prefab.meta
     - Assets/Scenes/Scene0.unity
+    - Assets/Scripts/Door.cs
+    - Assets/Scripts/SimpleDoor.cs
+    - Assets/Tiles/CableRed.asset
+    - Assets/Tiles/CableRed.asset.meta
+    - Assets/Tiles/Dead.meta
+    - Assets/Tiles/Dead/Dead.prefab
+    - Assets/Tiles/Dead/Dead.prefab.meta
+    - Assets/Tiles/Dead/DeadTile_0.asset
+    - Assets/Tiles/Dead/DeadTile_0.asset.meta
+    - Assets/Tiles/Dead/DeadTile_1.asset
+    - Assets/Tiles/Dead/DeadTile_1.asset.meta
+    - Assets/Tiles/Dead/DeadTile_10.asset
+    - Assets/Tiles/Dead/DeadTile_10.asset.meta
+    - Assets/Tiles/Dead/DeadTile_11.asset
+    - Assets/Tiles/Dead/DeadTile_11.asset.meta
+    - Assets/Tiles/Dead/DeadTile_12.asset
+    - Assets/Tiles/Dead/DeadTile_12.asset.meta
+    - Assets/Tiles/Dead/DeadTile_13.asset
+    - Assets/Tiles/Dead/DeadTile_13.asset.meta
+    - Assets/Tiles/Dead/DeadTile_14.asset
+    - Assets/Tiles/Dead/DeadTile_14.asset.meta
+    - Assets/Tiles/Dead/DeadTile_15.asset
+    - Assets/Tiles/Dead/DeadTile_15.asset.meta
+    - Assets/Tiles/Dead/DeadTile_16.asset
+    - Assets/Tiles/Dead/DeadTile_16.asset.meta
+    - Assets/Tiles/Dead/DeadTile_17.asset
+    - Assets/Tiles/Dead/DeadTile_17.asset.meta
+    - Assets/Tiles/Dead/DeadTile_18.asset
+    - Assets/Tiles/Dead/DeadTile_18.asset.meta
+    - Assets/Tiles/Dead/DeadTile_19.asset
+    - Assets/Tiles/Dead/DeadTile_19.asset.meta
+    - Assets/Tiles/Dead/DeadTile_2.asset
+    - Assets/Tiles/Dead/DeadTile_2.asset.meta
+    - Assets/Tiles/Dead/DeadTile_20.asset
+    - Assets/Tiles/Dead/DeadTile_20.asset.meta
+    - Assets/Tiles/Dead/DeadTile_21.asset
+    - Assets/Tiles/Dead/DeadTile_21.asset.meta
+    - Assets/Tiles/Dead/DeadTile_22.asset
+    - Assets/Tiles/Dead/DeadTile_22.asset.meta
+    - Assets/Tiles/Dead/DeadTile_23.asset
+    - Assets/Tiles/Dead/DeadTile_23.asset.meta
+    - Assets/Tiles/Dead/DeadTile_24.asset
+    - Assets/Tiles/Dead/DeadTile_24.asset.meta
+    - Assets/Tiles/Dead/DeadTile_25.asset
+    - Assets/Tiles/Dead/DeadTile_25.asset.meta
+    - Assets/Tiles/Dead/DeadTile_26.asset
+    - Assets/Tiles/Dead/DeadTile_26.asset.meta
+    - Assets/Tiles/Dead/DeadTile_27.asset
+    - Assets/Tiles/Dead/DeadTile_27.asset.meta
+    - Assets/Tiles/Dead/DeadTile_28.asset
+    - Assets/Tiles/Dead/DeadTile_28.asset.meta
+    - Assets/Tiles/Dead/DeadTile_29.asset
+    - Assets/Tiles/Dead/DeadTile_29.asset.meta
+    - Assets/Tiles/Dead/DeadTile_3.asset
+    - Assets/Tiles/Dead/DeadTile_3.asset.meta
+    - Assets/Tiles/Dead/DeadTile_30.asset
+    - Assets/Tiles/Dead/DeadTile_30.asset.meta
+    - Assets/Tiles/Dead/DeadTile_31.asset
+    - Assets/Tiles/Dead/DeadTile_31.asset.meta
+    - Assets/Tiles/Dead/DeadTile_32.asset
+    - Assets/Tiles/Dead/DeadTile_32.asset.meta
+    - Assets/Tiles/Dead/DeadTile_33.asset
+    - Assets/Tiles/Dead/DeadTile_33.asset.meta
+    - Assets/Tiles/Dead/DeadTile_34.asset
+    - Assets/Tiles/Dead/DeadTile_34.asset.meta
+    - Assets/Tiles/Dead/DeadTile_35.asset
+    - Assets/Tiles/Dead/DeadTile_35.asset.meta
+    - Assets/Tiles/Dead/DeadTile_36.asset
+    - Assets/Tiles/Dead/DeadTile_36.asset.meta
+    - Assets/Tiles/Dead/DeadTile_37.asset
+    - Assets/Tiles/Dead/DeadTile_37.asset.meta
+    - Assets/Tiles/Dead/DeadTile_4.asset
+    - Assets/Tiles/Dead/DeadTile_4.asset.meta
+    - Assets/Tiles/Dead/DeadTile_5.asset
+    - Assets/Tiles/Dead/DeadTile_5.asset.meta
+    - Assets/Tiles/Dead/DeadTile_6.asset
+    - Assets/Tiles/Dead/DeadTile_6.asset.meta
+    - Assets/Tiles/Dead/DeadTile_7.asset
+    - Assets/Tiles/Dead/DeadTile_7.asset.meta
+    - Assets/Tiles/Dead/DeadTile_8.asset
+    - Assets/Tiles/Dead/DeadTile_8.asset.meta
+    - Assets/Tiles/Dead/DeadTile_9.asset
+    - Assets/Tiles/Dead/DeadTile_9.asset.meta
+    - Assets/Tiles/ForestProps/Forestprops.prefab
     - Assets/Tiles/WallTileSet/WallPalette.prefab
+    - Assets/_Imports/Button&door&scanner/door1.png
+    - Assets/_Imports/Button&door&scanner/door1_NormalMap.png
+    - Assets/_Imports/Button&door&scanner/door1reverse.png
+    - Assets/_Imports/Button&door&scanner/door1reverse_NormalMap.png
+    - Assets/_Imports/Fonts/2015 Cruiser Bold SDF.asset
+    - Assets/_Imports/Hollograms/HollogramSheet.png
+    - Assets/_Imports/Hollograms/HollogramSheet.png.meta
+    - Assets/_Imports/Hollograms/HollogramSheet_e.png
+    - Assets/_Imports/Hollograms/HollogramSheet_e.png.meta
+    - Assets/_Imports/TileSets/CollisionTileset_e.png
+    - Assets/_Imports/TileSets/CollisionTileset_e.png.meta
+    - Assets/_Imports/TileSets/CollisionTileset_yellow.png.meta
+    - Assets/_Imports/TileSets/DeadTile.png
+    - Assets/_Imports/TileSets/DeadTile.png.meta
+    - Assets/_Imports/TileSets/DeadTile_n.png
+    - Assets/_Imports/TileSets/DeadTile_n.png.meta
+    - Assets/_Imports/TileSets/ForestPropsBackgroundTileset.png.meta
+    - Assets/_Imports/TileSets/ForestPropsBackgroundTileset_e.png
+    - Assets/_Imports/TileSets/ForestPropsBackgroundTileset_e.png.meta
+    - Assets/_Imports/TileSets/ForestPropsTileSet.png.meta
+    - Assets/_Imports/TileSets/ForestPropsTileSet_e.png
+    - Assets/_Imports/TileSets/ForestPropsTileSet_e.png.meta
+    - Assets/_Imports/TileSets/ModernTileSet.png.meta
+    - Assets/_Imports/TileSets/ModernTileSet_e.png
+    - Assets/_Imports/TileSets/ModernTileSet_e.png.meta
     - Packages/com.unity.2d.tilemap.extras/Runtime/Tiles/RuleTile/RuleTile.cs
+    - ProjectSettings/ProjectSettings.asset
     - 
-    m_Values: 0101010101010101010101
-  RevisionSummary: add bloom
+    m_Values: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0

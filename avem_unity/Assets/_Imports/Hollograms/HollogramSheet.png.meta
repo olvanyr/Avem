@@ -1,0 +1,1428 @@
+fileFormatVersion: 2
+guid: ac2b3c20a5c7d424b9443269ddddba14
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2091175301654589597
+    second: HollogramSheet_0
+  - first:
+      213: -4385131281745818449
+    second: HollogramSheet_1
+  - first:
+      213: 54379033734916492
+    second: HollogramSheet_2
+  - first:
+      213: -389670765380120793
+    second: HollogramSheet_3
+  - first:
+      213: -2699476366391381319
+    second: HollogramSheet_4
+  - first:
+      213: -7141247785521673447
+    second: HollogramSheet_5
+  - first:
+      213: 4804119491795144421
+    second: HollogramSheet_6
+  - first:
+      213: 83693616563256186
+    second: HollogramSheet_7
+  - first:
+      213: 3995961459119759320
+    second: HollogramSheet_8
+  - first:
+      213: 5845714575908121126
+    second: HollogramSheet_9
+  - first:
+      213: -4346078093114856485
+    second: HollogramSheet_10
+  - first:
+      213: 6170865219617921895
+    second: HollogramSheet_11
+  - first:
+      213: -1179531202986409897
+    second: HollogramSheet_12
+  - first:
+      213: 2065911669428379235
+    second: HollogramSheet_13
+  - first:
+      213: -8915437454335886484
+    second: HollogramSheet_14
+  - first:
+      213: -1953350320273126724
+    second: HollogramSheet_15
+  - first:
+      213: -2881284068550532725
+    second: HollogramSheet_16
+  - first:
+      213: -7801887416404165300
+    second: HollogramSheet_17
+  - first:
+      213: -7804383689949911626
+    second: HollogramSheet_18
+  - first:
+      213: -8736837341655127265
+    second: HollogramSheet_19
+  - first:
+      213: -7209917903183872977
+    second: HollogramSheet_20
+  - first:
+      213: -3744513135413115176
+    second: HollogramSheet_21
+  - first:
+      213: 4934646578057398091
+    second: HollogramSheet_22
+  - first:
+      213: -5550665605641852904
+    second: HollogramSheet_23
+  - first:
+      213: -1174916841266043636
+    second: HollogramSheet_24
+  - first:
+      213: 4805761074781865197
+    second: HollogramSheet_25
+  - first:
+      213: -603937427557030274
+    second: HollogramSheet_26
+  - first:
+      213: -2585715979254364986
+    second: HollogramSheet_27
+  - first:
+      213: 741666403108239594
+    second: HollogramSheet_28
+  - first:
+      213: -576762789447606066
+    second: HollogramSheet_29
+  - first:
+      213: 3072510653594527115
+    second: HollogramSheet_30
+  - first:
+      213: -5891632355763503327
+    second: HollogramSheet_31
+  - first:
+      213: -7154299973618694195
+    second: HollogramSheet_32
+  - first:
+      213: -3930027082487912662
+    second: HollogramSheet_33
+  - first:
+      213: 834202294650301753
+    second: HollogramSheet_34
+  - first:
+      213: 8688986860433641540
+    second: HollogramSheet_35
+  - first:
+      213: 2061449966472321840
+    second: HollogramSheet_36
+  - first:
+      213: -5768011172480603161
+    second: HollogramSheet_37
+  - first:
+      213: -950936080146999610
+    second: HollogramSheet_38
+  - first:
+      213: 7227808488829598608
+    second: HollogramSheet_39
+  - first:
+      213: 7667560392843942159
+    second: HollogramSheet_40
+  - first:
+      213: 6108826098265642183
+    second: HollogramSheet_41
+  - first:
+      213: -6676799487831592963
+    second: HollogramSheet_42
+  - first:
+      213: 3086145872439434014
+    second: HollogramSheet_43
+  - first:
+      213: 1755925562751419591
+    second: HollogramSheet_44
+  - first:
+      213: 5088554744680939693
+    second: HollogramSheet_45
+  - first:
+      213: -7309116271147529543
+    second: HollogramSheet_46
+  - first:
+      213: 3763629002231669206
+    second: HollogramSheet_47
+  - first:
+      213: -8948466520320803941
+    second: HollogramSheet_48
+  - first:
+      213: 2860715084729632345
+    second: HollogramSheet_49
+  - first:
+      213: 1602004758602065798
+    second: HollogramSheet_50
+  - first:
+      213: -2152589799240075145
+    second: HollogramSheet_51
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HollogramSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1056
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90313a7bd8550d10800000000000000
+      internalID: 2091175301654589597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1056
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac461a2552e423c0800000000000000
+      internalID: -4385131281745818449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_2
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1056
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89affc617131c000800000000000000
+      internalID: 54379033734916492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_3
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1056
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fc922e08c979af0800000000000000
+      internalID: -389670765380120793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_4
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1056
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2fda51c88898ad0800000000000000
+      internalID: -2699476366391381319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1056
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b8fea99f035ec90800000000000000
+      internalID: -7141247785521673447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1056
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eecaf67939aba240800000000000000
+      internalID: 4804119491795144421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 1056
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b783d96e6592100800000000000000
+      internalID: 83693616563256186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 880
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df1cfa86c1847730800000000000000
+      internalID: 3995961459119759320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_9
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 880
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62aa3535f66202150800000000000000
+      internalID: 5845714575908121126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_10
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 880
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb28c53001afa3c0800000000000000
+      internalID: -4346078093114856485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_11
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 880
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b932cf83153a550800000000000000
+      internalID: 6170865219617921895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_12
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 880
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750818cce9671afe0800000000000000
+      internalID: -1179531202986409897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 880
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36edc99b7b79bac10800000000000000
+      internalID: 2065911669428379235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 880
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6bb81d0fd0064480800000000000000
+      internalID: -8915437454335886484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 880
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba8936ab3e44e4e0800000000000000
+      internalID: -1953350320273126724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81ad05c76f9308d0800000000000000
+      internalID: -2881284068550532725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_17
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 704
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4db3af1bb02ab390800000000000000
+      internalID: -7801887416404165300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_18
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 704
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5eea5226241b390800000000000000
+      internalID: -7804383689949911626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_19
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 704
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b274e3ab480c680800000000000000
+      internalID: -8736837341655127265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_20
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 704
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2cfef8edd931fb90800000000000000
+      internalID: -7209917903183872977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 704
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6cae28421d80cc0800000000000000
+      internalID: -3744513135413115176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 704
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b474539fae26b7440800000000000000
+      internalID: 4934646578057398091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 704
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8182db45a0318f2b0800000000000000
+      internalID: -5550665605641852904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05a6bb9b5bd1bfe0800000000000000
+      internalID: -1174916841266043636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_25
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 528
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4c5c94c3e71b240800000000000000
+      internalID: 4805761074781865197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_26
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 528
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7666e30c126e97f0800000000000000
+      internalID: -603937427557030274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_27
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 528
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c40e7e3401bd1cd0800000000000000
+      internalID: -2585715979254364986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_28
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 528
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8bb130aadea4a00800000000000000
+      internalID: 741666403108239594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_29
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 528
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0ef4f7c4deef7f0800000000000000
+      internalID: -576762789447606066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_30
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 528
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85ea1c1920c3aa20800000000000000
+      internalID: 3072510653594527115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_31
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 528
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fb48f6697bc3ea0800000000000000
+      internalID: -5891632355763503327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc70fdf3412d6bc90800000000000000
+      internalID: -7154299973618694195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_33
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 352
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27a4aec03db579c0800000000000000
+      internalID: -3930027082487912662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_34
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 352
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d6273319ea39b00800000000000000
+      internalID: 834202294650301753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_35
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 352
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4401f2a638b759870800000000000000
+      internalID: 8688986860433641540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_36
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 352
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03bd2dd82ddbb9c10800000000000000
+      internalID: 2061449966472321840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_37
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 352
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb2fcb1668e3ffa0800000000000000
+      internalID: -5768011172480603161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_38
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 352
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c65cb26ca89dc2f0800000000000000
+      internalID: -950936080146999610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_39
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 352
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09bbd39a6855e4460800000000000000
+      internalID: 7227808488829598608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0951558d85a86a60800000000000000
+      internalID: 7667560392843942159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_41
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 176
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c452cd68f8e6c450800000000000000
+      internalID: 6108826098265642183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_42
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 176
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dffa943bd3e3753a0800000000000000
+      internalID: -6676799487831592963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_43
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 176
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b5ac3e15134da20800000000000000
+      internalID: 3086145872439434014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_44
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 176
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c483dbfefc4e5810800000000000000
+      internalID: 1755925562751419591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_45
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 176
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da006d8749d2e9640800000000000000
+      internalID: 5088554744680939693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_46
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 176
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba493c0a7dc09a90800000000000000
+      internalID: -7309116271147529543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_47
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 176
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1606013a81b3430800000000000000
+      internalID: 3763629002231669206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b7dcb5c19a0d380800000000000000
+      internalID: -8948466520320803941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_49
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95649ec763d43b720800000000000000
+      internalID: 2860715084729632345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_50
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68726f417d67b3610800000000000000
+      internalID: 1602004758602065798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HollogramSheet_51
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 0
+        width: 208
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7787a258bf67022e0800000000000000
+      internalID: -2152589799240075145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: bb222ad12cc7f414fb7502bc4f3db696, type: 3}
+      name: _Emission
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

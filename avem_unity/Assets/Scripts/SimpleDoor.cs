@@ -43,6 +43,12 @@ public class SimpleDoor : MonoBehaviour
         }
 
         hitSound = globalVar.doorHit1;
+
+        if (isAttachedToAButton ||isAttachedToAScanner)
+        {
+            var selfCollider = GetComponent<BoxCollider2D>();
+            selfCollider.enabled = false;
+        }
     }
 
     private void Start()
