@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\Scanner.cs" />
     <Compile Include="Assets\Scripts\Class\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\Green.cs" />
+    <Compile Include="Assets\NewCustomRuleTile.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\ReplaceGameObjects.cs" />
@@ -96,7 +97,6 @@
     <Compile Include="Assets\Scripts\ScreenShotMaker.cs" />
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
     <Compile Include="Assets\AttachGameObjectsToParticles.cs" />
-    <Compile Include="Assets\NewCustomRuleTile.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

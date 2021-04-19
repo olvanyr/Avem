@@ -101,6 +101,10 @@ public class Elevator : MonoBehaviour
                     PlayerMovement.instance.state = "move";
                     AudioManager.instance.PlayClip(stopSound, "Sound", transform.position);
                 }
+                else
+                {
+                    PlayerMovement.instance.state = "elevator";
+                }
             }
             else
             {
@@ -111,6 +115,10 @@ public class Elevator : MonoBehaviour
                     isMoving = false;
                     PlayerMovement.instance.state = "move";
                     AudioManager.instance.PlayClip(stopSound, "Sound", transform.position);
+                }
+                else
+                {
+                    PlayerMovement.instance.state = "elevator";
                 }
             }
         }

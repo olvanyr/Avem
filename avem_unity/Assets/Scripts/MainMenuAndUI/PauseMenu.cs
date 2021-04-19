@@ -20,11 +20,16 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject firstSelectedButton, firstSettingSelectedButton, firstControlSelectedButton, optionClosedButton, controlClosedButton;
 
+    //public GameObject player;
+
     public AudioClip onClickSound;
+    private AudioClip menuSong;
 
     public LevelLoader levelLoader;
 
     public string sceneId = "MainMenu";
+
+    public GlobalVariables globalVar;
 
     
 
@@ -32,6 +37,8 @@ public class PauseMenu : MonoBehaviour
     {
         playerInput = new PlayerInput();
         playerInput.Menu.Pause.performed += _ => PauseManager();
+
+        menuSong = globalVar.menuMusic;
     }
 
     private void Start()
@@ -48,18 +55,26 @@ public class PauseMenu : MonoBehaviour
         }
         else
         {
-            Paused();
+            if (PlayerMovement.instance.state != "die")
+            {
+                Paused();
+            }
+            
         }
         //Debug.Log("game is paused :" + gameIsPaused);
     }
 
     void Paused()
     {
+
         //activate our pause menu
         pauseMenuUI.SetActive(true);
         //stop other fonction of the game
-        Time.timeScale = 0;
-        PlayerMovement.instance.enabled = false;
+        //Time.timeScale = 0;
+        
+        PlayerMovement.instance.state = "menu";
+        
+        //PlayerMovement.instance.enabled = false;
         //change game status toggle pause game mod
         gameIsPaused = true;
 
@@ -69,11 +84,20 @@ public class PauseMenu : MonoBehaviour
 
     public void Resumed()
     {
+
+        
         pauseMenuUI.SetActive(false);
         settingsWindow.SetActive(false);
         controlsWindow.SetActive(false);
         Time.timeScale = 1;
-        PlayerMovement.instance.enabled = true;
+
+        //PlayerMovement.instance.enabled = true;
+        if (PlayerMovement.instance.state != "die")
+        {
+            PlayerMovement.instance.state = "move";
+        }
+        
+        
         gameIsPaused = false;
     }
 
@@ -82,6 +106,7 @@ public class PauseMenu : MonoBehaviour
     public void LoadMainMenu()
     {
         Resumed();
+        AudioManager.instance.NextSong(menuSong);
         levelLoader.LoadLevel(sceneId);
     }
 

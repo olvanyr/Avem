@@ -150,7 +150,7 @@ MonoBehaviour:
   animator: {fileID: 2118096488}
   fadeInTime: 1
   fadeOutTime: 1
-  audioClip: {fileID: 8300000, guid: 68a87a3de1e272947968614226240547, type: 3}
+  globalVar: {fileID: 11400000, guid: 7c65547159007f242bf8a3ab7aca9a90, type: 2}
 --- !u!95 &2118096488
 Animator:
   serializedVersion: 3

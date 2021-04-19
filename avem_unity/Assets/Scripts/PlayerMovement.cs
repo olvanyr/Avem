@@ -126,7 +126,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
+        //Debug.Log("player state = " + state.ToString());
         if (state == "move")
         {
 
@@ -164,24 +164,12 @@ public class PlayerMovement : MonoBehaviour
             MovePlayer(0, 0);
         }
 
-        //eat state 
-
-        if (state == "eat")
-        {
-
-        }
-
         // Animation
         float charachterVelocity = math.abs((rb.velocity.x));
         float charachterVerticalVelocity = (rb.velocity.y);
         animator.SetFloat("speed", charachterVelocity);
         animator.SetFloat("verticalSpeed", charachterVerticalVelocity);
         animator.SetBool("isGrounded", isGrounded);
-
-        if (state == "die")
-        {
-            animator.Play("Die");
-        }
     }
 
 
@@ -258,7 +246,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
-        state = "move";
+        if (state != "menu")
+        {
+           state = "move";
+        }
+        
     }
 
 

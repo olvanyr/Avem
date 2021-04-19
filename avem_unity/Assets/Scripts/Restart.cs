@@ -18,6 +18,8 @@ public class Restart : MonoBehaviour
 
     public GlobalVariables globalVar;
 
+    public PauseMenu pauseMenu;
+
 
     private void Awake()
     {
@@ -43,6 +45,7 @@ public class Restart : MonoBehaviour
             AudioManager.instance.PlayClip(explosionSound, "Sound", transform.position);
             explosionInstance = Instantiate(explosionLight, position, Quaternion.identity);
             StartCoroutine(ChangeRoom());
+            pauseMenu.Resumed();
         }
 
         

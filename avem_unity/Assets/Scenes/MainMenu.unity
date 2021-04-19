@@ -290,7 +290,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &12157816
@@ -1108,8 +1108,8 @@ MonoBehaviour:
   controlClosedButton: {fileID: 1598557536}
   highlightSound: {fileID: 8300000, guid: 79ddbe17b0340ef4ab66e42d9e2667cd, type: 3}
   onClickSound: {fileID: 8300000, guid: 79ddbe17b0340ef4ab66e42d9e2667cd, type: 3}
-  StartGameSong: {fileID: 8300000, guid: f7a0119918bc4b149baf6da8b495ec79, type: 3}
   audioMixer: {fileID: 24100000, guid: 57a41f2531137ba49b776c5a67c59afc, type: 2}
+  globalVar: {fileID: 11400000, guid: 7c65547159007f242bf8a3ab7aca9a90, type: 2}
 --- !u!114 &688213211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2519,6 +2519,11 @@ PrefabInstance:
     - target: {fileID: 1145436545391863108, guid: 0a00b7c0eea487445a397ed677e773ee,
         type: 3}
       propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 68a87a3de1e272947968614226240547, type: 3}
+    - target: {fileID: 1145436545391863109, guid: 0a00b7c0eea487445a397ed677e773ee,
+        type: 3}
+      propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 68a87a3de1e272947968614226240547, type: 3}
     - target: {fileID: 1145436545391863111, guid: 0a00b7c0eea487445a397ed677e773ee,

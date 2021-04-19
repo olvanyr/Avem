@@ -44,7 +44,34 @@ public class Door : MonoBehaviour
 
     void Update()
     {
-        if (isAttachedToAButton)
+        if (isAttachedToAScanner && isAttachedToAButton)
+        {
+
+            if (button.isOn || scanner.isActivate)
+            {
+                if (openDoor)
+                {
+                    isDoorOpen = true;
+                }
+                else
+                {
+                    isDoorOpen = false;
+                }
+
+            }
+            if (!button.isOn && !scanner.isActivate)
+            {
+                if (openDoor)
+                {
+                    isDoorOpen = false;
+                }
+                else
+                {
+                    isDoorOpen = true;
+                }
+            }
+        }
+        else if (isAttachedToAButton)
         {
             if (button.isOn)
             {

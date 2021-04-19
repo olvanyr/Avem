@@ -14,17 +14,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
+    - Assets/Animation/Bird/Die.anim
     - Assets/AttachGameObjectsToParticles.cs
     - Assets/AttachGameObjectsToParticles.cs.meta
     - Assets/Hologram.mat
     - Assets/NewCustomRuleTile.cs
     - Assets/NewCustomRuleTile.cs.meta
+    - Assets/Prefabs/Always needed/AudioManager.prefab
     - Assets/Prefabs/ParticleSpore.prefab
+    - Assets/Prefabs/Props/Elevator.prefab
     - Assets/Prefabs/Props/Point Light 2D Particle.prefab
     - Assets/Prefabs/Props/Point Light 2D Particle.prefab.meta
+    - Assets/Prefabs/Props/Scanner.prefab
+    - Assets/Scenes/MainMenu.unity
     - Assets/Scenes/Scene0.unity
     - Assets/Scripts/Door.cs
+    - Assets/Scripts/Elevator.cs
+    - Assets/Scripts/MainMenuAndUI/MainMenu.cs
+    - Assets/Scripts/MainMenuAndUI/PauseMenu.cs
+    - Assets/Scripts/PlayerHealth.cs
+    - Assets/Scripts/PlayerMovement.cs
+    - Assets/Scripts/Restart.cs
+    - Assets/Scripts/Scriptable Object/GlobalVar.asset
+    - Assets/Scripts/Scriptable Object/GlobalVariables.cs
     - Assets/Scripts/SimpleDoor.cs
+    - Assets/Scripts/Timer.cs
     - Assets/Tiles/CableRed.asset
     - Assets/Tiles/CableRed.asset.meta
     - Assets/Tiles/Dead.meta
@@ -107,7 +121,19 @@ MonoBehaviour:
     - Assets/Tiles/Dead/DeadTile_9.asset
     - Assets/Tiles/Dead/DeadTile_9.asset.meta
     - Assets/Tiles/ForestProps/Forestprops.prefab
+    - Assets/Tiles/ModernProps/ModernProps.prefab
     - Assets/Tiles/WallTileSet/WallPalette.prefab
+    - Assets/_Imports/Audio/Damage0.wav
+    - Assets/_Imports/Audio/Damage0.wav.meta
+    - Assets/_Imports/Audio/Damage1.wav
+    - Assets/_Imports/Audio/Damage1.wav.meta
+    - Assets/_Imports/Audio/Damage2.wav
+    - Assets/_Imports/Audio/Damage2.wav.meta
+    - Assets/_Imports/Audio/Damage3.wav
+    - Assets/_Imports/Audio/Damage3.wav.meta
+    - Assets/_Imports/Audio/MusicTest.meta
+    - Assets/_Imports/Audio/MusicTest/_ROPAL JV.wav
+    - Assets/_Imports/Audio/MusicTest/_ROPAL JV.wav.meta
     - Assets/_Imports/Button&door&scanner/door1.png
     - Assets/_Imports/Button&door&scanner/door1_NormalMap.png
     - Assets/_Imports/Button&door&scanner/door1reverse.png
@@ -136,7 +162,7 @@ MonoBehaviour:
     - Packages/com.unity.2d.tilemap.extras/Runtime/Tiles/RuleTile/RuleTile.cs
     - ProjectSettings/ProjectSettings.asset
     - 
-    m_Values: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

@@ -14,6 +14,7 @@ public class GlobalVariables : ScriptableObject
     //sound
     public AudioClip[] playerLandingSound;
     public AudioClip[] playerWalkingSound;
+    public AudioClip[] playerDamagingSound;
     public AudioClip doorHit1;
     public AudioClip doorHit2;
     public AudioClip elevatorLoop;

@@ -23,6 +23,10 @@ public class PlayerHealth : MonoBehaviour
     public Color flashColor;
 
     public static PlayerHealth instance;
+
+
+    private AudioClip[] damageSound;
+    public GlobalVariables globalVar;
     private void Awake()
     {
         if (instance != null)
@@ -32,6 +36,7 @@ public class PlayerHealth : MonoBehaviour
         }
 
         instance = this;
+        damageSound = globalVar.playerDamagingSound;
     }
 
 
@@ -48,20 +53,32 @@ public class PlayerHealth : MonoBehaviour
         {
             timer -= Time.deltaTime;
         }
+        //Debug.Log("player state = " + PlayerMovement.instance.state.ToString());
     }
 
     public void ReduceHealth(int damage)
     {
         if (!isInvincible)
         {
+            if (playerHealth > 0)
+            {
+                var sound = damageSound[UnityEngine.Random.Range(0, damageSound.Length - 1)];
+                AudioManager.instance.PlayClip(sound, "Sound", transform.position);
+            }
             if (playerHealth == 1)
             {
+                //Debug.Log("player just die");
                 PlayerMovement.instance.state = "die";
+                PlayerMovement.instance.animator.Play("Die");
+                
+
                 PlayerDeath();
                 playerHealth -= damage;
                 StopAllCoroutines();
                 return;
             }
+
+            
             CameraFollow.instance.StartScreenShake(invicibilityFlashDelay, 0.1f, 0.9f);
             playerHealth -= damage;
             if (playerHealth <= 0)

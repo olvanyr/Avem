@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GlobalVar
   m_EditorClassIdentifier: 
   menuMusic: {fileID: 8300000, guid: 68a87a3de1e272947968614226240547, type: 3}
-  gameMusic: {fileID: 8300000, guid: f7a0119918bc4b149baf6da8b495ec79, type: 3}
+  gameMusic: {fileID: 8300000, guid: 1c8ce9c8cdf2a12418038cda37c3816a, type: 3}
   endMusic: {fileID: 0}
   playerLandingSound:
   - {fileID: 8300000, guid: e2fd51bf8797fc9409d665d78a2d4172, type: 3}
@@ -25,6 +25,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 488a49353cc86964681a3ae5c9e6d9e4, type: 3}
   - {fileID: 8300000, guid: dbb74286203965f4384f9e008d325019, type: 3}
   - {fileID: 8300000, guid: ba72ea6a25fc2c64bb3cef323b962ee2, type: 3}
+  playerDamagingSound:
+  - {fileID: 8300000, guid: 69c35b7732a50924584fc61500f40b7b, type: 3}
+  - {fileID: 8300000, guid: 281903fa26e101b40b3ce41c6eea00e0, type: 3}
+  - {fileID: 8300000, guid: 77c88c28eb3da8f40baefea5e7455106, type: 3}
+  - {fileID: 8300000, guid: 63519ac9e7eaefd45bf937fb391226df, type: 3}
   doorHit1: {fileID: 8300000, guid: 54e4a8687ebc01d4aa3308d897f14a24, type: 3}
   doorHit2: {fileID: 8300000, guid: e8bedf43d21e34942aebc898c024faff, type: 3}
   elevatorLoop: {fileID: 8300000, guid: 7f6fcb00df79bc849b7bc96c8e54dfa2, type: 3}

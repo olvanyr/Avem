@@ -17,14 +17,20 @@ public class MainMenu : MonoBehaviour
     public AudioClip highlightSound;
     public AudioClip onClickSound;
 
-    public AudioClip StartGameSong;
+    
 
     public AudioMixer audioMixer;
+
+    public GlobalVariables globalVar;
+
+    private AudioClip StartGameSong;
 
     private void Start()
     {
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(firstSelectedButton);
+
+        StartGameSong = globalVar.gameMusic;
     }
 
     public void StartGameButton() //use this function to set all starting param, but not to change scene

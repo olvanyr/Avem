@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Timer : MonoBehaviour
 {
     public float startTime;
     public float currentTime;
 
-
+    public float time;
 
     public static Timer instance;
 
