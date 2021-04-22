@@ -22,6 +22,10 @@ MonoBehaviour:
     - Assets/NewCustomRuleTile.cs.meta
     - Assets/Prefabs/Always needed/AudioManager.prefab
     - Assets/Prefabs/ParticleSpore.prefab
+    - Assets/Prefabs/Props/Drope.prefab
+    - Assets/Prefabs/Props/Drope.prefab.meta
+    - Assets/Prefabs/Props/DropingFruit.prefab
+    - Assets/Prefabs/Props/DropingFruit.prefab.meta
     - Assets/Prefabs/Props/Elevator.prefab
     - Assets/Prefabs/Props/Point Light 2D Particle.prefab
     - Assets/Prefabs/Props/Point Light 2D Particle.prefab.meta
@@ -29,6 +33,8 @@ MonoBehaviour:
     - Assets/Scenes/MainMenu.unity
     - Assets/Scenes/Scene0.unity
     - Assets/Scripts/Door.cs
+    - Assets/Scripts/DropingFruit.cs
+    - Assets/Scripts/DropingFruit.cs.meta
     - Assets/Scripts/Elevator.cs
     - Assets/Scripts/MainMenuAndUI/MainMenu.cs
     - Assets/Scripts/MainMenuAndUI/PauseMenu.cs
@@ -162,7 +168,7 @@ MonoBehaviour:
     - Packages/com.unity.2d.tilemap.extras/Runtime/Tiles/RuleTile/RuleTile.cs
     - ProjectSettings/ProjectSettings.asset
     - 
-    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

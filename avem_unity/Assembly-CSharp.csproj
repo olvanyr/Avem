@@ -97,6 +97,7 @@
     <Compile Include="Assets\Scripts\ScreenShotMaker.cs" />
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
     <Compile Include="Assets\AttachGameObjectsToParticles.cs" />
+    <Compile Include="Assets\Scripts\DropingFruit.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
