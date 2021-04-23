@@ -23,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
     public float accelerationTime;
     public bool isGrounded;
     public float maxRbSpeed;
+
+    public float maxVelocity;
         //vector to apply the velocity 
         private Vector3 velocity = Vector3.zero;
 
@@ -170,6 +172,8 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("speed", charachterVelocity);
         animator.SetFloat("verticalSpeed", charachterVerticalVelocity);
         animator.SetBool("isGrounded", isGrounded);
+
+        rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxVelocity);
     }
 
 

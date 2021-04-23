@@ -8,7 +8,7 @@ public class Door : MonoBehaviour
 
     public Animator animator;
 
-    public bool isDoorOpen = false;
+    public bool isDoorOpen;
 
     private bool isInRange = false;
 
@@ -26,6 +26,15 @@ public class Door : MonoBehaviour
 
     private void Awake()
     {
+        if (openDoor)
+        {
+            isDoorOpen = true;
+        }
+        else
+        {
+            isDoorOpen = false;
+        }
+
         if (button != null)
         {
             isAttachedToAButton = true;
