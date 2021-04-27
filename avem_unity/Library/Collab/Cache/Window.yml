@@ -19,16 +19,22 @@ MonoBehaviour:
     - Assets/Animation/TwoWayDoor/Door2.controller
     - Assets/AttachGameObjectsToParticles.cs
     - Assets/AttachGameObjectsToParticles.cs.meta
+    - Assets/ColorManager.cs
+    - Assets/HollogramWaving.cs
+    - Assets/HollogramWaving.cs.meta
     - Assets/Hologram.mat
     - Assets/NewCustomRuleTile.cs
     - Assets/NewCustomRuleTile.cs.meta
     - Assets/Prefabs/Always needed/AudioManager.prefab
     - Assets/Prefabs/ParticleSpore.prefab
+    - Assets/Prefabs/Props/DestructionTimer.prefab
+    - Assets/Prefabs/Props/DestructionTimer.prefab.meta
     - Assets/Prefabs/Props/Drope.prefab
     - Assets/Prefabs/Props/Drope.prefab.meta
     - Assets/Prefabs/Props/DropingFruit.prefab
     - Assets/Prefabs/Props/DropingFruit.prefab.meta
     - Assets/Prefabs/Props/Elevator.prefab
+    - Assets/Prefabs/Props/Hologram.prefab
     - Assets/Prefabs/Props/Point Light 2D Particle.prefab
     - Assets/Prefabs/Props/Point Light 2D Particle.prefab.meta
     - Assets/Prefabs/Props/Scanner.prefab
@@ -142,6 +148,9 @@ MonoBehaviour:
     - Assets/_Imports/Audio/MusicTest.meta
     - Assets/_Imports/Audio/MusicTest/_ROPAL JV.wav
     - Assets/_Imports/Audio/MusicTest/_ROPAL JV.wav.meta
+    - Assets/_Imports/Button&door&scanner/Cable.png
+    - Assets/_Imports/Button&door&scanner/Cable.png.meta
+    - Assets/_Imports/Button&door&scanner/Cable_e.png
     - Assets/_Imports/Button&door&scanner/door1.png
     - Assets/_Imports/Button&door&scanner/door1_NormalMap.png
     - Assets/_Imports/Button&door&scanner/door1reverse.png
@@ -170,7 +179,7 @@ MonoBehaviour:
     - Packages/com.unity.2d.tilemap.extras/Runtime/Tiles/RuleTile/RuleTile.cs
     - ProjectSettings/ProjectSettings.asset
     - 
-    m_Values: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

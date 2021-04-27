@@ -12,6 +12,7 @@ public class ColorManager : MonoBehaviour
     public Tilemap backWallProps;
     public Tilemap wall;
     public Tilemap wallDetail;
+    public Tilemap backProps;
 
     private void Awake()
     {
@@ -19,6 +20,7 @@ public class ColorManager : MonoBehaviour
         backWallProps.color = (backWallColor);
         wall.color = (WallColor);
         wallDetail.color = (WallColor);
+        backProps.color = (WallColor);
 
     }
 }
