@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿/*using UnityEngine;
 using UnityEditor;
 using System.Collections;
 // CopyComponents - by Michael L. Croswell for Colorado Game Coders, LLC
@@ -9,6 +9,7 @@ using System.Collections;
 
 public class ReplaceGameObjects : ScriptableWizard
 {
+    
     public bool copyValues = true;
     public GameObject NewType;
     public GameObject[] OldObjects;
@@ -48,4 +49,5 @@ public class ReplaceGameObjects : ScriptableWizard
         }
 
     }
-}
+    
+}*/

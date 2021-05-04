@@ -366,8 +366,6 @@ MonoBehaviour:
   isDoorClose: 0
   id: 5
   timeSpawn: 10
-  hitSoundFirst: {fileID: 8300000, guid: 54e4a8687ebc01d4aa3308d897f14a24, type: 3}
-  hitSoundSecond: {fileID: 8300000, guid: e8bedf43d21e34942aebc898c024faff, type: 3}
   text: {fileID: 8631715141325562487}
   doorLight: {fileID: 8631715140882293975}
   color1: {r: 0, g: 0.7830189, b: 0.34104162, a: 0.87058824}
@@ -428,5 +426,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2, y: 4}
+  m_Size: {x: 0.5, y: 4}
   m_EdgeRadius: 0

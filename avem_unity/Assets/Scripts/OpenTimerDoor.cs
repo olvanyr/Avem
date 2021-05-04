@@ -37,7 +37,7 @@ public class OpenTimerDoor : MonoBehaviour
     private void Start()
     {
 
-        doorCollider.enabled = false;
+        doorCollider.enabled = true;
         SetColor(color2);
 
         if (GameSaveManager.instance.doorData.Contains(id))
@@ -81,7 +81,7 @@ public class OpenTimerDoor : MonoBehaviour
 
     void OpenDoor()
     {
-        doorCollider.enabled = true;
+        doorCollider.enabled = false;
         isDoorOpen = true;
 
         AudioManager.instance.PlayClipAt(hitSound, "Sound", transform.position);
@@ -96,7 +96,7 @@ public class OpenTimerDoor : MonoBehaviour
     void DoorAlreadyOpen()
     {
         SetColor(color1);
-        doorCollider.enabled = true;
+        doorCollider.enabled = false;
         animator.SetTrigger("DoorAlreadyOpen");
     }
 
