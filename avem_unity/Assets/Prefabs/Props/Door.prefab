@@ -73,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -414816013
-  m_SortingLayer: -6
+  m_SortingLayer: -7
   m_SortingOrder: 0
   m_Sprite: {fileID: -8234536430552275792, guid: 4c6b0d24205f8a14c90216ece3575435,
     type: 3}
@@ -108,6 +108,7 @@ MonoBehaviour:
   isAttachedToAScanner: 0
   button: {fileID: 0}
   scanner: {fileID: 0}
+  globalVar: {fileID: 11400000, guid: 7c65547159007f242bf8a3ab7aca9a90, type: 2}
 --- !u!61 &1469552500655535319
 BoxCollider2D:
   m_ObjectHideFlags: 0

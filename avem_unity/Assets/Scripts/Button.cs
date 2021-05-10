@@ -36,10 +36,15 @@ public class Button : MonoBehaviour
     public Material normalMaterial;
     public Material litMaterial;
 
+    private AudioClip clickSound;
+    public GlobalVariables globalVar;
+
     public bool isHorizontal;
     // Start is called before the first frame update
     void Start()
     {
+        clickSound = globalVar.clickButton;
+
         player = PlayerMovement.instance;
         //init cable color
         for (int i = 0; i < cablesSprite.Length; i++)
@@ -202,5 +207,10 @@ public class Button : MonoBehaviour
     {
         buttonLight.color = c;
         text.color = c;
+    }
+
+    void PlaySound()
+    {
+        AudioManager.instance.PlayClipAt(clickSound, "Sound", transform.position);
     }
 }

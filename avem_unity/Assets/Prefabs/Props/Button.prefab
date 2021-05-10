@@ -288,6 +288,7 @@ MonoBehaviour:
   player: {fileID: 0}
   normalMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   litMaterial: {fileID: 2100000, guid: d02f35a58e02d7c498cd61d07b6f2791, type: 2}
+  globalVar: {fileID: 11400000, guid: 7c65547159007f242bf8a3ab7aca9a90, type: 2}
   isHorizontal: 0
 --- !u!61 &3927387630354320906
 BoxCollider2D:

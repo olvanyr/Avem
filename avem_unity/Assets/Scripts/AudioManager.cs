@@ -116,8 +116,8 @@ public class AudioManager : MonoBehaviour
             audioMixerGroupe = audioMixerGroupeSound;
             audioSource.spatialBlend = 1f;
             audioSource.rolloffMode = AudioRolloffMode.Linear;
-            audioSource.minDistance = 6f;
-            audioSource.maxDistance = 10f;
+            audioSource.minDistance = 8f;
+            audioSource.maxDistance = 14f;
         }
 
         if (audioMixerString == "Music")

@@ -35,3 +35,4 @@ MonoBehaviour:
   elevatorLoop: {fileID: 8300000, guid: 7f6fcb00df79bc849b7bc96c8e54dfa2, type: 3}
   elevatorStop: {fileID: 8300000, guid: 966083245bb63d445bc8a1666e1487b7, type: 3}
   explosion: {fileID: 8300000, guid: 93ab61ee9471bde4da54212a023f4744, type: 3}
+  clickButton: {fileID: 8300000, guid: c22857d43fb18c6468e97ba09a5d7958, type: 3}

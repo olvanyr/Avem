@@ -16,7 +16,13 @@ MonoBehaviour:
     m_Keys:
     - Assets/Animation/Bird/Die.anim
     - Assets/Animation/Bird/Player.controller
+    - Assets/Animation/Button/Off.anim
+    - Assets/Animation/Button/On.anim
+    - Assets/Animation/HorizontalButton/Off.anim
+    - Assets/Animation/HorizontalButton/On.anim
+    - Assets/Animation/TwoWayDoor/Close.anim
     - Assets/Animation/TwoWayDoor/Door2.controller
+    - Assets/Animation/TwoWayDoor/Open.anim
     - Assets/AttachGameObjectsToParticles.cs
     - Assets/AttachGameObjectsToParticles.cs.meta
     - Assets/ColorManager.cs
@@ -27,8 +33,10 @@ MonoBehaviour:
     - Assets/NewCustomRuleTile.cs.meta
     - Assets/Prefabs/Always needed/AudioManager.prefab
     - Assets/Prefabs/ParticleSpore.prefab
+    - Assets/Prefabs/Props/Button.prefab
     - Assets/Prefabs/Props/DestructionTimer.prefab
     - Assets/Prefabs/Props/DestructionTimer.prefab.meta
+    - Assets/Prefabs/Props/Door.prefab
     - Assets/Prefabs/Props/Drope.prefab
     - Assets/Prefabs/Props/Drope.prefab.meta
     - Assets/Prefabs/Props/DropingFruit.prefab
@@ -39,9 +47,12 @@ MonoBehaviour:
     - Assets/Prefabs/Props/Point Light 2D Particle.prefab.meta
     - Assets/Prefabs/Props/Scanner.prefab
     - Assets/Prefabs/Props/TimerDoor.prefab
+    - Assets/Prefabs/Props/horizontalButton.prefab
     - Assets/ReplaceGameObjects.cs
     - Assets/Scenes/MainMenu.unity
     - Assets/Scenes/Scene0.unity
+    - Assets/Scripts/AudioManager.cs
+    - Assets/Scripts/Button.cs
     - Assets/Scripts/CameraFollow.cs
     - Assets/Scripts/Door.cs
     - Assets/Scripts/DropingFruit.cs
@@ -141,6 +152,8 @@ MonoBehaviour:
     - Assets/Tiles/ForestProps/Forestprops.prefab
     - Assets/Tiles/ModernProps/ModernProps.prefab
     - Assets/Tiles/WallTileSet/WallPalette.prefab
+    - Assets/_Imports/Audio/ClickButton.wav
+    - Assets/_Imports/Audio/ClickButton.wav.meta
     - Assets/_Imports/Audio/Damage0.wav
     - Assets/_Imports/Audio/Damage0.wav.meta
     - Assets/_Imports/Audio/Damage1.wav
@@ -192,7 +205,7 @@ MonoBehaviour:
     - Packages/com.unity.2d.tilemap.extras/Runtime/Tiles/RuleTile/RuleTile.cs
     - ProjectSettings/ProjectSettings.asset
     - 
-    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

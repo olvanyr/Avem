@@ -21,11 +21,14 @@ public class Door : MonoBehaviour
 
     public Button button;
     public Scanner scanner;
-
+    private AudioClip hitSound;
+    public GlobalVariables globalVar;
 
 
     private void Awake()
     {
+        hitSound = globalVar.doorHit1;
+
         if (openDoor)
         {
             isDoorOpen = true;
@@ -176,5 +179,10 @@ public class Door : MonoBehaviour
     void CloseDoor()
     {
         doorCollider.enabled = true;
+    }
+
+    void PlaySound()
+    {
+        AudioManager.instance.PlayClipAt(hitSound, "Sound", transform.position);
     }
 }

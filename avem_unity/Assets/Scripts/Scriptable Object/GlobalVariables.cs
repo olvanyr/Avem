@@ -20,6 +20,7 @@ public class GlobalVariables : ScriptableObject
     public AudioClip elevatorLoop;
     public AudioClip elevatorStop;
     public AudioClip explosion;
+    public AudioClip clickButton;
 
 
 }
