@@ -6,7 +6,7 @@ public class Snapping : MonoBehaviour
 {
 
     public float cameraSize;
-    public Color color;
+    //public Color color;
 
     public BoxCollider2D boxCollider;
     public CameraFollow cameraFollow;
@@ -29,7 +29,7 @@ public class Snapping : MonoBehaviour
         boxY = boxCollider.size.y;
 
         Camera camera = Camera.main;
-        halfHeight = camera.orthographicSize;
+        halfHeight = cameraSize;
         halfWidth = camera.aspect * halfHeight;
 
         minPosition.x = transform.position.x - ((boxX/2) - halfWidth);
@@ -52,35 +52,31 @@ public class Snapping : MonoBehaviour
             if (Camera.main.orthographicSize != cameraSize)
             {
                 Camera.main.orthographicSize = cameraSize;
-                boxX = boxCollider.size.x;
-                boxY = boxCollider.size.y;
-
-                Camera camera = Camera.main;
-                halfHeight = camera.orthographicSize;
-                halfWidth = camera.aspect * halfHeight;
-
-                minPosition.x = transform.position.x - ((boxX / 2) - halfWidth);
-                minPosition.y = transform.position.y - ((boxY / 2) - halfHeight);
-                maxPosition.x = transform.position.x + ((boxX / 2) - halfWidth);
-                maxPosition.y = transform.position.y + ((boxY / 2) - halfHeight);
             }
             cameraFollow.minPosition = minPosition;
             cameraFollow.maxPosition = maxPosition;
-            for (int i = 0; i < ObjectManagment.Length; i++)
+            if (ObjectManagment.Length < 0)
             {
-                ObjectManagment[i].SetActive(true);
+                for (int i = 0; i < ObjectManagment.Length; i++)
+                {
+                    ObjectManagment[i].SetActive(true);
+                }
             }
+            
 
-            CameraFollow.instance.CamerColorUpdate(color);
+            //CameraFollow.instance.CamerColorUpdate(color);
         }
         
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        for (int i = 0; i < ObjectManagment.Length; i++)
+        if (ObjectManagment.Length < 0)
         {
-            ObjectManagment[i].SetActive(false);
+            for (int i = 0; i < ObjectManagment.Length; i++)
+            {
+                ObjectManagment[i].SetActive(false);
+            }
         }
     }
 

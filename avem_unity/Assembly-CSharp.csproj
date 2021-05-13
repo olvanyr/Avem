@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Restart.cs" />
     <Compile Include="Assets\Scripts\SimpleDoor.cs" />
+    <Compile Include="Assets\HollogramWaving.cs" />
     <Compile Include="Assets\Scripts\OpenTimerDoor.cs" />
     <Compile Include="Assets\Scripts\GameSaveManager.cs" />
     <Compile Include="Assets\Scripts\Red.cs" />
@@ -98,7 +99,7 @@
     <Compile Include="Assets\Scripts\ScreenShotMaker.cs" />
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
     <Compile Include="Assets\AttachGameObjectsToParticles.cs" />
-    <Compile Include="Assets\HollogramWaving.cs" />
+    <Compile Include="Assets\MapFollow.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

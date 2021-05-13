@@ -18,6 +18,19 @@ MonoBehaviour:
     - Assets/Animation/Bird/Player.controller
     - Assets/Animation/Button/Off.anim
     - Assets/Animation/Button/On.anim
+    - Assets/Animation/FruitBlue.controller
+    - Assets/Animation/FruitBlue.controller.meta
+    - Assets/Animation/Fruits/Plush.meta
+    - Assets/Animation/Fruits/Plush/Idle.anim
+    - Assets/Animation/Fruits/Plush/Idle.anim.meta
+    - Assets/Animation/Fruits/Plush/OnGround.anim
+    - Assets/Animation/Fruits/Plush/OnGround.anim.meta
+    - Assets/Animation/Fruits/Plush/Picked.anim
+    - Assets/Animation/Fruits/Plush/Picked.anim.meta
+    - Assets/Animation/Fruits/Plush/Walked.anim
+    - Assets/Animation/Fruits/Plush/Walked.anim.meta
+    - Assets/Animation/Fruits/Red/OnGround.anim
+    - Assets/Animation/Fruits/Red/Picked.anim
     - Assets/Animation/HorizontalButton/Off.anim
     - Assets/Animation/HorizontalButton/On.anim
     - Assets/Animation/TwoWayDoor/Close.anim
@@ -29,6 +42,8 @@ MonoBehaviour:
     - Assets/HollogramWaving.cs
     - Assets/HollogramWaving.cs.meta
     - Assets/Hologram.mat
+    - Assets/MapFollow.cs
+    - Assets/MapFollow.cs.meta
     - Assets/NewCustomRuleTile.cs
     - Assets/NewCustomRuleTile.cs.meta
     - Assets/Prefabs/Always needed/AudioManager.prefab
@@ -67,6 +82,7 @@ MonoBehaviour:
     - Assets/Scripts/Scriptable Object/GlobalVar.asset
     - Assets/Scripts/Scriptable Object/GlobalVariables.cs
     - Assets/Scripts/SimpleDoor.cs
+    - Assets/Scripts/Snapping.cs
     - Assets/Scripts/Timer.cs
     - Assets/Tiles/CableRed.asset
     - Assets/Tiles/CableRed.asset.meta
@@ -177,6 +193,10 @@ MonoBehaviour:
     - Assets/_Imports/Button&door&scanner/door1reverse.png
     - Assets/_Imports/Button&door&scanner/door1reverse_NormalMap.png
     - Assets/_Imports/Fonts/2015 Cruiser Bold SDF.asset
+    - Assets/_Imports/Fruits/StuffedAnimal.png
+    - Assets/_Imports/Fruits/StuffedAnimal.png.meta
+    - Assets/_Imports/Fruits/StuffedAnimal_n.png
+    - Assets/_Imports/Fruits/StuffedAnimal_n.png.meta
     - Assets/_Imports/Hollograms/Face.png
     - Assets/_Imports/Hollograms/Face.png.meta
     - Assets/_Imports/Hollograms/Face_E.png
@@ -185,6 +205,12 @@ MonoBehaviour:
     - Assets/_Imports/Hollograms/HollogramSheet.png.meta
     - Assets/_Imports/Hollograms/HollogramSheet_e.png
     - Assets/_Imports/Hollograms/HollogramSheet_e.png.meta
+    - Assets/_Imports/Hollograms/MapHollogram.png
+    - Assets/_Imports/Hollograms/MapHollogram.png.meta
+    - Assets/_Imports/Hollograms/MapHollogramTarget.png
+    - Assets/_Imports/Hollograms/MapHollogramTarget.png.meta
+    - Assets/_Imports/Hollograms/MapHollogram_e.png
+    - Assets/_Imports/Hollograms/MapHollogram_e.png.meta
     - Assets/_Imports/TileSets/CollisionTileset_e.png
     - Assets/_Imports/TileSets/CollisionTileset_e.png.meta
     - Assets/_Imports/TileSets/CollisionTileset_yellow.png.meta
@@ -205,7 +231,7 @@ MonoBehaviour:
     - Packages/com.unity.2d.tilemap.extras/Runtime/Tiles/RuleTile/RuleTile.cs
     - ProjectSettings/ProjectSettings.asset
     - 
-    m_Values: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
