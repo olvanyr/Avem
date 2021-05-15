@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\ColorManager.cs" />
     <Compile Include="Assets\Scripts\InputPlayer.cs" />
+    <Compile Include="Assets\MapFollow.cs" />
     <Compile Include="Assets\Scripts\PopUp.cs" />
     <Compile Include="Assets\Scripts\Scanner.cs" />
     <Compile Include="Assets\Scripts\Class\PlayerInput.cs" />
@@ -99,7 +100,7 @@
     <Compile Include="Assets\Scripts\ScreenShotMaker.cs" />
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
     <Compile Include="Assets\AttachGameObjectsToParticles.cs" />
-    <Compile Include="Assets\MapFollow.cs" />
+    <Compile Include="Assets\FinalDoor.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

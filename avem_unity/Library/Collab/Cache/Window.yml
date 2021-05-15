@@ -15,9 +15,18 @@ MonoBehaviour:
   SimpleSelectedItems:
     m_Keys:
     - Assets/Animation/Bird/Die.anim
+    - Assets/Animation/Bird/PickUp.anim
     - Assets/Animation/Bird/Player.controller
+    - Assets/Animation/Bird/Press.anim
     - Assets/Animation/Button/Off.anim
     - Assets/Animation/Button/On.anim
+    - Assets/Animation/FinalDoor.meta
+    - Assets/Animation/FinalDoor/FinalDoor.controller
+    - Assets/Animation/FinalDoor/FinalDoor.controller.meta
+    - Assets/Animation/FinalDoor/Idle.anim
+    - Assets/Animation/FinalDoor/Idle.anim.meta
+    - Assets/Animation/FinalDoor/Open.anim
+    - Assets/Animation/FinalDoor/Open.anim.meta
     - Assets/Animation/FruitBlue.controller
     - Assets/Animation/FruitBlue.controller.meta
     - Assets/Animation/Fruits/Plush.meta
@@ -39,6 +48,8 @@ MonoBehaviour:
     - Assets/AttachGameObjectsToParticles.cs
     - Assets/AttachGameObjectsToParticles.cs.meta
     - Assets/ColorManager.cs
+    - Assets/FinalDoor.cs
+    - Assets/FinalDoor.cs.meta
     - Assets/HollogramWaving.cs
     - Assets/HollogramWaving.cs.meta
     - Assets/Hologram.mat
@@ -231,7 +242,7 @@ MonoBehaviour:
     - Packages/com.unity.2d.tilemap.extras/Runtime/Tiles/RuleTile/RuleTile.cs
     - ProjectSettings/ProjectSettings.asset
     - 
-    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

@@ -166,6 +166,11 @@ public class PlayerMovement : MonoBehaviour
             MovePlayer(0, 0);
         }
 
+        if (state == "press" && animator.GetCurrentAnimatorStateInfo(0).IsName("idle"))
+        {
+            state = "move";
+        }
+
         // Animation
         float charachterVelocity = math.abs((rb.velocity.x));
         float charachterVerticalVelocity = (rb.velocity.y);
