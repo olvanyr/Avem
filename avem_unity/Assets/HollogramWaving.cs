@@ -6,7 +6,6 @@ using Unity.Mathematics;
 public class HollogramWaving : MonoBehaviour
 {
 
-    public bool isWaving;
 
     public float rng;
 
@@ -14,14 +13,8 @@ public class HollogramWaving : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (isWaving)
-        {
+
             rng = UnityEngine.Random.Range(0f, 100f);
-        }
-        else
-        {
-            
-        }
         
     }
 
