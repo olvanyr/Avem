@@ -20,6 +20,11 @@ MonoBehaviour:
     - Assets/Animation/Bird/Press.anim
     - Assets/Animation/Button/Off.anim
     - Assets/Animation/Button/On.anim
+    - Assets/Animation/Cloud.meta
+    - Assets/Animation/Cloud/Cloud.controller
+    - Assets/Animation/Cloud/Cloud.controller.meta
+    - Assets/Animation/Cloud/Idle.anim
+    - Assets/Animation/Cloud/Idle.anim.meta
     - Assets/Animation/FinalDoor.meta
     - Assets/Animation/FinalDoor/FinalDoor.controller
     - Assets/Animation/FinalDoor/FinalDoor.controller.meta
@@ -42,6 +47,11 @@ MonoBehaviour:
     - Assets/Animation/Fruits/Red/Picked.anim
     - Assets/Animation/HorizontalButton/Off.anim
     - Assets/Animation/HorizontalButton/On.anim
+    - Assets/Animation/Planet.meta
+    - Assets/Animation/Planet/Idle.anim
+    - Assets/Animation/Planet/Idle.anim.meta
+    - Assets/Animation/Planet/Planet.controller
+    - Assets/Animation/Planet/Planet.controller.meta
     - Assets/Animation/TwoWayDoor/Close.anim
     - Assets/Animation/TwoWayDoor/Door2.controller
     - Assets/Animation/TwoWayDoor/Open.anim
@@ -75,6 +85,8 @@ MonoBehaviour:
     - Assets/Prefabs/Props/TimerDoor.prefab
     - Assets/Prefabs/Props/horizontalButton.prefab
     - Assets/ReplaceGameObjects.cs
+    - Assets/Scenes/End.unity
+    - Assets/Scenes/End.unity.meta
     - Assets/Scenes/MainMenu.unity
     - Assets/Scenes/Scene0.unity
     - Assets/Scripts/AudioManager.cs
@@ -192,6 +204,8 @@ MonoBehaviour:
     - Assets/_Imports/Audio/MusicTest.meta
     - Assets/_Imports/Audio/MusicTest/_ROPAL JV.wav
     - Assets/_Imports/Audio/MusicTest/_ROPAL JV.wav.meta
+    - Assets/_Imports/Background.png
+    - Assets/_Imports/Background.png.meta
     - Assets/_Imports/Button&door&scanner/Cable.png
     - Assets/_Imports/Button&door&scanner/Cable.png.meta
     - Assets/_Imports/Button&door&scanner/Cable_e.png
@@ -222,6 +236,8 @@ MonoBehaviour:
     - Assets/_Imports/Hollograms/MapHollogramTarget.png.meta
     - Assets/_Imports/Hollograms/MapHollogram_e.png
     - Assets/_Imports/Hollograms/MapHollogram_e.png.meta
+    - Assets/_Imports/Planete1.png
+    - Assets/_Imports/Planete1.png.meta
     - Assets/_Imports/PropsNest/NestBackground.png
     - Assets/_Imports/TileSets/CollisionTileset_e.png
     - Assets/_Imports/TileSets/CollisionTileset_e.png.meta
@@ -240,10 +256,12 @@ MonoBehaviour:
     - Assets/_Imports/TileSets/ModernTileSet.png.meta
     - Assets/_Imports/TileSets/ModernTileSet_e.png
     - Assets/_Imports/TileSets/ModernTileSet_e.png.meta
+    - Assets/_Imports/cloud.png
+    - Assets/_Imports/cloud.png.meta
     - Packages/com.unity.2d.tilemap.extras/Runtime/Tiles/RuleTile/RuleTile.cs
     - ProjectSettings/ProjectSettings.asset
     - 
-    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
