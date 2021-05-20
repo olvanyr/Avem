@@ -255,7 +255,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
-        if (state != "menu")
+        if (state != "menu" && state != "exit")
         {
            state = "move";
         }

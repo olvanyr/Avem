@@ -92,7 +92,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
 
         //PlayerMovement.instance.enabled = true;
-        if (PlayerMovement.instance.state != "die")
+        if (PlayerMovement.instance.state != "die" && PlayerMovement.instance.state != "exit")
         {
             PlayerMovement.instance.state = "move";
         }

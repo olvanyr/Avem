@@ -56,17 +56,17 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ColorManager.cs" />
+    <Compile Include="Assets\Scripts\ColorManager.cs" />
     <Compile Include="Assets\Scripts\InputPlayer.cs" />
-    <Compile Include="Assets\MapFollow.cs" />
+    <Compile Include="Assets\Scripts\MapFollow.cs" />
     <Compile Include="Assets\Scripts\PopUp.cs" />
     <Compile Include="Assets\Scripts\Scanner.cs" />
     <Compile Include="Assets\Scripts\Class\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\Green.cs" />
-    <Compile Include="Assets\NewCustomRuleTile.cs" />
+    <Compile Include="Assets\Scripts\NewCustomRuleTile.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />
-    <Compile Include="Assets\ReplaceGameObjects.cs" />
+    <Compile Include="Assets\Scripts\ReplaceGameObjects.cs" />
     <Compile Include="Assets\Scripts\MainMenuAndUI\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MainMenuAndUI\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\TimerDoor.cs" />
@@ -82,7 +82,7 @@
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Restart.cs" />
     <Compile Include="Assets\Scripts\SimpleDoor.cs" />
-    <Compile Include="Assets\HollogramWaving.cs" />
+    <Compile Include="Assets\Scripts\HollogramWaving.cs" />
     <Compile Include="Assets\Scripts\OpenTimerDoor.cs" />
     <Compile Include="Assets\Scripts\GameSaveManager.cs" />
     <Compile Include="Assets\Scripts\Red.cs" />
@@ -96,11 +96,12 @@
     <Compile Include="Assets\Scripts\DropingFruit.cs" />
     <Compile Include="Assets\Scripts\Scriptable Object\GlobalVariables.cs" />
     <Compile Include="Assets\Scripts\SceneTransition.cs" />
+    <Compile Include="Assets\Scripts\FinalDoor.cs" />
     <Compile Include="Assets\Scripts\Button.cs" />
     <Compile Include="Assets\Scripts\ScreenShotMaker.cs" />
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
-    <Compile Include="Assets\AttachGameObjectsToParticles.cs" />
-    <Compile Include="Assets\FinalDoor.cs" />
+    <Compile Include="Assets\Scripts\AttachGameObjectsToParticles.cs" />
+    <Compile Include="Assets\Scripts\GoToMenu.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
