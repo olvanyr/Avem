@@ -47,6 +47,11 @@ MonoBehaviour:
     - Assets/Animation/Fruits/Red/Picked.anim
     - Assets/Animation/HorizontalButton/Off.anim
     - Assets/Animation/HorizontalButton/On.anim
+    - Assets/Animation/Menu.meta
+    - Assets/Animation/Menu/Credits.anim
+    - Assets/Animation/Menu/Credits.anim.meta
+    - Assets/Animation/Menu/Panel.controller
+    - Assets/Animation/Menu/Panel.controller.meta
     - Assets/Animation/Planet.meta
     - Assets/Animation/Planet/Idle.anim
     - Assets/Animation/Planet/Idle.anim.meta
@@ -242,14 +247,12 @@ MonoBehaviour:
     - Assets/_Imports/Audio/MusicTest.meta
     - Assets/_Imports/Audio/MusicTest/_ROPAL JV.wav
     - Assets/_Imports/Audio/MusicTest/_ROPAL JV.wav.meta
-    - Assets/_Imports/Background.png
-    - Assets/_Imports/Background.png.meta
-    - Assets/_Imports/Background_e.png
-    - Assets/_Imports/Background_e.png.meta
-    - Assets/_Imports/BlueRocket.png
-    - Assets/_Imports/BlueRocket.png.meta
-    - Assets/_Imports/BlueRocket_e.png
-    - Assets/_Imports/BlueRocket_e.png.meta
+    - Assets/_Imports/Banner.png
+    - Assets/_Imports/Banner.png.meta
+    - Assets/_Imports/Button&door&scanner/BrokenElevator.png
+    - Assets/_Imports/Button&door&scanner/BrokenElevator.png.meta
+    - Assets/_Imports/Button&door&scanner/BrokenElevator_n.png
+    - Assets/_Imports/Button&door&scanner/BrokenElevator_n.png.meta
     - Assets/_Imports/Button&door&scanner/Cable.png
     - Assets/_Imports/Button&door&scanner/Cable.png.meta
     - Assets/_Imports/Button&door&scanner/Cable_e.png
@@ -261,6 +264,19 @@ MonoBehaviour:
     - Assets/_Imports/Button&door&scanner/door1_NormalMap.png
     - Assets/_Imports/Button&door&scanner/door1reverse.png
     - Assets/_Imports/Button&door&scanner/door1reverse_NormalMap.png
+    - Assets/_Imports/End.meta
+    - Assets/_Imports/End/Background.png
+    - Assets/_Imports/End/Background.png.meta
+    - Assets/_Imports/End/Background_e.png
+    - Assets/_Imports/End/Background_e.png.meta
+    - Assets/_Imports/End/BlueRocket.png
+    - Assets/_Imports/End/BlueRocket.png.meta
+    - Assets/_Imports/End/BlueRocket_e.png
+    - Assets/_Imports/End/BlueRocket_e.png.meta
+    - Assets/_Imports/End/OrangeRocket.png
+    - Assets/_Imports/End/OrangeRocket.png.meta
+    - Assets/_Imports/End/Planete1.png
+    - Assets/_Imports/End/Planete1.png.meta
     - Assets/_Imports/Fonts/2015 Cruiser Bold SDF.asset
     - Assets/_Imports/Fruits/StuffedAnimal.png
     - Assets/_Imports/Fruits/StuffedAnimal.png.meta
@@ -280,10 +296,8 @@ MonoBehaviour:
     - Assets/_Imports/Hollograms/MapHollogramTarget.png.meta
     - Assets/_Imports/Hollograms/MapHollogram_e.png
     - Assets/_Imports/Hollograms/MapHollogram_e.png.meta
-    - Assets/_Imports/OrangeRocket.png
-    - Assets/_Imports/OrangeRocket.png.meta
-    - Assets/_Imports/Planete1.png
-    - Assets/_Imports/Planete1.png.meta
+    - Assets/_Imports/MenuUi/Prompt.png
+    - Assets/_Imports/MenuUi/Prompt.png.meta
     - Assets/_Imports/PropsNest/NestBackground.png
     - Assets/_Imports/TileSets/CollisionTileset_e.png
     - Assets/_Imports/TileSets/CollisionTileset_e.png.meta
@@ -308,7 +322,7 @@ MonoBehaviour:
     - ProjectSettings/EditorBuildSettings.asset
     - ProjectSettings/ProjectSettings.asset
     - 
-    m_Values: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

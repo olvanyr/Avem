@@ -11,8 +11,9 @@ public class MainMenu : MonoBehaviour
 
     public GameObject settingsWindow;
     public GameObject controlsWindow;
+    public GameObject creditWindow;
 
-    public GameObject firstSelectedButton, firstSettingSelectedButton, firstControlSelectedButton, optionClosedButton, controlClosedButton;
+    public GameObject firstSelectedButton, firstSettingSelectedButton, firstControlSelectedButton, firstCreditSelectedButton, optionClosedButton, controlClosedButton, creditClosedButton;
 
     public AudioClip highlightSound;
     public AudioClip onClickSound;
@@ -72,6 +73,22 @@ public class MainMenu : MonoBehaviour
         controlsWindow.SetActive(false);
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(controlClosedButton);
+        OnClickSound();
+    }
+
+    public void CreditsButton()
+    {
+        creditWindow.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(firstCreditSelectedButton);
+        OnClickSound();
+
+    }
+    public void CloseCreditsButton()
+    {
+        creditWindow.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(creditClosedButton);
         OnClickSound();
     }
 
