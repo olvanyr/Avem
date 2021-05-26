@@ -1403,7 +1403,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Music 2
+  m_Text: Arthur Motais de Narbonne
 --- !u!222 &612261053
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2692,7 +2692,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Music 3
+  m_Text: "Ro\xEF Adiv"
 --- !u!222 &1142644346
 CanvasRenderer:
   m_ObjectHideFlags: 0

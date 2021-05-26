@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\Scriptable Object\VectorValue.cs" />
     <Compile Include="Assets\Scripts\Pick.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
+    <Compile Include="Assets\Scripts\GoToMenu.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Restart.cs" />
     <Compile Include="Assets\Scripts\SimpleDoor.cs" />
@@ -101,7 +102,6 @@
     <Compile Include="Assets\Scripts\ScreenShotMaker.cs" />
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
     <Compile Include="Assets\Scripts\AttachGameObjectsToParticles.cs" />
-    <Compile Include="Assets\Scripts\GoToMenu.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
