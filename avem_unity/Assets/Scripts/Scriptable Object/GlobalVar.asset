@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c7dcade73b17f4697f4e5d712756fe, type: 3}
   m_Name: GlobalVar
   m_EditorClassIdentifier: 
-  menuMusic: {fileID: 8300000, guid: 68a87a3de1e272947968614226240547, type: 3}
+  menuMusic: {fileID: 8300000, guid: 6d6645064029614458d451d287b5a4fe, type: 3}
   gameMusic: {fileID: 8300000, guid: 1c8ce9c8cdf2a12418038cda37c3816a, type: 3}
-  endMusic: {fileID: 8300000, guid: f7a0119918bc4b149baf6da8b495ec79, type: 3}
+  endMusic: {fileID: 8300000, guid: fc29fa36394d2d5409040323abf3ad63, type: 3}
   playerLandingSound:
   - {fileID: 8300000, guid: e2fd51bf8797fc9409d665d78a2d4172, type: 3}
   - {fileID: 8300000, guid: fb108ca173e890248b6a2603c1b2e703, type: 3}
