@@ -14,34 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Scenes/MainMenu.unity
-    - Assets/Scripts/Scriptable Object/GlobalVar.asset
-    - Assets/_Imports/Audio/Door hit 11.wav
-    - Assets/_Imports/Audio/Step_test1/FootStep0.wav
-    - Assets/_Imports/Audio/Step_test1/FootStep0.wav.meta
-    - Assets/_Imports/Audio/Step_test1/FootStep1.wav
-    - Assets/_Imports/Audio/Step_test1/FootStep1.wav.meta
-    - Assets/_Imports/Audio/Step_test1/FootStep2.wav
-    - Assets/_Imports/Audio/Step_test1/FootStep2.wav.meta
-    - Assets/_Imports/Audio/Step_test1/FootStep3.wav
-    - Assets/_Imports/Audio/Step_test1/FootStep3.wav.meta
-    - Assets/_Imports/Audio/Step_test1/FootStep4.wav
-    - Assets/_Imports/Audio/Step_test1/FootStep4.wav.meta
-    - Assets/_Imports/Audio/Step_test1/Landing0.wav
-    - Assets/_Imports/Audio/Step_test1/Landing0.wav.meta
-    - Assets/_Imports/Audio/Step_test1/Landing1.wav
-    - Assets/_Imports/Audio/Step_test1/Landing1.wav.meta
-    - Assets/_Imports/Audio/Step_test1/Landing2.wav
-    - Assets/_Imports/Audio/Step_test1/Landing2.wav.meta
-    - Assets/_Imports/Audio/door hit 0.wav
-    - Assets/_Imports/Audio/door hit 0.wav.meta
-    - Assets/_Imports/Audio/musique fin.wav
-    - Assets/_Imports/Audio/musique fin.wav.meta
-    - Assets/_Imports/Audio/musique menu.wav
-    - Assets/_Imports/Audio/musique menu.wav.meta
+    - Assets/Scenes/Scene0.unity
     - 
-    m_Values: 0101010101010101010101010101010101010101010101010101
-  RevisionSummary: 
+    m_Values: 0101
+  RevisionSummary: change the music menu for nothing if you just complet the game
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0

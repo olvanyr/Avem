@@ -11,7 +11,7 @@ public class GoToMenu : MonoBehaviour
 
     private void Awake()
     {
-        nextSong = globalVar.menuMusic;
+        //nextSong = globalVar.menuMusic;
     }
     public void ChangeRoom() 
     {
