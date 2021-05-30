@@ -16,8 +16,8 @@ MonoBehaviour:
     m_Keys:
     - Assets/Scenes/Scene0.unity
     - 
-    m_Values: 0101
-  RevisionSummary: change the music menu for nothing if you just complet the game
+    m_Values: 0000
+  RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GlobalVar
   m_EditorClassIdentifier: 
   menuMusic: {fileID: 8300000, guid: 6d6645064029614458d451d287b5a4fe, type: 3}
-  gameMusic: {fileID: 8300000, guid: 1c8ce9c8cdf2a12418038cda37c3816a, type: 3}
+  gameMusic: {fileID: 8300000, guid: 0e9afa068441b6649ad0087128c074df, type: 3}
   endMusic: {fileID: 8300000, guid: fc29fa36394d2d5409040323abf3ad63, type: 3}
   playerLandingSound:
   - {fileID: 8300000, guid: e2fd51bf8797fc9409d665d78a2d4172, type: 3}

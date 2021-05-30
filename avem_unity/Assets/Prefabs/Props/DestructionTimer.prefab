@@ -125,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 4088987676890612619}
   timerLight: {fileID: 4088987676786238880}
-  runDuration: 600
+  runDuration: 596.775
 --- !u!114 &356001905463917775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,7 +138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 340a4129ff533d847ad92834c21db2a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWaving: 0
   rng: 0
   div: 750
 --- !u!1 &4088987676890612616
