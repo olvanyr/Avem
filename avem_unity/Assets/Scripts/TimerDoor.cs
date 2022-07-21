@@ -89,7 +89,7 @@ public class TimerDoor : MonoBehaviour
         {
             Debug.LogError("the current door id is already atributed");
         }
-        GameSaveManager.instance.doorData.Add(id);
+        //GameSaveManager.instance.doorData.Add(id);
     }
 
     void DoorAlreadyClosed()
